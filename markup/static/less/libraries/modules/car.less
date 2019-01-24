@@ -1,6 +1,30 @@
 .hook-card-misc() {
-  .uk-card-car {
+  .uk-card-model {
+    font-size: @base-h6-font-size;
+    color: @global-muted-color;
+    text-align: center;
+    display: block;
 
+    .uk-card-title {
+      font-size: @base-h6-font-size;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    .uk-card-body {
+      padding: 10px 0;
+    }
+
+    .uk-card-img {
+      height: 110px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        object-fit: contain;
+      }
+    }
   }
 }
 
