@@ -2,6 +2,7 @@
   .uk-card-brand {
     padding: 15px;
     display: block;
+    text-align: center;
 
     &:hover {
       text-decoration: none;
@@ -22,7 +23,13 @@
     }
     
     .uk-card-title {
-      margin: 30px 0 0;
+      font-size: 16px;
+      margin: 20px 0 0;
+
+      @media (min-width: 768px) {
+        font-size: @base-h5-font-size;
+        margin: 30px 0 0;
+      }
     }
   }
 }
@@ -32,3 +39,4 @@
 
   }
 }
+
