@@ -2,7 +2,7 @@ module.exports = {
     "postcss": [],
     "svg": {
         "active": true,
-        "workflow": "sprite",
+        "workflow": "symbols",
         "symbolsConfig": {
             "loadingType": "inject",
             "usePolyfillForExternalSymbols": true,
@@ -13,14 +13,16 @@ module.exports = {
         "workflow": "concat"
     },
     "js": {
-        "workflow": "concat",
+        "workflow": "modular",
         "bundler": "webpack",
         "lint": false,
         "useBabel": true,
         "removeConsoleLog": true,
         "webpack": {
             "useHMR": false,
-            "providePlugin": {}
+            "providePlugin": {
+                noUiSlider: 'nouislider'
+            }
         },
         "jsPathsToConcatBeforeModulesJs": [],
         "lintJsCodeBeforeModules": false,

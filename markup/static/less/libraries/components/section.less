@@ -1,0 +1,57 @@
+// Name:            Section
+// Description:     Component to create horizontal layout section
+//
+// Component:       `uk-section`
+//
+// Modifiers:       `uk-section-xsmall`
+//                  `uk-section-small`
+//                  `uk-section-large`
+//                  `uk-section-xlarge`
+//                  `uk-section-default`
+//                  `uk-section-muted`
+//                  `uk-section-primary`
+//                  `uk-section-secondary`
+//                  `uk-section-overlap`
+//
+// States:          `uk-preserve-color`
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@section-padding-vertical:                        @global-medium-margin;
+@section-padding-vertical-m:                      75px;
+
+@section-xsmall-padding-vertical:                 @global-margin;
+
+@section-small-padding-vertical:                  @global-medium-margin;
+
+@section-large-padding-vertical:                  @global-large-margin;
+@section-large-padding-vertical-m:                80px;
+
+@section-xlarge-padding-vertical:                 @global-xlarge-margin;
+@section-xlarge-padding-vertical-m:               (@global-large-margin + @global-xlarge-margin);
+
+@section-default-background:                      @global-background;
+
+@section-muted-background:                        @global-muted-background;
+
+@section-primary-background:                      @global-primary-background;
+@section-primary-color-mode:                      light;
+
+@section-secondary-background:                    @global-secondary-background;
+@section-secondary-color-mode:                    light;
+
+
+// Hooks
+// ========================================================================
+
+.hook-section() {}
+.hook-section-default() {}
+.hook-section-muted() {}
+.hook-section-secondary() {}
+.hook-section-primary() {}
+.hook-section-overlap() {}
+.hook-section-misc() {}

@@ -10,7 +10,7 @@
 // ========================================================================
 
 @background-default-background:                 @global-background;
-@background-muted-background:                   @global-muted-background;
+@background-muted-background:                   @global-color;
 @background-primary-background:                 @global-primary-background;
 @background-secondary-background:               @global-secondary-background;
 
@@ -19,4 +19,48 @@
 
 .hook-background-misc;
 
-.hook-background-misc() {}
+.hook-background-misc() {
+  .uk-background-warning {
+    background-color: @global-warning-background;
+  }
+  .uk-background-danger {
+    background-color: @global-danger-background;
+  }
+  .uk-background-1 {
+    background-color: #2E3191;
+  }
+  .uk-background-2 {
+    background: linear-gradient(121.62deg, #F2994A 0%, #F2C94C 100%);
+  }
+  .uk-background-3 {
+    background: linear-gradient(121.62deg, #C2E59C 0%, #64B3F4 100%);
+  }
+  .uk-background-4 {
+    background: linear-gradient(121.62deg, #4B134F 0%, #C94B4B 100%);
+  }
+  .uk-background-5 {
+    background: linear-gradient(121.62deg, #FF416C 0%, #FF4B2B 100%);
+  }
+  .uk-background-6 {
+    background: linear-gradient(121.62deg, #76B852 0%, #BCE9A2 100%);
+  }
+  .uk-background-7 {
+    background: linear-gradient(121.62deg, #9796F0 0%, #FBC7D4 100%);
+  }
+  .uk-background-8 {
+    background: linear-gradient(121.62deg, #F2709C 0%, #FF9472 100%);
+  }
+  .uk-background-9 {
+    background: linear-gradient(121.62deg, #536976 0%, #292E49 100%);
+  }
+  .uk-background-10 {
+    background: linear-gradient(121.62deg, #0052D4 0%, #6FB1FC 100%);
+  }
+  .uk-background-11 {
+    background: linear-gradient(121.62deg, #FFD194 0%, #D1913C 100%);
+  }
+  .uk-background-12 {
+    background: linear-gradient(121.62deg, #F2994A 0%, #F2C94C 100%);
+  }
+
+}
