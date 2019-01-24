@@ -8,9 +8,50 @@
     <body>
         %=symbols=%
 
-        <div class="page">
-            <div class="page-body">
+        <div class="uk-page">
+            <div class="uk-page-left">
+                <div class="uk-menus">
+                    <div class="uk-menu-primary">
+                        <ul class="uk-menu-list" data-uk-sticky>
+                            <li><a href="#">{{Icon iconName="cardealers"}} Автосалоны</a></li>
+                            <li><a href="#">{{Icon iconName="trucks"}} Грузовая техника</a></li>
+                            <li><a href="#">{{Icon iconName="services"}} Все услуги</a></li>
+                            <li><a href="#">{{Icon iconName="information"}} О компании</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-menu-dealers">
+                        <ul class="uk-menu-list" data-uk-sticky>
+                            <li><a href="#"><img src="%=static=%img/content/mercedes-benz.png" alt="">Mercedes-Benz</a></li>
+                            <li><a href="#"><img src="%=static=%img/content/vw.png" alt="">Volkswagen</a></li>
+                            <li><a href="#"><img src="%=static=%img/content/renault.png" alt="">Renault</a></li>
+                            <li><a href="#"><img src="%=static=%img/content/skoda.png" alt="">Skoda</a></li>
+                            <li><a href="#"><img src="%=static=%img/content/mitsubushi.png" alt="">Mitsubushi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-page-body">
                 <div class="uk-offcanvas-content">
+
+                    <nav class="uk-navbar-container uk-navbar-transparent">
+                        <div class="uk-container">
+                            <div uk-navbar>
+                                <div class="uk-navbar-left">
+                                    <a class="uk-logo" href="#">
+                                        <div class="uk-logo-image">{{Icon iconName="logo"}}</div>
+                                        <div class="uk-logo-description">Международный автомобильный холдинг</div>
+                                    </a>
+                                </div>
+                                <div class="uk-navbar-right">
+                                    <ul class="uk-navbar-nav">
+                                        <li class="uk-active"><a href="#">Авто в наличии</a></li>
+                                        <li><a href="#">Акции</a></li>
+                                        <li><a href="#">Вакансии</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
 
                     <nav class="uk-navbar-container">
                         <div class="uk-container">
@@ -192,7 +233,7 @@
                                                 <header class="uk-comment-header uk-position-relative">
                                                     <div class="uk-grid-medium uk-flex-middle" uk-grid>
                                                         <div class="uk-width-auto">
-                                                            <img class="uk-comment-avatar" src="images/avatar.jpg" width="50" alt="">
+                                                            <img class="uk-comment-avatar" src="https://picsum.photos/600/600" width="50" alt="">
                                                         </div>
                                                         <div class="uk-width-expand">
                                                             <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
@@ -349,6 +390,18 @@
         
                                                 <div class="uk-margin-small">
                                                     <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
+
+                                                    <h3>Price</h3>
+                                                    <div class="uk-price">
+                                                        <div class="uk-price-inputs">
+                                                            <input type="text" id="price-from" class="uk-input">
+                                                            <div class="uk-price-divider"></div>
+                                                            <input type="text" id="price-to" class="uk-input">
+                                                        </div>
+                                                        <div class="uk-price-range">
+                                                            <div id="price"></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
         
                                             </form>
@@ -437,7 +490,7 @@
                                 <div>
         
                                     <div class="uk-inline">
-                                        <img src="images/light.jpg" alt="">
+                                        <img src="https://picsum.photos/600/600" alt="">
                                         <a class="uk-position-absolute uk-transform-center" style="left: 20%; top: 30%" href="#" uk-marker></a>
                                         <a class="uk-position-absolute uk-transform-center" style="left: 60%; top: 40%" href="#" uk-marker></a>
                                         <a class="uk-position-absolute uk-transform-center" style="left: 80%; top: 70%" href="#" uk-marker></a>
@@ -447,7 +500,7 @@
                                 <div>
         
                                     <div class="uk-inline-clip">
-                                        <img src="images/photo.jpg" alt="">
+                                        <img src="https://picsum.photos/600/600" alt="">
                                         <div class="uk-overlay uk-overlay-default uk-position-bottom">
                                             <p>Default Lorem ipsum dolor sit amet, consectetur.</p>
                                         </div>
@@ -457,7 +510,7 @@
                                 <div>
         
                                     <div class="uk-inline-clip">
-                                        <img src="images/photo.jpg" alt="">
+                                        <img src="https://picsum.photos/600/600" alt="">
                                         <div class="uk-overlay uk-overlay-primary uk-position-bottom">
                                             <p>Primary Lorem ipsum dolor sit amet, consectetur.</p>
                                         </div>
@@ -467,7 +520,7 @@
                                 <div>
         
                                     <div class="uk-inline uk-light">
-                                        <img src="images/photo.jpg" alt="">
+                                        <img src="https://picsum.photos/600/600" alt="">
                                         <div class="uk-position-center">
                                             <span uk-overlay-icon></span>
                                         </div>
@@ -500,9 +553,9 @@
                                 <div>
         
                                     <ul class="uk-thumbnav">
-                                        <li class="uk-active"><a href="#"><img src="images/photo.jpg" width="60" alt=""></a></li>
-                                        <li><a href="#"><img src="images/dark.jpg" width="60" alt=""></a></li>
-                                        <li><a href="#"><img src="images/light.jpg" width="60" alt=""></a></li>
+                                        <li class="uk-active"><a href="#"><img src="https://picsum.photos/600/600" width="60" alt=""></a></li>
+                                        <li><a href="#"><img src="https://picsum.photos/600/600" width="60" alt=""></a></li>
+                                        <li><a href="#"><img src="https://picsum.photos/600/600" width="60" alt=""></a></li>
                                     </ul>
         
                                 </div>
@@ -800,18 +853,275 @@
         
                         </div>
                     </div>
+
+                    <div class="uk-section uk-section-swipers">
+                        <div class="uk-container">
+                            <h2>Swiper</h2>
+
+                            <!-- Slider main container -->
+                            <div class="swiper-container uk-margin-large-bottom">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper uk-grid uk-child-width-1-2@s uk-grid-match" data-uk-grid>
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="uk-card uk-card-default uk-card-body">
+                                            <h3 class="uk-card-title">Default</h3>
+                                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="uk-card uk-card-default uk-card-body">
+                                            <h3 class="uk-card-title">Default</h3>
+                                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="uk-card uk-card-default uk-card-body">
+                                            <h3 class="uk-card-title">Default</h3>
+                                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="uk-card uk-card-default uk-card-body">
+                                            <h3 class="uk-card-title">Default</h3>
+                                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="uk-card uk-card-default uk-card-body">
+                                            <h3 class="uk-card-title">Default</h3>
+                                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+
+                            <!-- Slider main container -->
+                            <div class="swiper-container" style="overflow: visible;">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper uk-grid uk-child-width-1-3@s uk-grid-match" data-uk-grid>
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="uk-card uk-card-default uk-card-body">
+                                            <h3 class="uk-card-title">Default</h3>
+                                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="uk-card uk-card-default uk-card-body">
+                                            <h3 class="uk-card-title">Default</h3>
+                                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="uk-card uk-card-default uk-card-body">
+                                            <h3 class="uk-card-title">Default</h3>
+                                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="uk-card uk-card-default uk-card-body">
+                                            <h3 class="uk-card-title">Default</h3>
+                                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="uk-card uk-card-default uk-card-body">
+                                            <h3 class="uk-card-title">Default</h3>
+                                            <p>Lorem ipsum <a href="#">dolor</a> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-hero uk-hero-main uk-light">
+                        <div class="uk-hero-background">
+                            <img src="%=static=%img/content/hero-image.jpg" alt="">
+                        </div>
+                        <div class="uk-hero-overlay uk-background-primary"></div>
+                        <div class="uk-hero-foreground">
+                            <div class="uk-hero-header">
+                                <nav class="uk-navbar-container uk-navbar-transparent">
+                                    <div class="uk-container">
+                                        <div uk-navbar>
+                                            <div class="uk-navbar-left">
+                                                <a class="uk-logo" href="#">
+                                                    <div class="uk-logo-image uk-logo-inverse">{{Icon iconName="logo"}}</div>
+                                                    <div class="uk-logo-description uk-logo-inverse">Международный автомобильный холдинг</div>
+                                                </a>
+                                            </div>
+                                            <div class="uk-navbar-right">
+                                                <ul class="uk-navbar-nav">
+                                                    <li class="uk-active"><a href="#">Авто в наличии</a></li>
+                                                    <li><a href="#">Акции</a></li>
+                                                    <li><a href="#">Вакансии</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="uk-hero-body">
+                                <div class="uk-container">
+                                    <div class="uk-hero-heading">Солли Плюс</div>
+                                    <div class="uk-hero-description">Международный автомобильный холдинг </div>
+                                    <div class="uk-hero-arrow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-hero uk-hero-dealer">
+                        <div class="uk-hero-background">
+                            <img src="%=static=%img/content/hero-image-2.jpg" alt="">
+                        </div>
+                        <div class="uk-hero-overlay uk-background-warning"></div>
+                        <div class="uk-hero-foreground">
+                            <div class="uk-hero-header">
+                                <nav class="uk-navbar-container uk-navbar-transparent">
+                                    <div class="uk-container">
+                                        <div uk-navbar>
+                                            <div class="uk-navbar-left">
+                                                <a class="uk-logo" href="#">
+                                                    <div class="uk-logo-image">{{Icon iconName="logo"}}</div>
+                                                    <div class="uk-logo-description">Международный автомобильный холдинг</div>
+                                                </a>
+                                            </div>
+                                            <div class="uk-navbar-right">
+                                                <ul class="uk-navbar-nav">
+                                                    <li class="uk-active"><a href="#">Авто в наличии</a></li>
+                                                    <li><a href="#">Акции</a></li>
+                                                    <li><a href="#">Вакансии</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="uk-hero-body">
+                                <div class="uk-container">
+                                    <div class="uk-hero-heading">Renault</div>
+                                    <div class="uk-hero-description">Официальный дилер Рено в Харькове</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-hero uk-hero-dealer uk-light">
+                        <div class="uk-hero-background">
+                            <img src="%=static=%img/content/hero-image-3.jpg" alt="">
+                        </div>
+                        <div class="uk-hero-overlay uk-background-1"></div>
+                        <div class="uk-hero-foreground">
+                            <div class="uk-hero-header">
+                                <nav class="uk-navbar-container uk-navbar-transparent">
+                                    <div class="uk-container">
+                                        <div uk-navbar>
+                                            <div class="uk-navbar-left">
+                                                <a class="uk-logo" href="#">
+                                                    <div class="uk-logo-image uk-logo-inverse">{{Icon iconName="logo"}}</div>
+                                                    <div class="uk-logo-description uk-logo-inverse">Международный автомобильный холдинг</div>
+                                                </a>
+                                            </div>
+                                            <div class="uk-navbar-right">
+                                                <ul class="uk-navbar-nav">
+                                                    <li class="uk-active"><a href="#">Авто в наличии</a></li>
+                                                    <li><a href="#">Акции</a></li>
+                                                    <li><a href="#">Вакансии</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="uk-hero-body">
+                                <div class="uk-container">
+                                    <div class="uk-hero-heading">DAF</div>
+                                    <div class="uk-hero-description">Официальный сервис DAF в Харькове</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-hero uk-hero-article uk-light">
+                        <div class="uk-hero-background">
+                            <img src="%=static=%img/content/hero-image-2.jpg" alt="">
+                        </div>
+                        <div class="uk-hero-overlay uk-background-muted"></div>
+                        <div class="uk-hero-foreground">
+                            <div class="uk-hero-header">
+                                <nav class="uk-navbar-container uk-navbar-transparent">
+                                    <div class="uk-container">
+                                        <div uk-navbar>
+                                            <div class="uk-navbar-left">
+                                                <a class="uk-logo" href="#">
+                                                    <div class="uk-logo-image uk-logo-inverse">{{Icon iconName="logo"}}</div>
+                                                    <div class="uk-logo-description uk-logo-inverse">Международный автомобильный холдинг</div>
+                                                </a>
+                                            </div>
+                                            <div class="uk-navbar-right">
+                                                <ul class="uk-navbar-nav">
+                                                    <li class="uk-active"><a href="#">Авто в наличии</a></li>
+                                                    <li><a href="#">Акции</a></li>
+                                                    <li><a href="#">Вакансии</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="uk-hero-body">
+                                <div class="uk-container">
+                                    <div class="uk-h2">На выставке коммерческого транспорта IAA IVECO вошла в историю, полностью отказавшись от дизельных автомобилей на своем стенде</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-hero uk-hero-article uk-light">
+                        <div class="uk-hero-overlay uk-background-7"></div>
+                        <div class="uk-hero-foreground">
+                            <div class="uk-hero-header">
+                                <nav class="uk-navbar-container uk-navbar-transparent">
+                                    <div class="uk-container">
+                                        <div uk-navbar>
+                                            <div class="uk-navbar-left">
+                                                <a class="uk-logo" href="#">
+                                                    <div class="uk-logo-image uk-logo-inverse">{{Icon iconName="logo"}}</div>
+                                                    <div class="uk-logo-description uk-logo-inverse">Международный автомобильный холдинг</div>
+                                                </a>
+                                            </div>
+                                            <div class="uk-navbar-right">
+                                                <ul class="uk-navbar-nav">
+                                                    <li class="uk-active"><a href="#">Авто в наличии</a></li>
+                                                    <li><a href="#">Акции</a></li>
+                                                    <li><a href="#">Вакансии</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="uk-hero-body">
+                                <div class="uk-container">
+                                    <div class="uk-h2">На выставке коммерческого транспорта IAA IVECO вошла в историю, полностью отказавшись от дизельных автомобилей на своем стенде</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
         
                 </div>
-        
-                <script>
-        
-                    var date = (new Date(Date.now() + 864e5 * 7)).toISOString();
-        
-                    UIkit.util.$$('[js-countdown]').forEach(function(el) {
-                        UIkit.countdown(el, {date: date});
-                    });
-        
-                </script>
             </div>
         </div>
 
@@ -820,6 +1130,16 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/js/uikit-icons.min.js"></script>
+
+        <script>
+        
+            var date = (new Date(Date.now() + 864e5 * 7)).toISOString();
+
+            UIkit.util.$$('[js-countdown]').forEach(function(el) {
+                UIkit.countdown(el, {date: date});
+            });
+
+        </script>
 
         <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
         <script src="%=static=%js/main%=hash=%%=min=%.js"></script>

@@ -7,6 +7,8 @@
   "dependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
+    "nouislider": "^12.1.0",
+    "swiper": "^4.4.6",
     "uikit": "^3.0.0-rc.26"
   },
   "devDependencies": {
