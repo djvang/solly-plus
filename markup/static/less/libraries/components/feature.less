@@ -1,0 +1,50 @@
+.hook-card-misc() {
+  .uk-card-feature {
+    background: linear-gradient(298.64deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #FBF659;
+    color: @global-color;
+    padding: 35px 25px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    > * {
+      margin: 15px;
+    }
+
+    .uk-card-icon {
+      font-size: 60px;
+      svg, img {
+        display: block;
+      }
+    }
+
+    .uk-card-title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .uk-card-left {
+      flex-shrink: 0;
+    }
+
+    .uk-card-body {
+      padding: 0;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: @global-color;
+      box-shadow: 0px 5px 40px rgba(251, 246, 89, 0.6);
+    }
+
+    @media (max-width: @breakpoint-small-max) {
+      flex-wrap: wrap;
+      padding: 15px 10px;
+      
+      .uk-card-icon {
+        font-size: 50px;
+      }
+    }
+  }
+}

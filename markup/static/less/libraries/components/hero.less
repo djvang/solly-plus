@@ -59,20 +59,31 @@
   font-weight: 100;
 }
 
+.uk-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: -10px -20px;
+  padding-bottom: 40px;
+  > * {
+    margin: 10px 20px;
+  }
+
+  .uk-back {
+    margin-right: auto;
+  }
+}
+
 
 .uk-hero-main {
   min-height: 700px;
+  .uk-hero-background,
+  .uk-hero-overlay {
+    bottom: 20px;
+  }
   .uk-hero-body {
     display: flex;
     align-items: center;
     text-align: center;
-  }
-}
-
-.uk-hero-dealer {
-  min-height: 360px;
-  .uk-hero-body {
-    display: flex;
-    align-items: flex-end;
   }
 }

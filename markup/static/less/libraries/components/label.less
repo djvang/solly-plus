@@ -1,0 +1,69 @@
+// Name:            Label
+// Description:     Component to indicate important notes
+//
+// Component:       `uk-label`
+//
+// Modifiers:       `uk-label-success`
+//                  `uk-label-warning`
+//                  `uk-label-danger`
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@label-padding-vertical:                        6px;
+@label-padding-horizontal:                      12px;
+@label-background:                              @global-primary-background;
+@label-line-height:                             @global-line-height;
+@label-font-size:                               @global-small-font-size;
+@label-color:                                   @global-inverse-color;
+
+@label-success-background:                      @global-success-background;
+@label-success-color:                           @global-inverse-color;
+@label-warning-background:                      @global-warning-background;
+@label-warning-color:                           @global-inverse-color;
+@label-danger-background:                       @global-danger-background;
+@label-danger-color:                            @global-inverse-color;
+
+
+// Hooks
+// ========================================================================
+
+.hook-label() {
+  border-radius: 500px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+}
+.hook-label-success() {}
+.hook-label-warning() {}
+.hook-label-danger() {}
+.hook-label-misc() {
+  .uk-label-for {
+    font-size: 14px;
+    opacity: 0.6;
+  }
+  .uk-labels {
+    > * {
+      margin: 5px 10px;
+    }
+  }
+}
+
+
+// Inverse
+// ========================================================================
+
+@inverse-label-background:                     @inverse-global-primary-background;
+@inverse-label-color:                          @label-background;
+
+.hook-inverse() {}
+
+.hook-inverse-label() {
+  &:hover,
+  &:focus {
+    color: @label-background;
+  }
+}
