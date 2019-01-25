@@ -10,9 +10,9 @@
 // ========================================================================
 
 @background-default-background:                 @global-background;
-@background-muted-background:                   @global-color;
+@background-muted-background:                   #F1F2F4;
 @background-primary-background:                 #376BC7;
-@background-secondary-background:               @global-secondary-background;
+@background-secondary-background:               @global-color;
 
 // Hooks
 // ========================================================================
@@ -20,6 +20,9 @@
 .hook-background-misc;
 
 .hook-background-misc() {
+  .uk-background-muted {
+    background-color: @background-muted-background;
+  }
   .uk-background-warning {
     background-color: #FFDA0D;
   }
