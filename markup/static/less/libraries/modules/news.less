@@ -6,12 +6,14 @@
     }
 
     &:hover {
-      box-shadow: @global-medium-box-shadow;
+      text-decoration: none;
     }
 
     .uk-card-img {
       border-radius: 10px;
       overflow: hidden;
+      background-color: @global-muted-color;
+      height: 235px;
       
       @media (min-width: 640px) {
         width: 50%;
@@ -29,6 +31,9 @@
 
     .uk-card-title {
       margin: 10px 0 15px;
+      font-size: 18px;
+      font-weight: 500;
+
       @media (min-width: 960px) {
         margin-bottom: 40px;
       }
@@ -37,6 +42,9 @@
     .uk-card-body {
       padding: 20px;
       box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
       @media (min-width: 640px) {
         width: 50%;
@@ -47,9 +55,14 @@
         padding: 45px 40px 20px;
       }
 
-      .date, .city {
+      &:before, &:after {
+        display: none;
+      }
+
+      .uk-card-date, .uk-card-city {
         font-size: 12px;
         color: @global-muted-color;
+        display: block;
       }
     }
   }
