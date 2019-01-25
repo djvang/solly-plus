@@ -1,0 +1,47 @@
+.hook-card-misc() {
+  .uk-card-stock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    min-height: 235px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    color: @global-muted-color;
+    background-color: @global-muted-background;
+
+    &:hover {
+      text-decoration: none;
+      color: @global-muted-color;
+      box-shadow: @global-large-box-shadow;
+    }
+
+    &.uk-light {
+      &:hover {
+        color: @global-inverse-color;
+      }
+    }
+
+    strong {
+      display: block;
+      margin: 10px 0;
+    }
+
+    .city, .date {
+      font-size: 12px;
+      opacity: .6;
+    }
+  }
+}
+
+.hook-section-misc() {
+  
+}
+
+.hook-grid-misc() {
+  .uk-grid-cars {
+
+  }
+}

@@ -5,6 +5,13 @@
     text-align: center;
     display: block;
 
+    &:hover {
+      text-decoration: none;
+      .uk-card-title {
+        color: @global-link-hover-color;
+      }
+    }
+
     .uk-card-title {
       font-size: @base-h6-font-size;
       font-weight: 500;
