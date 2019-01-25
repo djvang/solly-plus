@@ -48,7 +48,27 @@
 // Hooks
 // ========================================================================
 
-.hook-section() {}
+.hook-section() {
+  position: relative;
+  
+  &-background,
+  &-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &-overlay {
+    opacity: 0.5;
+  }
+
+  &-foreground {
+    position: relative;
+    min-height: inherit;
+  }
+}
 .hook-section-default() {}
 .hook-section-muted() {}
 .hook-section-secondary() {}
