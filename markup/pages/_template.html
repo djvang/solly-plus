@@ -10,24 +10,15 @@
 
         <div class="uk-page">
 
-            <div class="uk-page-header">
-                {{> header/header}}
+            <div class="uk-page-left">
+                {{> header/header dealers=false}}
             </div>
 
-            <div class="uk-page-body">
+            <div class="uk-page-body"></div>
 
-            </div>
-
-            <div class="uk-page-footer">
-                {{> footer/footer}}
-            </div>
         </div>
 
-        <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
-        <script>svg4everybody();</script>
-
-        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
-        <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+        {{> scripts/scripts}}
     </body>
 
 </html>

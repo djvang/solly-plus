@@ -85,6 +85,11 @@
 
 .hook-base-body() {
   font-weight: 300;
+
+  @media (max-width: @breakpoint-small-max) {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }
 .hook-base-link() {}
 .hook-base-link-hover() {}
@@ -92,12 +97,27 @@
 .hook-base-heading() {}
 .hook-base-h1() {
   font-weight: 100;
+
+  @media (max-width: @breakpoint-small-max) {
+    font-size: 28px;
+  }
 }
 .hook-base-h2() {
   font-weight: 100;
+  @media (max-width: @breakpoint-small-max) {
+    font-size: 24px;
+  }
 }
-.hook-base-h3() {}
-.hook-base-h4() {}
+.hook-base-h3() {
+  @media (max-width: @breakpoint-small-max) {
+    font-size: 20px;
+  }
+}
+.hook-base-h4() {
+  @media (max-width: @breakpoint-small-max) {
+    font-size: 20px;
+  }
+}
 .hook-base-h5() {}
 .hook-base-h6() {}
 .hook-base-hr() {}
@@ -106,11 +126,15 @@
 .hook-base-pre() {}
 
 .hook-base-misc() {
-  .uk-lead {
+  .uk-text-lead {
     line-height: 1.63;
-    font-size: 22px;
+    font-size: 1.22rem;
     margin-bottom: 30px;
     font-weight: 100;
+
+    @media (max-width: @breakpoint-small-max) {
+      font-size: 18px;
+    }
   }
   .uk-date {
     font-size: 14px;

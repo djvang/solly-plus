@@ -104,7 +104,174 @@
 }
 
 .hook-section-misc() {
-  .uk-section-cars {
+  .uk-section-cars {}
+  .uk-section-car {}
+
+
+  .uk-car {
 
   }
+
+  .uk-car-heading {
+    margin-bottom: 30px;
+  }
+
+  .uk-car-title {
+    margin-bottom: 0;
+  }
+
+  .uk-car-id {
+    line-height: normal;
+    font-size: 14px;
+    color: #A5A8AD;
+  }
+
+  .uk-car-prices {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -10px;
+    margin-bottom: 20px;
+
+    > * {
+      margin: 10px;
+    }
+  }
+
+  .uk-car-price {
+    background-color: @global-success-background;
+    border-radius: 500px;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 24px;
+    color: #fff;
+    padding: 8px 16px;
+    text-align: center;
+    @media (max-width: @breakpoint-xsmall-max) {
+      font-size: 18px;
+    }
+  }
+
+  .uk-car-price-old {
+    font-size: 20px;
+    line-height: normal;
+    text-decoration: line-through;
+    color: #A5A8AD;
+    text-align: center;
+    @media (max-width: @breakpoint-xsmall-max) {
+      font-size: 16px;
+    }
+  }
+
+  .uk-car-info {
+    font-size: 16px;
+    line-height: 1.625;
+  }
+
+  .uk-car-info td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: top;
+  }
+
+  .uk-car-info-label {
+    width: 150px;
+    padding-right: 12px;
+  }
+
+  .uk-car-info-text {
+    font-weight: 500;
+  }
+
+  .uk-car-info {
+    @media (max-width: @breakpoint-small-max) {
+      tr {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+      td {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      .uk-car-info-label {
+        width: auto;
+      }
+    }
+  }
+
+  .uk-car-about {
+    font-size: 14px;
+    line-height: 2.14;
+  }
+
+  .uk-car-about-title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .uk-car-gallery {
+    margin-bottom: 40px;
+  }
+
+  .uk-car-gallery-general {
+    height: 412px;
+    @media (max-width: @breakpoint-small-max) {
+      height: 200px;
+    }
+  }
+
+  .uk-car-gallery-thumbs {
+    height: 70px;
+    margin-top: 20px;
+  }
+
+  .uk-car-gallery-thumbs .swiper-slide {
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .uk-car-gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 0.4;
+  }
+
+  .uk-car-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -10px;
+
+    > * {
+      margin: 10px;
+    }
+  }
+
+  .uk-car-dealer {
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+
+    > * {
+      margin: 10px;
+    }
+  }
+
+  .uk-car-dealer-logo {
+    width: 60px;
+    flex-shrink: 0;
+  }
+  
+  .uk-car-dealer-title {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .uk-car-dealer-link {
+    font-size: 14px;
+  }
+
 }

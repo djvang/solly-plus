@@ -37,7 +37,7 @@
                         <div class="uk-container">
                             <div uk-navbar>
                                 <div class="uk-navbar-left">
-                                    <a class="uk-logo" href="#">
+                                    <a class="uk-logo uk-logo-default" href="#">
                                         <div class="uk-logo-image"><svg xmlns="http://www.w3.org/2000/svg" width="110" height="14" viewBox="0 0 110 14" fill="none"><path fill="#FBF659" d="M109.998 6.44H0v1.127h109.998V6.44z"/><path fill="#376BC7" fill-rule="evenodd" d="M86.32 8.086h5.76v3.331h2.765v2.122H83.538v-2.123h2.78v-3.33h.003zm20.892 5.455h-5.755V10.21h-2.761V8.09H110v2.12h-2.786v3.331h-.002zm-35.75-5.459h6.71l1.766 3.347h2.52v2.106h-12.27V11.43h2.977L71.46 8.082h.002zm-8.194 0h3.473l-1.707 3.345h2.222v2.104h-7.46v-2.104H61.5l1.768-3.347v.002zm-14.102 0h6.77l1.726 3.347h1.79v2.1H48.087v-2.106h2.826l-1.745-3.347-.002.006zm-7.937 0h3.45l-1.745 3.347h2.069v2.098h-8.218v-2.106h2.697l1.745-3.347.002.008zm-9.945-.01c-.304 2.233-1.573 3.878-3.102 3.878-1.457 0-2.715-1.645-3.002-3.877h-6.09c.678 3.409 4.525 5.925 9.097 5.927 4.848 0 8.75-2.513 9.405-5.922l-6.308-.005zM18.01 9.785h-4.243c-.73 1.3-2.09 2.155-4.225 2.153-1.524 0-2.744-1.646-3.048-3.878H0c.655 3.384 4.46 5.924 9.237 5.925 3.964 0 7.341-1.691 8.772-4.208v.008zm7.25-3.718H19.16c.563-3.5 4.481-5.992 9.125-5.99 4.947 0 8.864 2.49 9.45 5.993H31.38C31.1 3.79 29.83 2.118 28.279 2.118c-1.48 0-2.744 1.67-3.027 3.951l.008-.003zm20.489 0h-3.446L45.134.62H52.1l2.792 5.455h-6.804l-1.132-2.27-1.198 2.268-.008-.007zm22.105 0h-3.479L67.4.62h6.757l2.868 5.455h-6.631L69.128 3.59l-1.276 2.478.002-.002zm24.212 0h-5.76v-3.33h-2.764V.616h11.303v2.12h-2.78V6.07l.001-.003zM101.478.62h5.749v3.334h2.767v2.12H98.696V3.951h2.78V.622l.002-.002zM13.641 4.288h5.167V0H14.4v1.093A13.137 13.137 0 0 0 9.263.027C4.55.025.582 2.57 0 6.052h6.517C6.8 3.772 8.09 2.1 9.567 2.1c1.856.002 3.26.875 4.08 2.19l-.006-.002z" clip-rule="evenodd"/></svg></div>
                                         <div class="uk-logo-description">Международный автомобильный холдинг</div>
                                     </a>
@@ -391,7 +391,7 @@
                                                 <div class="uk-margin-small">
                                                     <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
 
-                                                    <h3>Price</h3>
+                                                    <!--<h3>Price</h3>
                                                     <div class="uk-price">
                                                         <div class="uk-price-inputs">
                                                             <input type="text" id="price-from" class="uk-input">
@@ -401,7 +401,7 @@
                                                         <div class="uk-price-range">
                                                             <div id="price"></div>
                                                         </div>
-                                                    </div>
+                                                    </div>-->
                                                 </div>
         
                                             </form>
@@ -785,7 +785,7 @@
                         </div>
                     </div>
         
-                    <div id="modal" uk-modal>
+                    <div id="modal" data-uk-modal>
                         <div class="uk-modal-dialog">
                             <button class="uk-modal-close-default" type="button" uk-close></button>
                             <div class="uk-modal-header">
@@ -801,7 +801,7 @@
                         </div>
                     </div>
         
-                    <div id="modal-search" class="uk-modal-full" uk-modal>
+                    <div id="modal-search" class="uk-modal-full" data-uk-modal>
                         <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
         
                             <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
@@ -826,7 +826,7 @@
                         </div>
                     </div>
         
-                    <div id="offcanvas" uk-offcanvas="flip: true; overlay: true">
+                    <div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
                         <div class="uk-offcanvas-bar">
         
                             <button class="uk-offcanvas-close" type="button" uk-close></button>
@@ -947,7 +947,7 @@
 
                     <div class="uk-hero uk-hero-main">
                         <div class="uk-hero-background">
-                            <img src="%=static=%img/content/hero-image.jpg" alt="">
+                            <img class="uk-hero-object" src="%=static=%img/content/hero-image.jpg" alt="">
                         </div>
                         <div class="uk-hero-overlay uk-background-primary"></div>
                         <div class="uk-hero-foreground">
@@ -1026,14 +1026,14 @@
 
                     <div class="uk-hero uk-hero-dealer">
                         <div class="uk-hero-background">
-                            <img src="%=static=%img/content/hero-image-2.jpg" alt="">
+                            <img class="uk-hero-object" src="%=static=%img/content/hero-image-2.jpg" alt="">
                         </div>
                         <div class="uk-hero-overlay uk-background-warning"></div>
                         <div class="uk-hero-foreground">
                             <div class="uk-hero-header">
                                 <nav class="uk-navbar-container uk-navbar-transparent">
                                     <div class="uk-container">
-                                        <div uk-navbar>
+                                        <div class="uk-navbar" data-uk-navbar>
                                             <div class="uk-navbar-left">
                                                 <a class="uk-logo" href="#">
                                                     <div class="uk-logo-image"><svg xmlns="http://www.w3.org/2000/svg" width="110" height="14" viewBox="0 0 110 14" fill="none"><path fill="#FBF659" d="M109.998 6.44H0v1.127h109.998V6.44z"/><path fill="#376BC7" fill-rule="evenodd" d="M86.32 8.086h5.76v3.331h2.765v2.122H83.538v-2.123h2.78v-3.33h.003zm20.892 5.455h-5.755V10.21h-2.761V8.09H110v2.12h-2.786v3.331h-.002zm-35.75-5.459h6.71l1.766 3.347h2.52v2.106h-12.27V11.43h2.977L71.46 8.082h.002zm-8.194 0h3.473l-1.707 3.345h2.222v2.104h-7.46v-2.104H61.5l1.768-3.347v.002zm-14.102 0h6.77l1.726 3.347h1.79v2.1H48.087v-2.106h2.826l-1.745-3.347-.002.006zm-7.937 0h3.45l-1.745 3.347h2.069v2.098h-8.218v-2.106h2.697l1.745-3.347.002.008zm-9.945-.01c-.304 2.233-1.573 3.878-3.102 3.878-1.457 0-2.715-1.645-3.002-3.877h-6.09c.678 3.409 4.525 5.925 9.097 5.927 4.848 0 8.75-2.513 9.405-5.922l-6.308-.005zM18.01 9.785h-4.243c-.73 1.3-2.09 2.155-4.225 2.153-1.524 0-2.744-1.646-3.048-3.878H0c.655 3.384 4.46 5.924 9.237 5.925 3.964 0 7.341-1.691 8.772-4.208v.008zm7.25-3.718H19.16c.563-3.5 4.481-5.992 9.125-5.99 4.947 0 8.864 2.49 9.45 5.993H31.38C31.1 3.79 29.83 2.118 28.279 2.118c-1.48 0-2.744 1.67-3.027 3.951l.008-.003zm20.489 0h-3.446L45.134.62H52.1l2.792 5.455h-6.804l-1.132-2.27-1.198 2.268-.008-.007zm22.105 0h-3.479L67.4.62h6.757l2.868 5.455h-6.631L69.128 3.59l-1.276 2.478.002-.002zm24.212 0h-5.76v-3.33h-2.764V.616h11.303v2.12h-2.78V6.07l.001-.003zM101.478.62h5.749v3.334h2.767v2.12H98.696V3.951h2.78V.622l.002-.002zM13.641 4.288h5.167V0H14.4v1.093A13.137 13.137 0 0 0 9.263.027C4.55.025.582 2.57 0 6.052h6.517C6.8 3.772 8.09 2.1 9.567 2.1c1.856.002 3.26.875 4.08 2.19l-.006-.002z" clip-rule="evenodd"/></svg></div>
@@ -1059,7 +1059,7 @@
                             </div>
                             <div class="uk-hero-footer">
                                 <div class="uk-container">
-                                    <ul class="uk-tab">
+                                    <ul class="uk-tab uk-tab-dealers">
                                         <li class="uk-active"><a href="#">Харьков</a></li>
                                         <li><a href="#">Полтава</a></li>
                                         <li><a href="#">Кременчуг</a></li>
@@ -1068,11 +1068,10 @@
                             </div>
                         </div>
                     </div>
-
                   
                     <div class="uk-hero uk-hero-dealer uk-light">
                         <div class="uk-hero-background">
-                            <img src="%=static=%img/content/hero-image-3.jpg" alt="">
+                            <img class="uk-hero-object" src="%=static=%img/content/hero-image-3.jpg" alt="">
                         </div>
                         <div class="uk-hero-overlay uk-background-1"></div>
                         <div class="uk-hero-foreground">
@@ -1105,7 +1104,7 @@
                             </div>
                             <div class="uk-hero-footer">
                                 <div class="uk-container">
-                                    <ul class="uk-tab">
+                                    <ul class="uk-tab uk-tab-dealers">
                                         <li class="uk-active"><a href="#">Харьков</a></li>
                                     </ul>
                                 </div>
@@ -1115,7 +1114,7 @@
 
                     <div class="uk-hero uk-hero-article uk-light">
                         <div class="uk-hero-background">
-                            <img src="%=static=%img/content/hero-image-2.jpg" alt="">
+                            <img class="uk-hero-object" src="%=static=%img/content/hero-image-2.jpg" alt="">
                         </div>
                         <div class="uk-hero-overlay uk-background-secondary"></div>
                         <div class="uk-hero-foreground">
@@ -1205,7 +1204,7 @@
 
                     <div class="uk-hero uk-hero-person uk-light">
                         <div class="uk-hero-background">
-                            <img src="%=static=%img/content/full-person.jpg" alt="">
+                            <img class="uk-hero-object" src="%=static=%img/content/full-person.jpg" alt="">
                         </div>
                         <div class="uk-hero-overlay uk-background-secondary"></div>
                         <div class="uk-hero-foreground">
@@ -1232,7 +1231,7 @@
                             </div>
                             <div class="uk-hero-body">
                                 <div class="uk-container">
-                                    <div class="uk-full-person uk-width-2-3@s">
+                                    <div class="uk-full-person uk-width-2-3@m">
                                         <div class="uk-full-person-name">Пучков <br> Олег Алексеевич</div>
                                         <div class="uk-full-person-position">Генеральный директор холдинга Солли Плюс</div>
                                         <div class="uk-full-person-contacts">
@@ -1305,7 +1304,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="uk-width-1-2">
+                                    <div class="uk-width-1-2@s">
                                         <div class="uk-card uk-card-person-2">
                                             <div class="uk-card-top">
                                                 <div class="uk-card-person-avatar">
@@ -1318,7 +1317,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="uk-width-1-2">
+                                    <div class="uk-width-1-2@s">
                                         <div class="uk-card uk-card-person-3">
                                             <div class="uk-card-top">
                                                 <div class="uk-card-person-avatar">
@@ -1331,7 +1330,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="uk-width-1-2">
+                                    <div class="uk-width-1-2@s">
                                         <div class="uk-card uk-card-person-4">
                                             <div class="uk-card-top">
                                                 <div class="uk-card-person-avatar">
@@ -1352,7 +1351,7 @@
                     <footer class="uk-footer">
                         <div class="uk-footer-top">
                             <div class="uk-container">
-                                <div class="uk-grid uk-child-width-1-4@m uk-footer-navs">
+                                <div class="uk-grid uk-child-width-1-2 uk-child-width-1-4@m uk-footer-navs" data-uk-grid>
                                     <div class="uk-footer-item">
                                         <div class="uk-footer-label">Автосалоны</div>
                                         <ul class="uk-footer-nav">
@@ -1465,8 +1464,8 @@
                         </div>
                         <div class="uk-section-foreground">
                             <div class="uk-container">
-                                <div class="uk-width-2-3@s uk-width-1-3@l">
-                                    <p class="uk-lead">
+                                <div class="uk-width-2-3@s uk-width-1-3@m uk-width-1-2@l">
+                                    <p class="uk-text-lead">
                                         Солли Плюс — открытая и дружелюбная команда профессионалов. Нам важно мнение наших клиентов. Благодаря вам мы становимся лучше.
                                     </p>
                                     <div class="uk-card uk-card-person-2">
@@ -1483,7 +1482,324 @@
                                 </div>
                             </div>
                         </div>
-                    </div>        
+                    </div>
+                    
+                    <div class="uk-section uk-section-car">
+                        <div class="uk-section-foregound">
+                            <div class="uk-container">
+                                <div class="uk-car uk-grid" data-uk-grid>
+                                    <div class="uk-car-left uk-width-2-5@s">
+                                        <div class="uk-car-heading">
+                                            <h1 class="uk-car-title uk-h3">Mercedes-Benz A-Class 200 AT 4matic Brabus 2018</h1>
+                                            <div class="uk-car-id">ID: 45632</div>
+                                        </div>
+                                        <div class="uk-car-prices">
+                                            <span class="uk-car-price">973 850 грн</span>
+                                            <span class="uk-car-price-old">1 003 850 грн</span>
+                                        </div>
+                                        <table class="uk-car-info">
+                                            <tr>
+                                                <td class="uk-car-info-label">Двигатель:</td>
+                                                <td class="uk-car-info-text">2.0, Бензин</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="uk-car-info-label">Коробка передач:</td>
+                                                <td class="uk-car-info-text">Автомат <span class="uk-text-muted">(DSG)</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="uk-car-info-label">Привод:</td>
+                                                <td class="uk-car-info-text">Полный</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="uk-car-info-label">Тип транспорта:</td>
+                                                <td class="uk-car-info-text">Легковой, Хэтчбэк</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="uk-car-info-label">Комплектация:</td>
+                                                <td class="uk-car-info-text">Progressive</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="uk-car-info-label">Безопасность:</td>
+                                                <td class="uk-car-info-text">ABD, ABS, ESP, Иммобилайзер, Подушка безопасности (Airbag), Серворуль, Центральный замок</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="uk-car-info-label">Комфорт:</td>
+                                                <td class="uk-car-info-text">Бортовой компьютер, Датчик света, Климат контроль, Круиз контроль, Мультируль, Парктроник, Подогрев зеркал, Подогрев сидений, Сенсор дождя, Усилитель руля, Эл. стеклоподъемники, Электропакет</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="uk-car-info-label">Год:</td>
+                                                <td class="uk-car-info-text">2018</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="uk-car-info-label">Пробег:</td>
+                                                <td class="uk-car-info-text">216 км <span class="uk-text-muted">(тест-драйв)</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="uk-car-body uk-width-3-5@s">
+                                        <div class="uk-car-gallery">
+                                            <div class="swiper-container uk-car-gallery-general">
+                                                <div class="swiper-wrapper" data-uk-lightbox>
+                                                    <a href="%=static=%img/content/big-image.jpg" data-caption="Caption 1" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                                    <a href="%=static=%img/content/big-image.jpg" data-caption="Caption 2" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                                    <a href="%=static=%img/content/big-image.jpg" data-caption="Caption 3" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                                    <a href="%=static=%img/content/big-image.jpg" data-caption="Caption 4" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                                    <a href="%=static=%img/content/big-image.jpg" data-caption="Caption" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                                    <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                                    <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                                    <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                                    <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                                    <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                                </div>
+                                                <!-- Add Arrows -->
+                                                <div class="swiper-button-next swiper-button-white"></div>
+                                                <div class="swiper-button-prev swiper-button-white"></div>
+                                            </div>
+                                            <div class="swiper-container uk-car-gallery-thumbs">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                                    <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                                    <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                                    <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                                    <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                                    <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                                    <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                                    <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                                    <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                                    <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-car-about">
+                                            <h5 class="uk-car-about-title">Описание авто</h5>
+                                            <p>Индивидуальная комплектация: Видеокамера заднего вида; Активная система; облегчения паркования; Система экстренного торможения; Мультифункциональное рулевое колесо; Аудиосистема Audio 20 CD вкл. подготовку для Garmin® MAP PILOT; Передние сиденья с электрорегулировкой; Автоматизированная система кондиционирования воздуха THERMATIC; Адаптивные фары дальнего света Plus; Светодиодная система освещения Intelligent Light System; Декоративные элементы: ясень крупнопористый коричневый; Легкосплавные колесные диски 18 дюймов; Велюровые коврики; Гарантия 2 года без ограничения по пробегу. Самые выгодные условия приобретения нового автомобиля у единственного официального дилера Mercedes-benz в Харькове. Возможность кредита, лизинга, страхования и услуги Trade-in.</p>
+                                        </div>
+                                    </div>
+                                    <div class="uk-car-actions uk-width-1-1">
+                                        <button class="uk-button uk-button-small uk-button-primary">Оставить заявку на авто</button>
+                                        <div class="uk-text-muted uk-text-small uk-margin-auto-right">Менеджер автосалона свяжется с вами</div>
+                                        <div class="uk-car-dealer">
+                                            <div class="uk-car-dealer-logo">
+                                                <img src="%=static=%img/content/mercedes-benz.png" alt="">
+                                            </div>
+                                            <div class="uk-car-dealer-body">
+                                                <div class="uk-car-dealer-title">Mercedes-Benz Харьков</div>
+                                                <a class="uk-car-dealer-link" href="#">Перейти на страницу автосалона</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-section uk-section-filter-cars">
+                        <div class="uk-section-background uk-background-muted"></div>
+                        <div class="uk-section-foreground">
+                            <div class="uk-container">
+                                <div class="uk-heading">
+                                    <h2 class="uk-heading-title">Подобрать автомобиль в наличии</h2>
+                                </div>
+                                <form action="#" class="uk-filter uk-filter-cars">
+
+                                    <div class="uk-grid uk-flex-center uk-filter-controls" data-uk-grid>
+                                        <div>
+                                            <select class="uk-select uk-form-width-large uk-select-primary">
+                                                <option value="" disabled selected>Выберите марку авто</option>
+                                                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                                <option value="Volkswagen">Volkswagen</option>
+                                                <option value="Renault">Renault</option>
+                                                <option value="Opel">Opel</option>
+                                                <option value="Skoda">Skoda</option>
+                                                <option value="Ravon">Ravon</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <select class="uk-select uk-form-width-medium">
+                                                <option value="" disabled selected>Тип КПП</option>
+                                                <option value="1">Тип КПП 1</option>
+                                                <option value="2">Тип КПП 2</option>
+                                                <option value="3">Тип КПП 3</option>
+                                                <option value="4">Тип КПП 4</option>
+                                                <option value="5">Тип КПП 5</option>
+                                                <option value="6">Тип КПП 6</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <select class="uk-select uk-form-width-medium">
+                                                <option value="" disabled selected>Кузов</option>
+                                                <option value="1">Кузов 1</option>
+                                                <option value="2">Кузов 2</option>
+                                                <option value="3">Кузов 3</option>
+                                                <option value="4">Кузов 4</option>
+                                                <option value="5">Кузов 5</option>
+                                                <option value="6">Кузов 6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+    
+                                    <div class="uk-price uk-filter-price">
+                                        <div class="uk-price-inputs">
+                                            <input type="text" id="price-from" class="uk-input">
+                                            <div class="uk-price-divider"></div>
+                                            <input type="text" id="price-to" class="uk-input">
+                                        </div>
+                                        <div class="uk-price-range">
+                                            <div id="price"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-filter-result">Найдено 482 варианта</div>
+
+                                    <div class="uk-filter-actions">
+                                        <button type="submit" class="uk-button uk-button-primary uk-button-small">Показать</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-hero uk-hero-dealer-secondary uk-hero-height-full">
+                        <div class="uk-hero-background uk-hero-background-switcher">
+                            <div>
+                                <img class="uk-hero-object" src="%=static=%img/content/map-fullscreen.jpg" alt="">
+                                <!--<iframe class="uk-hero-object" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="100%" height="200" frameborder="0" style="border:0"></iframe>-->
+                            </div>
+                            <div>
+                                <div class="uk-hero-object uk-visible-toggle uk-light" tabindex="-1" data-uk-slideshow="ratio: false;">
+
+                                    <ul class="uk-slideshow-items" data-uk-height-viewport="min-height: 100vh">
+                                        <li>
+                                            <img src="%=static=%img/content/photo-fullscreen.jpg" alt="" data-uk-cover>
+                                        </li>
+                                        <li>
+                                            <img src="%=static=%img/content/photo-fullscreen.jpg" alt="" data-uk-cover>
+                                        </li>
+                                        <li>
+                                            <img src="%=static=%img/content/photo-fullscreen.jpg" alt="" data-uk-cover>
+                                        </li>
+                                    </ul>
+                                
+                                    <div class="uk-slidenavs uk-position-bottom">
+                                        <a href="#" data-uk-slidenav-previous uk-slideshow-item="previous"></a>
+                                        <a href="#" data-uk-slidenav-next uk-slideshow-item="next"></a>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-hero-foreground">
+                            <div class="uk-hero-header">
+                                <div class="uk-navbar-secondary-container">
+                                    <div class="uk-navbar-secondary">
+                                        <div class="uk-navbar-secondary-left">
+                                            <a href="#" class="uk-navbar-secondary-back">{{Icon iconName="arrow-left"}}</a>
+                                        </div>
+                                        <div class="uk-navbar-secondary-body">
+                                            <div class="uk-navbar-secondary-item uk-margin-auto-right">Официальный дилер Рено в Харькове</div>
+                                            <ul class="uk-navbar-secondary-nav" data-uk-switcher="connect: .uk-hero-background-switcher">
+                                                <li class="uk-active"><a href="#">Карта</a></li>
+                                                <li><a href="#">Фото</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-hero uk-hero-dealer-secondary uk-hero-height-full">
+                        <div class="uk-hero-background uk-hero-background-switcher">
+                            <img class="uk-hero-object" src="%=static=%img/content/map-fullscreen-2.jpg" alt="">
+                            <!--<iframe class="uk-hero-object" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="100%" height="200" frameborder="0" style="border:0"></iframe>-->
+                        </div>
+                        <div class="uk-hero-foreground">
+                            <div class="uk-hero-header">
+                                <div class="uk-navbar-secondary-container">
+                                    <div class="uk-navbar-secondary">
+                                        <div class="uk-navbar-secondary-left">
+                                            <a href="#" class="uk-navbar-secondary-back">{{Icon iconName="arrow-left"}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-hero-body">
+                                <div class="uk-container">
+                                    <div class="uk-heading">
+                                        <div class="uk-heading-suptitle">Харьков, Украина</div>
+                                        <h1 class="uk-heading-title">ул. Академика Павлова, 323</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-hero uk-hero-dealer-secondary uk-hero-height-full">
+                        <div class="uk-hero-foreground-row">
+                            <div class="uk-hero-content">
+                                <div class="uk-hero-header">
+                                    <div class="uk-navbar-secondary-container">
+                                        <div class="uk-navbar-secondary">
+                                            <div class="uk-navbar-secondary-left">
+                                                <a href="#" class="uk-navbar-secondary-back">{{Icon iconName="arrow-left"}}</a>
+                                            </div>
+                                            <div class="uk-navbar-secondary-body">
+                                                <div class="uk-navbar-secondary-item uk-margin-auto-right">Официальный дилер Рено в Харькове</div>
+                                                <ul class="uk-navbar-secondary-nav" data-uk-switcher="connect: .uk-hero-background-switcher">
+                                                    <li class="uk-active"><a href="#">Карта</a></li>
+                                                    <li><a href="#">Фото</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="uk-hero-object" src="%=static=%img/content/map-fullscreen-3.jpg" alt="">
+                                <!--<iframe class="uk-hero-object" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="100%" height="200" frameborder="0" style="border:0"></iframe>-->
+                            </div>
+                            <div class="uk-hero-sidebar">
+                                <div class="uk-locations">
+                                    <div class="uk-card uk-card-location">
+                                        <div class="uk-card-title">Mercedes-Benz Харьков</div>
+                                        <div class="uk-card-address">ул. Академика Павлова, 323</div>
+                                        <div class="uk-card-phone">(057) 000-00-00</div>
+                                        <a href="#" class="uk-card-link">Страница компании</a>
+                                    </div>
+                                    <div class="uk-card uk-card-location">
+                                        <div class="uk-card-title">Mercedes-Benz Харьков</div>
+                                        <div class="uk-card-address">ул. Академика Павлова, 323</div>
+                                        <div class="uk-card-phone">(057) 000-00-00</div>
+                                        <a href="#" class="uk-card-link">Страница компании</a>
+                                    </div>
+                                    <div class="uk-card uk-card-location">
+                                        <div class="uk-card-title">Mercedes-Benz Харьков</div>
+                                        <div class="uk-card-address">ул. Академика Павлова, 323</div>
+                                        <div class="uk-card-phone">(057) 000-00-00</div>
+                                        <a href="#" class="uk-card-link">Страница компании</a>
+                                    </div>
+                                    <div class="uk-card uk-card-location">
+                                        <div class="uk-card-title">Mercedes-Benz Харьков</div>
+                                        <div class="uk-card-address">ул. Академика Павлова, 323</div>
+                                        <div class="uk-card-phone">(057) 000-00-00</div>
+                                        <a href="#" class="uk-card-link">Страница компании</a>
+                                    </div>
+                                    <div class="uk-card uk-card-location">
+                                        <div class="uk-card-title">Mercedes-Benz Харьков</div>
+                                        <div class="uk-card-address">ул. Академика Павлова, 323</div>
+                                        <div class="uk-card-phone">(057) 000-00-00</div>
+                                        <a href="#" class="uk-card-link">Страница компании</a>
+                                    </div>
+                                    <div class="uk-card uk-card-location">
+                                        <div class="uk-card-title">Mercedes-Benz Харьков</div>
+                                        <div class="uk-card-address">ул. Академика Павлова, 323</div>
+                                        <div class="uk-card-phone">(057) 000-00-00</div>
+                                        <a href="#" class="uk-card-link">Страница компании</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

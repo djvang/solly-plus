@@ -1,1 +1,21 @@
-header
+<div class="uk-menus">
+    <div class="uk-menu-primary">
+        <ul class="uk-menu-list" data-uk-sticky>
+            <li><a href="#">{{Icon iconName="cardealers"}} Автосалоны</a></li>
+            <li><a href="#">{{Icon iconName="trucks"}} Грузовая техника</a></li>
+            <li><a href="#">{{Icon iconName="services"}} Все услуги</a></li>
+            <li><a href="#">{{Icon iconName="information"}} О компании</a></li>
+        </ul>
+    </div>
+    {{#if dealers}}
+        <div class="uk-menu-dealers">
+            <ul class="uk-menu-list" data-uk-sticky>
+                <li><a href="#"><img src="%=static=%img/content/mercedes-benz.png" alt="">Mercedes-Benz</a></li>
+                <li><a href="#"><img src="%=static=%img/content/vw.png" alt="">Volkswagen</a></li>
+                <li><a href="#"><img src="%=static=%img/content/renault.png" alt="">Renault</a></li>
+                <li><a href="#"><img src="%=static=%img/content/skoda.png" alt="">Skoda</a></li>
+                <li><a href="#"><img src="%=static=%img/content/mitsubushi.png" alt="">Mitsubushi</a></li>
+            </ul>
+        </div>
+    {{/if}}
+</div>
