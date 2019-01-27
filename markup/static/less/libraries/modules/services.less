@@ -72,6 +72,25 @@
         }
       }
     }
+
+    .uk-card-icon {
+      position: absolute;
+      right: 0;
+      width: 150px;
+      height: 150px;
+      z-index: -1;
+      top: 30px;
+      @media (min-width: 960px) {
+        top: 85px;
+        width: 200px;
+        height: 200px;
+      }
+      svg {
+        width: 100%;
+        height: 100%;
+        fill: @global-muted-background;
+      }
+    }
   }
 
   .uk-card-service {
@@ -115,7 +134,12 @@
         &:nth-child(2n) {
           flex-direction: row-reverse;
           margin-top: -55px;
-  
+          
+          .uk-card-icon {
+            top: auto;
+            right: 60px;
+            bottom: 65px;
+          }
           
           .uk-card-info-2 {
             .uk-card-foreground {
