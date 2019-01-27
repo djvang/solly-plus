@@ -3,6 +3,91 @@
 import 'nouislider';
 import Swiper from 'swiper';
 
+function swiperCarInit() {
+    function slideOtherGalleryTo(sGalleryName, nSlideIndex) {
+    sGalleryName.slideTo(nSlideIndex);
+    }
+
+    let thumbs = new Swiper('.uk-car-gallery-thumbs', {
+        spaceBetween: 20,
+        slidesPerView: 5,
+        // freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        slideToClickedSlide: true,
+        breakpoints: {
+            967: {
+              slidesPerView: 3,
+            }
+        },
+        on: {
+            init: function () {
+
+                this.slides.each((index, slide) => {
+                    let rest = document.createElement('div');
+                    rest.classList.add('swiper-rest');
+
+                    rest.innerHTML = `<div class="swiper-rest-value">${this.slides.length - (index + 1)}+</div><div class="swiper-rest-text">еще фото</div>`;
+
+                    slide.appendChild(rest);
+
+                });
+
+                this.endVisibleSlide = this.visibleSlides[this.visibleSlides.length - 1];
+
+                if(this.endVisibleSlide && !this.isEnd) {
+                    this.endVisibleSlide.querySelector('.swiper-rest').classList.add('swiper-rest-active');
+                }
+
+
+            },
+            slideChange: function () {
+
+                this.endVisibleSlide.querySelector('.swiper-rest').classList.remove('swiper-rest-active');
+
+                this.endVisibleSlide = this.visibleSlides[this.visibleSlides.length - 1];
+
+                if(this.endVisibleSlide && !this.isEnd) {
+                    this.endVisibleSlide.querySelector('.swiper-rest').classList.add('swiper-rest-active');
+                }
+
+            },
+            touchStart: function () {
+
+                this.endVisibleSlide.querySelector('.swiper-rest').classList.remove('swiper-rest-active');
+
+                this.endVisibleSlide = this.visibleSlides[this.visibleSlides.length - 1];
+
+                if(this.endVisibleSlide && !this.isEnd) {
+                    this.endVisibleSlide.querySelector('.swiper-rest').classList.add('swiper-rest-active');
+                }
+            }
+        }
+    });
+
+    let general = new Swiper('.uk-car-gallery-general', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: thumbs
+        },
+        on: {
+            init: function () {
+                if (this.slides.length < 2) {
+                this.$el.addClass('swiper-single');
+                }
+            },
+            transitionStart: function () {
+                // Move thumbnails Gallery to the selected image
+                slideOtherGalleryTo(thumbs, this.activeIndex);
+            }
+        }
+    });
+}
+
 
 function swiperInit() {
     document.querySelectorAll('.swiper-container').forEach(function(swiper) {
@@ -12,6 +97,7 @@ function swiperInit() {
                 draggable: true,
             },
             speed: 200,
+            centerInsufficientSlides: true,
             freeMode: true,
             slidesPerView: 'auto'
         });
@@ -105,3 +191,4 @@ function priceInit() {
 
 priceInit();
 swiperInit();
+swiperCarInit();

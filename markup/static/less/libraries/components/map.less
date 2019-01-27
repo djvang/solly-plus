@@ -1,9 +1,48 @@
+.hook-card-misc() {
+  .uk-card-location {
+    background-color: @global-muted-background;
+    padding: 30px;
+    line-height: 1.28;
+    font-size: 14px;
+    cursor: pointer;
+
+    .uk-card-title {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.44;
+      margin-bottom: 8px;
+    }
+
+    .uk-card-address {
+      margin-bottom: 8px;
+    }
+
+    .uk-card-phone {
+      margin-bottom: 8px;
+    }
+
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: #E7E8EB;
+    }
+  }
+}
+
 .hook-section-misc() {
   .uk-section-map-country {
     
     .uk-section-background {
       top: auto;
+      left: auto;
       z-index: -1;
+
+      @media (max-width: @breakpoint-xsmall-max) {
+        position: relative;
+        margin-bottom: -40px;
+        margin-top: -70px;
+      }
     }
 
     .uk-section-foreground {

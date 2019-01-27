@@ -22,12 +22,16 @@
 
 .hook-form-range() {}
 .hook-form-range-thumb() {
-  box-shadow: 0 5px 10px fade(@form-range-thumb-background, 30%);
   margin-top: -((@form-range-thumb-height - 4) / 2);
   position: relative;
   background-image: url(@internal-form-radio-image);
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 5px 10px fade(@form-range-thumb-background, 30%);
+  }
 }
 .hook-form-range-track() {}
 .hook-form-range-track-focus() {}
@@ -38,7 +42,7 @@
     box-shadow: none;
     height: 4px;
     background: #E7E8EB;
-    margin: ((@form-range-thumb-height - 2) / 2) 0;
+    margin: ((@form-range-thumb-height - 2) / 2);
   }
 
   .noUi-connect {
@@ -53,7 +57,7 @@
     width: @form-range-thumb-height;
     border-radius: @form-range-thumb-border-radius;
     background: @form-range-thumb-background;
-    box-shadow: 0 5px 10px fade(@form-range-thumb-background, 30%);
+    box-shadow: none;
 
     background-image: url(@internal-form-radio-image);
     background-repeat: no-repeat;
@@ -67,7 +71,20 @@
 
     &:focus {
       outline: none;
+      box-shadow: 0 5px 10px fade(@form-range-thumb-background, 30%);
     }
+  }
+
+  // .noUi-handle-lower {
+  //   right: -26px !important;
+  // }
+  
+  // .noUi-handle-upper {
+  //   right: 0 !important;
+  // }
+
+  html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
+    right: -13px;
   }
 
   .noUi-horizontal .noUi-handle {
