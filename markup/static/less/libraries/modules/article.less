@@ -1,0 +1,116 @@
+.hook-card-misc() {
+  .uk-btn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border: @global-border-width solid @global-border;
+    border-radius: 10px;
+  }
+
+  .uk-list {
+    li {
+      padding-left: 30px;
+      position: relative;
+      margin-top: 40px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-top: 40px;
+      }
+
+      &:before {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 14px;
+        content: "";
+        width: 8px;
+        height: 8px;
+        background-color: #E7E8EB;
+        border-radius: 50%;
+      }
+
+      ul {
+        padding-left: 0;
+      }
+
+      li {
+        &:before {
+          background-color: @global-background;
+          border: @global-border-width solid #D9DADD;
+        }
+
+        li {
+          &:before {
+            height: 1px;
+            border-radius: 0;
+            border: @global-border-width solid #D9DADD;
+          }
+        }
+      }
+    }
+  }
+
+  .uk-video-holder {
+    position: relative;
+    min-height: 220px;
+    overflow: hidden;
+
+    .uk-video-background, .uk-video-overlay, .uk-video-foreground {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .uk-video-overlay {
+      background-color: @global-link-color;
+      opacity: .85;
+    }
+
+    .uk-btn-video-link {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+      width: 64px;
+      height: 64px;
+      color: @global-inverse-color;
+      svg {
+        width: 100%;
+        height: 100%;
+      } 
+    }
+  }
+}
+
+.hook-section-misc() {
+  .uk-article {
+    img {
+      width: 100%;
+    }
+
+    .uk-btn-link-holder {
+      .uk-btn-link {
+        margin: 0 40px 40px 0;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.hook-grid-misc() {
+  
+}

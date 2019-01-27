@@ -1,0 +1,68 @@
+.hook-card-misc() {
+  .uk-card-vacancy {
+    display: block;
+    position: relative;
+    padding: 5px 15px 5px 35px;
+
+    .uk-logo-dealer {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 0;
+      top: 7px;
+      color: @global-muted-color;
+
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .uk-card-title {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .uk-card-footer {
+      padding: 0;
+      font-size: 14px;
+      color: @global-muted-color;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+
+      .uk-footer-item {
+        padding: 0 10px;
+        position: relative;
+        &:before {
+          position: absolute;
+          content: "";
+          width: 1px;
+          height: 10px;
+          background: @global-muted-color;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &:last-child {
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hook-section-misc() {
+
+}
+
+.hook-grid-misc() {
+  
+}
