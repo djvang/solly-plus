@@ -40,7 +40,7 @@
     }
 
     .uk-card-body {
-      padding: 20px;
+      padding: 20px 0;
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
@@ -48,6 +48,7 @@
 
       @media (min-width: 640px) {
         width: 50%;
+        padding: 20px;
       }
 
       @media (min-width: 960px) {
@@ -66,10 +67,42 @@
       }
     }
   }
+
+  .uk-load-more, .uk-load-more-secondary {
+    position: relative;
+    display: block;
+    z-index: 10;
+    font-size: 22px;
+
+    .uk-btn-icon {
+      display: inline-block;
+      font-size: 28px;
+      margin-right: 20px;
+      line-height: 1.2;
+    }
+  }
+  
+  .uk-load-more-secondary {
+    &:after {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 281px;
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.7) 20%, #FFFFFF 70%);
+    }
+  }
 }
 
 .hook-section-misc() {
-  
+  .uk-section-news-overview {
+    padding-top: 10px;
+    .uk-filter-news {
+      margin-bottom: 60px;
+    }
+  }
 }
 
 .hook-grid-misc() {
