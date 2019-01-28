@@ -21,6 +21,19 @@
       }
     }
 
+    &.uk-card-vacancy-secondary {
+      padding-left: 80px;
+      font-size: 14px;
+      .uk-logo-dealer {
+        top: 0;
+        width: 60px;
+        height: 60px;
+      }
+      .uk-card-title {
+        font-size: 22px;
+      }
+    }
+
     .uk-card-title {
       font-size: 18px;
       font-weight: 500;
@@ -60,7 +73,48 @@
 }
 
 .hook-section-misc() {
+  .uk-section-vacancies {
+    padding-top: 10px;
+    
+    .uk-list-vacancy {
+      margin-bottom: 50px;
+    }
+  }
 
+  .uk-section-vacancy {
+    padding-top: 10px;
+
+    h5 {
+      @media (min-width: @breakpoint-medium) {
+        margin: 60px 0 30px;
+      }
+    }
+    .uk-vacancy-info {
+      font-size: 16px;
+    }
+    .uk-list {
+      li {
+        margin-top: 20px;
+        &:last-child {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .uk-filter-vacancy-holder {
+    .uk-filter-vacancy {
+      margin-bottom: 30px;
+    }
+    .uk-link {
+      font-size: 16px;
+      margin-bottom: 30px;
+
+      @media (min-width: @breakpoint-medium) {
+        margin-bottom: 60px;
+      }
+    }
+  }
 }
 
 .hook-grid-misc() {
