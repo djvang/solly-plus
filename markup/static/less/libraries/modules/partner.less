@@ -1,7 +1,7 @@
 .hook-card-misc() {
   .uk-card-partner {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     filter: grayscale(1);
     opacity: .3;
@@ -13,7 +13,12 @@
 }
 
 .hook-grid-misc() {
-  .uk-grid-cars {
+  .uk-partners-highlight {
+    overflow: visible;
 
+    .swiper-slide {
+      width: 16%;
+      min-width: 80px;
+    }
   }
 }

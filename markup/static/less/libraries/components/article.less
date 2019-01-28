@@ -32,7 +32,13 @@
 .hook-article-adjacent() {}
 .hook-article-title() {}
 .hook-article-meta() {}
-.hook-article-misc() {}
+.hook-article-misc() {
+  .uk-article-title {
+    @media (max-width: @breakpoint-xsmall-max) {
+      font-size: 2rem;
+    }
+  }
+}
 
 
 // Inverse

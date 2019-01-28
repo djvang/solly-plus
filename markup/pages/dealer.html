@@ -1,0 +1,533 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+    {{> head/head head.defaults}}
+</head>
+
+<body>
+    %=symbols=%
+
+    <div class="uk-page">
+
+        <div class="uk-page-left">
+            {{> header/header dealers=true}}
+        </div>
+
+        <div class="uk-page-body">
+            <div class="uk-hero uk-hero-dealer">
+                <div class="uk-hero-background">
+                    <img class="uk-hero-object" src="%=static=%img/content/hero-image-2.jpg" alt="">
+                </div>
+                <div class="uk-hero-overlay uk-background-warning"></div>
+                <div class="uk-hero-foreground">
+                    <div class="uk-hero-header">
+                        <nav class="uk-navbar-container uk-navbar-transparent">
+                            <div class="uk-container">
+                                <div class="uk-navbar" data-uk-navbar>
+                                    <div class="uk-navbar-left">
+                                        <a class="uk-logo" href="#">
+                                            <div class="uk-logo-image"><svg xmlns="http://www.w3.org/2000/svg" width="110"
+                                                    height="14" viewBox="0 0 110 14" fill="none">
+                                                    <path fill="#FBF659" d="M109.998 6.44H0v1.127h109.998V6.44z" />
+                                                    <path fill="#376BC7" fill-rule="evenodd" d="M86.32 8.086h5.76v3.331h2.765v2.122H83.538v-2.123h2.78v-3.33h.003zm20.892 5.455h-5.755V10.21h-2.761V8.09H110v2.12h-2.786v3.331h-.002zm-35.75-5.459h6.71l1.766 3.347h2.52v2.106h-12.27V11.43h2.977L71.46 8.082h.002zm-8.194 0h3.473l-1.707 3.345h2.222v2.104h-7.46v-2.104H61.5l1.768-3.347v.002zm-14.102 0h6.77l1.726 3.347h1.79v2.1H48.087v-2.106h2.826l-1.745-3.347-.002.006zm-7.937 0h3.45l-1.745 3.347h2.069v2.098h-8.218v-2.106h2.697l1.745-3.347.002.008zm-9.945-.01c-.304 2.233-1.573 3.878-3.102 3.878-1.457 0-2.715-1.645-3.002-3.877h-6.09c.678 3.409 4.525 5.925 9.097 5.927 4.848 0 8.75-2.513 9.405-5.922l-6.308-.005zM18.01 9.785h-4.243c-.73 1.3-2.09 2.155-4.225 2.153-1.524 0-2.744-1.646-3.048-3.878H0c.655 3.384 4.46 5.924 9.237 5.925 3.964 0 7.341-1.691 8.772-4.208v.008zm7.25-3.718H19.16c.563-3.5 4.481-5.992 9.125-5.99 4.947 0 8.864 2.49 9.45 5.993H31.38C31.1 3.79 29.83 2.118 28.279 2.118c-1.48 0-2.744 1.67-3.027 3.951l.008-.003zm20.489 0h-3.446L45.134.62H52.1l2.792 5.455h-6.804l-1.132-2.27-1.198 2.268-.008-.007zm22.105 0h-3.479L67.4.62h6.757l2.868 5.455h-6.631L69.128 3.59l-1.276 2.478.002-.002zm24.212 0h-5.76v-3.33h-2.764V.616h11.303v2.12h-2.78V6.07l.001-.003zM101.478.62h5.749v3.334h2.767v2.12H98.696V3.951h2.78V.622l.002-.002zM13.641 4.288h5.167V0H14.4v1.093A13.137 13.137 0 0 0 9.263.027C4.55.025.582 2.57 0 6.052h6.517C6.8 3.772 8.09 2.1 9.567 2.1c1.856.002 3.26.875 4.08 2.19l-.006-.002z"
+                                                        clip-rule="evenodd" /></svg></div>
+                                            <div class="uk-logo-description">Международный автомобильный холдинг</div>
+                                        </a>
+                                    </div>
+                                    <div class="uk-navbar-right">
+                                        <ul class="uk-navbar-nav">
+                                            <li class="uk-active"><a href="#">Авто в наличии</a></li>
+                                            <li><a href="#">Акции</a></li>
+                                            <li><a href="#">Вакансии</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="uk-hero-body">
+                        <div class="uk-container">
+                            <div class="uk-hero-heading">Renault</div>
+                            <div class="uk-hero-description">Официальный дилер Рено в Харькове</div>
+                        </div>
+                    </div>
+                    <div class="uk-hero-footer">
+                        <div class="uk-container">
+                            <ul class="uk-tab uk-tab-dealers">
+                                <li class="uk-active"><a href="#">Харьков</a></li>
+                                <li><a href="#">Полтава</a></li>
+                                <li><a href="#">Кременчуг</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="uk-section uk-section-contacts-highlight">
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="uk-heading">
+                            <h2 class="uk-heading-title">ул. Академика Павлова, 323</h2>
+                            <a href="#" class="uk-link">Посмотреть фото и расположение на карте</a>
+                        </div>
+                        <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-3@m uk-contacts-highlight"
+                            data-uk-grid>
+                            <div class="uk-col-contacts">
+                                <div class="uk-phone-holder">
+                                    <div class="uk-phone-block">
+                                        <h6 class="uk-contact-title">Отдел продаж</h6>
+                                        <a href="tel:0577525777" class="uk-contact-phone">(057) 752-57-77</a>
+                                        <a href="tel:0670000000" class="uk-contact-phone">(067) 000-00-00</a>
+                                    </div>
+                                </div>
+                                <div class="uk-schedule-block">
+                                    <h6 class="uk-contact-title">Понедельник–Пятница</h6>
+                                    <span class="uk-working-hours">с 8:00 до 20:00</span>
+                                    <h6 class="uk-contact-title">Суббота</h6>
+                                    <span class="uk-working-hours">с 9:00 до 18:00</span>
+                                    <h6 class="uk-contact-title">Воскресерье</h6>
+                                    <span class="uk-working-hours uk-text-danger">выходной</span>
+                                </div>
+                            </div>
+                            <div class="uk-col-contacts">
+                                <div class="uk-phone-holder">
+                                    <div class="uk-phone-block">
+                                        <h6 class="uk-contact-title">Сервис</h6>
+                                        <a href="tel:057000000" class="uk-contact-phone">(057) 00-00-00</a>
+                                    </div>
+                                    <div class="uk-phone-block">
+                                        <h6 class="uk-contact-title">Отдел продаж</h6>
+                                        <a href="tel:057000000" class="uk-contact-phone">(057) 00-00-00</a>
+                                    </div>
+                                </div>
+                                <div class="uk-schedule-block">
+                                    <h6 class="uk-contact-title">Понедельник–Пятница</h6>
+                                    <span class="uk-working-hours">с 8:00 до 20:00</span>
+                                    <h6 class="uk-contact-title">Суббота</h6>
+                                    <span class="uk-working-hours">с 9:00 до 18:00</span>
+                                    <h6 class="uk-contact-title">Воскресерье</h6>
+                                    <span class="uk-working-hours">с 9:00 до 18:00</span>
+                                </div>
+                            </div>
+                            <div class="uk-col-contacts">
+                                <div class="uk-contact-block">
+                                    <h6 class="uk-contact-title">Сайт</h6>
+                                    <a href="https://renault.kharkiv.ua" class="uk-contact-site">srenault.kharkiv.ua</a>
+                                </div>
+                                <div class="uk-contact-block">
+                                    <h6 class="uk-contact-title">Эл. почта</h6>
+                                    <a href="mailto:renault@sollyplus.com.ua" class="uk-contact-email">renault@sollyplus.com.ua</a>
+                                </div>
+                                <div class="uk-social-block">
+                                    <h6 class="uk-contact-title">Социальные сети</h6>
+                                    <ul class="uk-social-networks">
+                                        <li class="uk-social-item"><a href="#">Facebook</a></li>
+                                        <li class="uk-social-item"><a href="#">Instagram</a></li>
+                                        <li class="uk-social-item"><a href="#">Linkedin</a></li>
+                                        <li class="uk-social-item"><a href="#">Youtube</a></li>
+                                        <li class="uk-social-item"><a href="#">Pinterest</a></li>
+                                        <li class="uk-social-item"><a href="#">Google+</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="uk-section uk-section-stocks-highlight">
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="uk-heading uk-text-center">
+                            <h3 class="uk-heading-title">Акции и специальные предложения</h3>
+                        </div>
+                        <div class="swiper-container uk-stocks-hightlight">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper uk-grid uk-child-width-1-3@s uk-grid-match" data-uk-grid>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-2 uk-light">
+                                        <span class="city">Renault Харьков, Полтава</span>
+                                        <strong>Техническая помощь на дорогах</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-3 uk-light">
+                                        <span class="city">Mitsubishi Харьков</span>
+                                        <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
+                                        <span class="date">с 1 декабря 2018 по 1 февраля 2019</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-4 uk-light">
+                                        <span class="city">Renault Полтава</span>
+                                        <strong>Предложение для новых участников MY Renault</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-5 uk-light">
+                                        <span class="city">Volkswagen Харьков</span>
+                                        <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному
+                                            предложению от Солли Плюс</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-6 uk-light">
+                                        <span class="city">Mercedes-Benz</span>
+                                        <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-7 uk-light">
+                                        <span class="city">IVECO Харьков</span>
+                                        <strong>Техническая помощь на дорогах</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-8 uk-light">
+                                        <span class="city">Hyundai Trucks Сервис Харьков</span>
+                                        <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному
+                                            предложению от Солли Плюс</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-9 uk-light">
+                                        <span class="city">Ravon Харьков</span>
+                                        <strong>Предложение для новых участников MY Renault</strong>
+                                        <span class="date">Бессрочно</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-10 uk-light">
+                                        <span class="city">Ford Trucks Сервис Харьков</span>
+                                        <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному
+                                            предложению от Солли Плюс</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-11 uk-light">
+                                        <span class="city">Ravon Харьков</span>
+                                        <strong>Предложение для новых участников MY Renault</strong>
+                                        <span class="date">с 1 декабря 2018 по 1 февраля 2019</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-12 uk-light">
+                                        <span class="city">Opel Харьков</span>
+                                        <strong>Техническая помощь на дорогах</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-disabled">
+                                        <span class="city">Mercedes-Benz Харьков</span>
+                                        <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
+                                        <span class="date">Акция завершена</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-disabled">
+                                        <span class="city">Renault Харьков</span>
+                                        <strong>Предложение для новых участников MY Renault</strong>
+                                        <span class="date">Акция завершена</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-disabled">
+                                        <span class="city">Volkswagen Харьков, Запорожье</span>
+                                        <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному
+                                            предложению от Солли Плюс</strong>
+                                        <span class="date">Акция завершена</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-disabled">
+                                        <span class="city">Mercedes-Benz Харьков</span>
+                                        <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
+                                        <span class="date">Акция завершена</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-models-highlight">
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="uk-heading uk-text-center">
+                            <h3 class="uk-heading-title">Модельный ряд <span class="uk-heading-slash">/</span><a href="#">Renault
+                                    в наличии</a></h3>
+                        </div>
+                        <div class="uk-grid uk-child-width-1-2 uk-child-width-1-3@m uk-models-highlight" data-uk-grid>
+                            <div>
+                                <a href="#" class="uk-card-model">
+                                    <div class="uk-card-img">
+                                        <img src="%=static=%img/content/img-1.png" alt="car-1">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h6 class="uk-card-title">Новый Logan</h6>
+                                        <span>от 1 323 013 грн</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-model">
+                                    <div class="uk-card-img">
+                                        <img src="%=static=%img/content/img-2.png" alt="car-1">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h6 class="uk-card-title">Новый Logan</h6>
+                                        <span>от 1 323 013 грн</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-model">
+                                    <div class="uk-card-img">
+                                        <img src="%=static=%img/content/img-3.png" alt="car-1">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h6 class="uk-card-title">Новый Logan</h6>
+                                        <span>от 1 323 013 грн</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-model">
+                                    <div class="uk-card-img">
+                                        <img src="%=static=%img/content/img-3.png" alt="car-1">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h6 class="uk-card-title">Новый Logan</h6>
+                                        <span>от 1 323 013 грн</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-model">
+                                    <div class="uk-card-img">
+                                        <img src="%=static=%img/content/img-3.png" alt="car-1">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h6 class="uk-card-title">Новый Logan</h6>
+                                        <span>от 1 323 013 грн</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-model">
+                                    <div class="uk-card-img">
+                                        <img src="%=static=%img/content/img-3.png" alt="car-1">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h6 class="uk-card-title">Новый Logan</h6>
+                                        <span>от 1 323 013 грн</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-model">
+                                    <div class="uk-card-img">
+                                        <img src="%=static=%img/content/img-3.png" alt="car-1">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h6 class="uk-card-title">Новый Logan</h6>
+                                        <span>от 1 323 013 грн</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-model">
+                                    <div class="uk-card-img">
+                                        <img src="%=static=%img/content/img-3.png" alt="car-1">
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <h6 class="uk-card-title">Новый Logan</h6>
+                                        <span>от 1 323 013 грн</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-news-highlight">
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="uk-heading uk-text-center">
+                            <h3 class="uk-heading-title">Новости Renault Харьков</h3>
+                        </div>
+                        <div class="uk-grid uk-grid-match uk-list-news" data-uk-grid>
+                            <article class="uk-news-item">
+                                <a href="#" class="uk-card-news">
+                                    <div class="uk-card-img"><img src="%=static=%img/content/news-img-1.jpg" alt="img"></div>
+                                    <div class="uk-card-body">
+                                        <div class="uk-body-top">
+                                            <span class="uk-card-date">27 августа 2017</span>
+                                            <h5 class="uk-card-title">ŠKODA уже 14 лет является официальным партнером
+                                                самой масштабной велогонки мира</h5>
+                                        </div>
+                                        <span class="uk-card-city">Автоцентр Škoda Харьков</span>
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="uk-news-item">
+                                <a href="#" class="uk-card-news">
+                                    <div class="uk-card-img"><img src="%=static=%img/content/news-img-2.jpg" alt="img"></div>
+                                    <div class="uk-card-body">
+                                        <div class="uk-body-top">
+                                            <span class="uk-card-date">27 августа 2017</span>
+                                            <h5 class="uk-card-title">Гольф турнир MercedesTrophy в Украине сделает
+                                                паузу в 2018 году</h5>
+                                        </div>
+                                        <span class="uk-card-city">Грузовики Mercedes-Benz Харьков</span>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        <a href="#" class="uk-load-more uk-load-more-secondary uk-text-center"><span class="uk-btn-icon">{{Icon
+                                iconName="arrow-rotate"}}</span> Показать еще</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-certificates-highlight">
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="uk-heading uk-text-center">
+                            <h3 class="uk-heading-title">Сертификаты и награды</h3>
+                        </div>
+                        <div class="swiper-container uk-certificates-hightlight">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper uk-grid uk-child-width-1-5@s uk-grid-match" data-uk-grid>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-certificate">
+                                        <img src="%=static=%img/content/certificate-1.jpg" alt="certificate-1">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-certificate">
+                                        <img src="%=static=%img/content/certificate-2.jpg" alt="certificate-2">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-certificate">
+                                        <img src="%=static=%img/content/certificate-3.jpg" alt="certificate-3">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-certificate">
+                                        <img src="%=static=%img/content/certificate-4.jpg" alt="certificate-4">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-certificate">
+                                        <img src="%=static=%img/content/certificate-5.jpg" alt="certificate-5">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-certificate">
+                                        <img src="%=static=%img/content/certificate-1.jpg" alt="certificate-1">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-certificate">
+                                        <img src="%=static=%img/content/certificate-2.jpg" alt="certificate-2">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-certificate">
+                                        <img src="%=static=%img/content/certificate-3.jpg" alt="certificate-3">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-certificate">
+                                        <img src="%=static=%img/content/certificate-4.jpg" alt="certificate-4">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-certificate">
+                                        <img src="%=static=%img/content/certificate-5.jpg" alt="certificate-5">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-seo">
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="uk-seo">
+                            Новые и подержанные машины в наше время все больше продаются на специализированных
+                            автомобильных интернет-ресурсах. Наиболее известный и престижный из них — сайт
+                            auto.ria.com. Здесь собрана самая большая база бесплатных объявлений о продаже Renault в
+                            Днепре и других населенных пунктах Украины. Офлайн автобазар Днепр (Днепропетровск)
+                            распложен на улице Волгоградской. Однако автопродажи Renault в Днепре в последние годы
+                            осуществляются по большей части на сайте auto.ria.com. Это удобнее, быстрее и безопаснее.
+                            Обширная база объявлений сайта AUTO.RIA о продаже Renault в Днепре находится в вашем
+                            распоряжении круглосуточно, семь дней в неделю, без выходных. Каждый день на портале
+                            продается более 1400 автомобилей, при этом сайт посещают ежедневно около 6 миллионов
+                            украинцев. Чтобы купить б/у Renault в Днепре, вам достаточно зайти на сайт и выбрать среди
+                            множества объявлений о продаже нужное именно вам. Вследствие того, что производители
+                            Renault применяют в своих автомобилях наиболее качественные материалы и используют самые
+                            современные технологии, Renault в Днепре славятся своей надежностью, проходимостью,
+                            стильным внешним видом, экономичностью и плавностью хода, практически независимо от пробега
+                            автомобиля. Подержанные Renault в Днепре всегда пользовались и пользуются уважением среди
+                            почитателей автотранспорта. Для зарегистрированных пользователей наш сайт учредил новую
+                            программу — «Авто проверено AUTO.RIA.com», которая разработана для желающих подтвердить
+                            хорошее состояние выбранного транспортного средства перед покупкой, не растрачивая при этом
+                            время на поездку в другой населенный пункт. Программа также заинтересует продавцов машин,
+                            желающих повысить доверие к своему авто и побыстрее продать транспортное средство. Сделав
+                            заказ и пройдя комплексную диагностику, вы получите:  Отметку о проверке транспортного
+                            средства.  Повышенное доверие к вашей машине, так как теперь покупатели смогут
+                            ознакомиться с диагностическим протоколом. Программа гарантирует, что выбранная вами
+                            подержанная Renault в Днепре пройдет диагностику на лучших станциях технического
+                            обслуживания Украины, а результаты проверки будут доступны заказчику, что исключает
+                            подделку данных о техническом состоянии машины. Источник:
+                            https://auto.ria.com/car/renault/city/dnepr-dnepropetrovsk/ © AUTO.RIA.com™
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{> footer/footer visible=true}}
+        </div>
+
+    </div>
+
+    {{> scripts/scripts}}
+</body>
+
+</html>

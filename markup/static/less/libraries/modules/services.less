@@ -1,13 +1,14 @@
 .hook-card-misc() {
   .uk-card-info {
    position: relative;
-   min-height: 250px;
+  //  min-height: 250px;
    border-radius: 10px;
    overflow: hidden;
-    @media (min-width: 640px) {
-      min-height: 300px;
-    }
-    @media (min-width: 960px) {
+   font-weight: 100;
+    // @media (min-width: 640px) {
+    //   min-height: 300px;
+    // }
+    @media (min-width: @breakpoint-medium) {
       min-height: 375px;
     }
 
@@ -16,11 +17,14 @@
     }
    
     .uk-card-background {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+    
+      @media (min-width: @breakpoint-medium) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
 
       img {
         object-fit: cover;
@@ -45,29 +49,28 @@
       justify-content: center;
       padding: 30px;
 
-      @media (min-width: 960px) {
+      @media (min-width: @breakpoint-medium) {
         padding: 60px;
       }
     }
     .uk-card-title {
       margin-bottom: 10px;
 
-      @media (min-width: 960px) {
+      @media (min-width: @breakpoint-medium) {
         font-size: 40px;
       }
     }
     &.uk-card-info-2 {
-      color: @global-muted-color;
-
-      .uk-card-title {
-        color: @global-color;
-      }
+      color: @global-color;
+      font-weight: 300;
+      
 
       .uk-card-foreground {
         justify-content: flex-start;
         padding: 30px; 
 
-        @media (min-width: 960px) {
+        @media (min-width: @breakpoint-medium) {
+          font-size: 22px;
           padding: 20px 40px 80px 80px;
         }
       }
@@ -80,7 +83,7 @@
       height: 150px;
       z-index: -1;
       top: 30px;
-      @media (min-width: 960px) {
+      @media (min-width: @breakpoint-medium) {
         top: 85px;
         width: 200px;
         height: 200px;
@@ -99,29 +102,23 @@
     border-radius: 10px;
     display: flex;
     align-items: center;
+    line-height: 1.55;
 
     &:hover {
       border-color: @global-warning-background;
       box-shadow: 0px 0px 0px 2px @global-warning-background;
     }
 
-    @media (min-width: 640px) {
+    @media (min-width: @breakpoint-small) {
       padding: 35px;
     }
   }
-
-  .uk-card-certificate {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
 }
 
 .hook-grid-misc() {
   .uk-info-box {
     .uk-row {    
-      @media (min-width: 960px) {
+      @media (min-width: @breakpoint-medium) {
         margin-top: 0; 
         display: flex;
 
@@ -160,7 +157,7 @@
 
   .uk-info-2 {
     .uk-row {
-      @media (min-width: 960px) {
+      @media (min-width: @breakpoint-medium) {
         &:first-child {
           flex-direction: row-reverse;
 
@@ -194,7 +191,7 @@
 .hook-section-misc() {
   .uk-services {
     h3 {
-      @media (min-width: 960px) {
+      @media (min-width: @breakpoint-medium) {
         margin-bottom: 50px;
       }
     }
