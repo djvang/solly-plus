@@ -1,0 +1,53 @@
+.uk-chips {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: -10px;
+  margin-bottom: 20px;
+
+  > * {
+    margin: 10px;
+  }
+}
+
+.uk-chip {
+  background-color: #F1F2F4;
+  font-size: 16px;
+  line-height: normal;
+  color: @global-color;
+  padding: 7px 14px;
+  border-radius: 500px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    width: 1em;
+    height: 1em;
+    margin-top: 0.1em;
+    font-size: 0.8em;
+    margin-left: 8px;
+    color: @global-danger-background;
+    path {
+      stroke-width: 3;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: @global-danger-background;
+    color: fade(#fff, 60%);
+
+    svg {
+      color: #fff;
+    }
+  }
+
+}
+
+.uk-chip-reset {
+  color: #A5A8AD;
+  font-size: 14px;
+}

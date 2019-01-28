@@ -1,96 +1,65 @@
 .hook-card-misc() {
-  .uk-link, .uk-link-secondary {
-    font-size: 14px;
-    position: relative;
-    display: inline-block;
-    line-height: 1.5;
-    &:hover {
-      text-decoration: none;
-      &:before {
-        border-color: @global-link-hover-color;
-      }
-    }
-
-    &:before {
-      position: absolute;
-      content: "";
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 1px;
-      border-bottom: 1px dashed @global-link-color;
-    }
-  }
-
-  .uk-link-secondary {
-    color: @global-muted-color;
-    font-size: 16px;
-
-    &:before {
-      border-color: @global-muted-color;
-    }
-  }
 }
 
-.hook-section-misc() {
-  .uk-section-contacts {
-    font-size: 14px;
-
-    .uk-contact-title {
-      font-size: 14px;
-      color: @global-muted-color;
-      margin: 15px 0 5px;
-    }
-
-    .uk-phone-holder {
-      border-bottom: 3px solid @global-border;
-      margin-bottom: 40px;
-    }
-
-    .uk-phone-block {
-      margin-bottom: 30px;
-    }
-
-    .uk-contact-phone {
-      font-weight: 500;
-      font-size: 22px;
-      color: @global-color;
-      display: block;
-      margin-bottom: 10px;
-      &:last-child {
-        margin-bottom: 0;
-      }
-      &:hover {
-        color: @global-color;
-      }
-    }
-
-    .uk-working-hours {
-      font-weight: 500;
-    }
-
-    .uk-contact-block {
-      margin-bottom: 30px;
-    }
-
-    .uk-contact-site,
-    .uk-contact-email {
-      font-size: 18px;
-    }
-
-    .uk-social-networks {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-      font-weight: 500;
-
-      li {
-        margin-bottom: 10px;
-      }
-    }
-  }
-}
+.hook-section-misc() {}
 
 .hook-grid-misc() {
-  
+    .uk-col-contacts {
+        font-size: 14px;
+
+        .uk-contact-title {
+            font-size: 14px;
+            color: @global-muted-color;
+            margin: 15px 0 0;
+            font-weight: 300;
+        }
+
+        .uk-phone-holder {
+            border-bottom: 3px solid @global-border;
+            margin-bottom: 40px;
+        }
+
+        .uk-phone-block {
+            margin-bottom: 30px;
+        }
+
+        .uk-contact-phone {
+            font-weight: 500;
+            font-size: 22px;
+            color: @global-color;
+            display: block;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:hover {
+                color: @global-color;
+            }
+        }
+
+        .uk-working-hours {
+            font-weight: 500;
+        }
+
+        .uk-contact-block {
+            margin-bottom: 30px;
+        }
+
+        .uk-contact-site,
+        .uk-contact-email {
+            font-size: 18px;
+        }
+
+        .uk-social-networks {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            font-weight: 500;
+
+            li {
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
