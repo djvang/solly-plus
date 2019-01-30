@@ -88,7 +88,6 @@ function swiperCarInit() {
     });
 }
 
-
 function swiperInit() {
     document.querySelectorAll('.swiper-container').forEach(function(swiper) {
         new Swiper(swiper, {
@@ -107,6 +106,9 @@ function swiperInit() {
 function priceInit() {
 
     let price = document.getElementById('price');
+
+    if(!price) return;
+
     let priceFrom = document.getElementById('price-from');
     let priceTo = document.getElementById('price-to');
     let inputs = [priceFrom, priceTo];
