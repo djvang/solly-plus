@@ -1,10 +1,24 @@
 .hook-card-misc() {
   .uk-card-partner {
     display: flex;
-    // justify-content: center;
     align-items: center;
     filter: grayscale(1);
     opacity: .3;
+
+    &.uk-card-partner-2 {
+      justify-content: center;
+      padding: 30px 20px;
+      border: @global-border-width solid @global-border;
+      border-radius: 10px;
+      filter: none;
+      opacity: 1;
+      height: 150px;
+      box-sizing: border-box;
+      &:hover {
+        border-color: @global-warning-background;
+        box-shadow: 0 0 0 2px @global-warning-background;
+      }
+    }
   }
 }
 
