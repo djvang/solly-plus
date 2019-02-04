@@ -10,9 +10,13 @@
     overflow: hidden;
     text-align: center;
     line-height: 1.66;
+    transform: scale(1);
+    transition: transform 0.2s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       text-decoration: none;
+      transform: scale(1.1);
     }
 
     &.uk-disabled {
@@ -44,19 +48,6 @@
     padding-top: 10px;
     .uk-filter-stock {
       margin-bottom: 60px;
-    }
-  }
-
-  .uk-not-found-block {
-    .uk-form-subscription {
-      .uk-button-link {
-        font-size: 16px;
-        .uk-btn-icon {
-          font-size: 20px;
-          display: inline-block;
-          margin-right: 15px;
-        }
-      }
     }
   }
 }

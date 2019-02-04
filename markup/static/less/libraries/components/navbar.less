@@ -43,13 +43,13 @@
 @navbar-nav-item-color:                         @global-color;
 @navbar-nav-item-font-size:                     14px;
 @navbar-nav-item-font-family:                   @global-font-family;
-@navbar-nav-item-hover-color:                   @global-muted-color;
-@navbar-nav-item-onclick-color:                 @global-emphasis-color;
-@navbar-nav-item-active-color:                  @global-emphasis-color;
+@navbar-nav-item-hover-color:                   @global-color;
+@navbar-nav-item-onclick-color:                 @global-color;
+@navbar-nav-item-active-color:                  @global-color;
 
 @navbar-item-color:                             @global-color;
 
-@navbar-toggle-color:                           @global-muted-color;
+@navbar-toggle-color:                           @global-color;
 @navbar-toggle-hover-color:                     @global-color;
 
 @navbar-subtitle-font-size:                     @global-small-font-size;
@@ -86,11 +86,28 @@
 }
 .hook-navbar-container() {}
 .hook-navbar-nav-item() {}
-.hook-navbar-nav-item-hover() {}
-.hook-navbar-nav-item-onclick() {}
-.hook-navbar-nav-item-active() {}
+.hook-navbar-nav-item-hover() {
+  text-decoration: underline;
+}
+.hook-navbar-nav-item-onclick() {
+  text-decoration: underline;
+}
+.hook-navbar-nav-item-active() {
+  text-decoration: underline;
+}
 .hook-navbar-item() {}
-.hook-navbar-toggle(){}
+.hook-navbar-toggle(){
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: @global-warning-background;
+  box-shadow: 0px 0px 30px rgba(251, 246, 89, 0.6);
+  padding: 5px;
+
+  rect {
+    height: 3px;
+  }
+}
 .hook-navbar-toggle-hover(){}
 .hook-navbar-toggle-icon(){}
 .hook-navbar-toggle-icon-hover(){}
@@ -118,7 +135,106 @@
     }
   }
 
-  .uk-navbar-secondary-container {}
+  .uk-hamburger {
+    box-sizing: border-box;
+    font: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    margin: 0;
+    padding: 15px;
+    cursor: pointer;
+    transition-timing-function: linear;
+    transition-duration: .15s;
+    transition-property: opacity,filter;
+    text-transform: none;
+    color: inherit;
+    border: 0;
+    background-color: transparent;
+
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: @global-warning-background;
+    box-shadow: 0px 0px 30px rgba(251, 246, 89, 0.6);
+    padding: 5px;
+  }
+
+  .uk-hamburger-box {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 15px;
+  }
+
+  .uk-hamburger-inner {
+    top: 50%;
+    display: block;
+    margin-top: -2px;
+
+    transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+    transition-duration: 75ms;
+  }
+
+  .uk-hamburger-inner, 
+  .uk-hamburger-inner:after, 
+  .uk-hamburger-inner:before {
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: @global-color;
+  }
+
+  .uk-hamburger-inner:after, 
+  .uk-hamburger-inner:before {
+    display: block;
+    content: "";
+  }
+
+  .uk-hamburger-inner:before {
+    top: -6px;
+  }
+
+  .uk-hamburger-inner:after {
+    bottom: -6px;
+  }
+
+  .uk-hamburger-inner:before {
+    transition: top 75ms ease .12s,opacity 75ms ease;
+  }
+
+  .uk-hamburger-inner:after {
+    transition: bottom 75ms ease .12s,transform 75ms cubic-bezier(.55,.055,.675,.19);
+  }
+
+
+  .uk-offcanvas-page .uk-hamburger-inner,
+  .uk-hamburger.ul-active .uk-hamburger-inner {
+    transition-delay: .12s;
+    transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    transform: rotate(45deg)
+  }
+
+  .uk-offcanvas-page .uk-hamburger-inner:before,
+  .uk-hamburger.uk-active .uk-hamburger-inner:before {
+    top: 0;
+    transition: top 75ms ease,opacity 75ms ease .12s;
+    opacity: 0
+  }
+
+  .uk-offcanvas-page .uk-hamburger-inner:after,
+  .uk-hamburger.uk-active .uk-hamburger-inner:after {
+    bottom: 0;
+    transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
+    transform: rotate(-90deg)
+  }
+
   .uk-navbar-secondary {
     display: flex;
     font-size: 16px;
@@ -160,7 +276,6 @@
       margin: 10px;
     }
   }
-  .uk-navbar-secondary-item {}
   .uk-navbar-secondary-nav {
     list-style: none;
     padding-left: 0;

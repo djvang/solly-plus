@@ -7,6 +7,19 @@
     display: flex;
     flex-direction: column;
     max-width: 260px;
+    color: inherit;
+
+    &[href] {
+      &:hover,
+      &:focus {
+        color: inherit;
+        text-decoration: none;
+
+        .uk-card-person-name {
+          color: @global-link-color;
+        }
+      }
+    }
 
     .uk-card-top {
       margin-bottom: 30px;
@@ -151,6 +164,11 @@
 
   .uk-full-person-contact-email {
     text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
   }
 }
 

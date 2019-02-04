@@ -167,31 +167,37 @@
         > :first-child {
             margin-right: 15px;
         }
+
+        &:hover,
+        &:focus {
+            opacity: 1;
+        }
     }
 
     .uk-link,
     .uk-link-secondary {
-        position: relative;
-        display: inline-block;
+        // position: relative;
+        // display: inline-block;
         line-height: 1.5;
+        border-bottom: 1px dashed;
 
         &:hover {
             text-decoration: none;
 
-            &:before {
-                border-color: @global-link-hover-color;
-            }
+            // &:before {
+            //     border-color: @global-link-hover-color;
+            // }
         }
 
-        &:before {
-            position: absolute;
-            content: "";
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 1px;
-            border-bottom: 1px dashed @global-link-color;
-        }
+        // &:before {
+        //     position: absolute;
+        //     content: "";
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;
+        //     height: 1px;
+        //     border-bottom: 1px dashed @global-link-color;
+        // }
     }
 
     .uk-link-secondary {
