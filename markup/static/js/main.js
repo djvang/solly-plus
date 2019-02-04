@@ -2,6 +2,110 @@
 
 import 'nouislider';
 import Swiper from 'swiper';
+import Choices from 'choices.js';
+
+function choicesInit() {
+    const strToEl = (function() {
+        const tmpEl = document.createElement('div');
+        return function(str) {
+          const cleanedInput = str.trim();
+          let r;
+          tmpEl.innerHTML = cleanedInput;
+          r = tmpEl.children[0];
+      
+          while (tmpEl.firstChild) {
+            tmpEl.removeChild(tmpEl.firstChild);
+          }
+      
+          return r;
+        };
+      })();
+    const choices = new Choices('.uk-select', {
+        silent: false,
+        items: [],
+        choices: [],
+        renderChoiceLimit: -1,
+        maxItemCount: -1,
+        addItems: true,
+        removeItems: true,
+        removeItemButton: false,
+        editItems: false,
+        duplicateItemsAllowed: true,
+        delimiter: ',',
+        paste: true,
+        searchEnabled: false,
+        searchChoices: true,
+        searchFloor: 1,
+        searchResultLimit: 4,
+        searchFields: ['label', 'value'],
+        position: 'auto',
+        resetScrollPosition: true,
+        regexFilter: null,
+        shouldSort: true,
+        shouldSortItems: false,
+        sortFn: () => {},
+        placeholder: true,
+        placeholderValue: null,
+        searchPlaceholderValue: null,
+        prependValue: null,
+        appendValue: null,
+        renderSelectedChoices: 'auto',
+        loadingText: 'Loading...',
+        noResultsText: 'No results found',
+        noChoicesText: 'No choices to choose from',
+        itemSelectText: 'Press to select',
+        addItemText: (value) => {
+            return `Press Enter to add <b>"${value}"</b>`;
+        },
+        maxItemText: (maxItemCount) => {
+            return `Only ${maxItemCount} values can be added`;
+        },
+        itemComparer: (choice, item) => {
+            return choice === item;
+        },
+        classNames: {
+            containerOuter: 'choices',
+            containerInner: 'choices__inner',
+            input: 'uk-input',
+            inputCloned: 'choices__input--cloned',
+            list: 'choices__list',
+            listItems: 'choices__list--multiple',
+            listSingle: 'choices__list--single',
+            listDropdown: 'choices__list--dropdown',
+            item: 'choices__item',
+            itemSelectable: 'choices__item--selectable',
+            itemDisabled: 'choices__item--disabled',
+            itemChoice: 'choices__item--choice',
+            placeholder: 'choices__placeholder',
+            group: 'choices__group',
+            groupHeading: 'choices__heading',
+            button: 'choices__button',
+            activeState: 'is-active',
+            focusState: 'is-focused',
+            openState: 'is-open',
+            disabledState: 'is-disabled',
+            highlightedState: 'is-highlighted',
+            hiddenState: 'is-hidden',
+            flippedState: 'is-flipped',
+            loadingState: 'is-loading',
+            noResults: 'has-no-results',
+            noChoices: 'has-no-choices'
+        },
+        fuseOptions: {
+            include: 'score'
+        },
+        callbackOnInit: null,
+        callbackOnCreateTemplates: function (template) {
+            return {
+                containerInner(globalClasses) {
+                    return strToEl(`
+                      <div class="${this.passedElement.element.className}"></div>
+                    `);
+                  }
+            };
+          }
+    });
+}
 
 function swiperCarInit() {
     function slideOtherGalleryTo(sGalleryName, nSlideIndex) {
@@ -194,3 +298,4 @@ function priceInit() {
 priceInit();
 swiperInit();
 swiperCarInit();
+choicesInit();

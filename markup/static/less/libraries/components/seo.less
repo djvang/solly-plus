@@ -2,9 +2,53 @@
   // .uk-section-seo {
   //   padding-bottom: 0;
   // }
+
   .uk-seo {
     color: #A5A8AD;
     font-size: 14px;
     line-height: 2.14;
   }
+
+  .uk-seo-content {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    }
+  }
+
+  .uk-seo-toggle {
+    color: #A5A8AD;
+    border-bottom: 1px dashed;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .uk-seo-open {
+    .uk-seo-content {
+      height: auto;
+  
+      &::after {
+        display: none;
+      }
+    }
+
+    .uk-seo-toggle {
+      display: none;
+    }
+  }
+
+  
+
 }

@@ -4,6 +4,12 @@
     padding: 10px 20px;
     border: @global-border-width solid @global-border;
     border-radius: 10px;
+
+    &:hover,
+    &:focus {
+      border-color: @global-warning-background;
+      box-shadow: 0 0 0 2px @global-warning-background;
+    }
   }
 
   .uk-list {
@@ -57,6 +63,7 @@
     position: relative;
     min-height: 220px;
     overflow: hidden;
+    display: block;
 
     .uk-video-background, .uk-video-overlay, .uk-video-foreground {
       position: absolute;
@@ -80,15 +87,23 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%) scale(1);
       display: block;
       width: 64px;
       height: 64px;
       color: @global-inverse-color;
+      transition: transform 0.2s;
       svg {
         width: 100%;
         height: 100%;
       } 
+    }
+
+    &:hover,
+    &:focus {
+      .uk-btn-video-link {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
     }
   }
 }

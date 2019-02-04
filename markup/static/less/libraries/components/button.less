@@ -115,7 +115,26 @@
 .hook-button-text() {}
 .hook-button-text-hover() {}
 .hook-button-text-disabled() {}
-.hook-button-link() {}
+.hook-button-link() {
+    font-size: 16px;
+
+    .uk-btn-icon {
+      font-size: 20px;
+      display: inline-block;
+      margin-right: 15px;
+      transform: translateX(0%);
+      transition: transform 0.2s;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none !important;
+
+      .uk-btn-icon {
+        transform: translateX(40%);
+      }
+    }
+}
 .hook-button-misc() {}
 
 
