@@ -1,80 +1,146 @@
 .hook-card-misc() {
 }
 
-.hook-section-misc() {}
+.hook-section-misc() {
+	.uk-hero-contacts {
+		.uk-hero-foreground {
+			@media (min-width: @breakpoint-medium) {
+				min-height: 640px;
+			}
+		}
+		
+		.uk-hero-overlay {
+			opacity: .6;
+		}
+
+		.uk-col-contacts {
+			.uk-contact-title {
+				color: @global-color;
+			}
+			.uk-phone-block, .uk-phone-holder, .uk-contact-block {
+				border-bottom: none;
+				margin-bottom: 0;
+			}
+		}
+		
+	}
+	.uk-section-contacts {
+		.uk-form-contact {
+			textarea {
+				resize: none;
+				height: 174px;
+			}
+		}
+		.uk-col-title {
+			font-weight: 200;
+			margin-bottom: 30px;
+		}
+		
+	}
+
+	.uk-section-shopping-map {
+		.uk-section-map-country {
+			.uk-section-background {
+				right: auto;
+				left: -47%;
+				top: 0;
+			}
+			.uk-section-foreground {
+				margin-left: auto;
+			}
+			.uk-sity-shops-block {
+				.uk-sity-name {
+					margin-bottom: 10px;
+				}
+				.uk-shops-list {
+					list-style: none;
+					padding-left: 0;
+					font-size: 14px;
+					margin-top: 0;
+
+					a {
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 
 .hook-grid-misc() {
-    .uk-col-contacts {
-        font-size: 14px;
+	.uk-col-contacts {
+			font-size: 14px;
 
-        .uk-contact-title {
-            font-size: 14px;
-            color: @global-muted-color;
-            margin: 15px 0 0;
-            font-weight: 300;
-        }
+		.uk-contact-title {
+				font-size: 14px;
+				color: @global-muted-color;
+				margin: 15px 0 0;
+				font-weight: 300;
+		}
 
-        .uk-phone-holder {
-            border-bottom: 3px solid @global-border;
-            margin-bottom: 40px;
+		.uk-phone-holder {
+				border-bottom: 3px solid @global-border;
+				margin-bottom: 40px;
 
-            @media (max-width: @breakpoint-xsmall-max) {
-                margin-bottom: 20px;
-            }
-        }
+				@media (max-width: @breakpoint-xsmall-max) {
+						margin-bottom: 20px;
+				}
+		}
 
-        .uk-phone-block {
-            margin-bottom: 30px;
-            @media (max-width: @breakpoint-xsmall-max) {
-                margin-bottom: 15px;
-            }
-        }
+		.uk-phone-block {
+				margin-bottom: 30px;
+				@media (max-width: @breakpoint-xsmall-max) {
+						margin-bottom: 15px;
+				}
+		}
 
-        .uk-contact-phone {
-            font-weight: 500;
-            font-size: 22px;
-            color: @global-color;
-            display: block;
+		.uk-contact-phone {
+				font-weight: 500;
+				font-size: 22px;
+				color: @global-color;
+				display: block;
 
-            @media (max-width: @breakpoint-xsmall-max) {
-                font-size: 16px;
-            }
+				@media (max-width: @breakpoint-xsmall-max) {
+						font-size: 16px;
+				}
 
-            &:last-child {
-                margin-bottom: 0;
-            }
+				&:last-child {
+						margin-bottom: 0;
+				}
 
-            &:hover {
-                color: @global-color;
-            }
-        }
+				&:hover {
+						color: @global-color;
+				}
+		}
 
-        .uk-working-hours {
-            font-weight: 500;
-        }
+		.uk-working-hours {
+				font-weight: 500;
+		}
 
-        .uk-contact-block {
-            margin-bottom: 30px;
-        }
+		.uk-contact-block {
+				margin-bottom: 30px;
+		}
 
-        .uk-contact-site,
-        .uk-contact-email {
-            font-size: 18px;
-        }
+		.uk-contact-site,
+		.uk-contact-email {
+				font-size: 18px;
+		}
 
-        .uk-social-networks {
-            list-style: none;
-            padding-left: 0;
-            margin: 0;
-            font-weight: 500;
+		.uk-social-networks {
+				list-style: none;
+				padding-left: 0;
+				margin: 0;
+				font-weight: 500;
 
-            li {
-                // margin-bottom: 10px;
-                a {
-                    display: inline-block;
-                    padding: 5px 0;
-                }
-            }
-        }
-    }
+				li {
+						// margin-bottom: 10px;
+						a {
+								display: inline-block;
+								padding: 5px 0;
+						}
+				}
+		}
+	}
 }

@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body>
+        %=symbols=%
+
+			<div class="uk-page">
+
+				<div class="uk-page-left">
+					{{> header/header dealers=false}}
+				</div>
+
+				<div class="uk-page-body">
+
+					<div class="uk-hero uk-hero-contacts">
+						<div class="uk-hero-background">
+								<img class="uk-hero-object" src="%=static=%img/content/hero-image-4.jpg" alt="">
+						</div>
+						<div class="uk-hero-overlay uk-background-16"></div>
+						<div class="uk-hero-foreground">
+							<div class="uk-hero-header">
+								{{> navbar/navbar }}
+							</div>
+								<div class="uk-hero-body">
+									<div class="uk-container">
+										<div class="uk-heading">
+											<div class="uk-heading-suptitle">Харьков, Украина</div>
+											<h1 class="uk-heading-title">ул. Академика Павлова, 323</h1>
+											<a href="#" class="uk-link">Посмотреть фото и расположение на карте</a>
+										</div>
+										<div class="uk-grid uk-child-width-1-2@s uk-child-width-1-4@l" data-uk-grid>
+											<div class="uk-col-contacts">
+												<div class="uk-phone-holder">
+													<div class="uk-phone-block">
+														<h6 class="uk-contact-title">Сервис</h6>
+														<a href="tel:057000000" class="uk-contact-phone">(057) 00-00-00</a>
+													</div>
+												</div>
+											</div>
+											<div class="uk-col-contacts">
+												<div class="uk-contact-block">
+													<h6 class="uk-contact-title">Эл. почта</h6>
+													<a href="mailto:info@sollyplus.com.ua" class="uk-contact-email">info@sollyplus.com.ua</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+				</div>
+					<section class="uk-section uk-section-contacts">
+						<div class="uk-container">
+							<h3 class="uk-section-title">Написать директору</h3>
+							<div class="uk-grid uk-child-width-1-2@s" data-uk-grid>
+								<div class="uk-col">
+									<form action="#" class="uk-form-contact uk-grid uk-child-width-1-1" data-uk-grid >
+										<div>
+											<label><input class="uk-input" type="text" placeholder="Как вас зовут?"></label>
+										</div>
+										<div>
+											<label><input class="uk-input" type="email" placeholder="Введите ваш e-mail"></label>
+										</div>
+										<div>
+											<label><textarea class="uk-input" placeholder="Текст сообщения"></textarea></label>
+										</div>
+										<div>
+											<button class="uk-button uk-button-primary">Отправить сообщение</button>
+										</div>
+									</form>
+								</div>
+								<div class="uk-col uk-margin-medium-top">
+									<h4 class="uk-col-title">Солли Плюс — открытая и дружелюбная команда профессионалов. Нам важно мнение наших клиентов. Благодаря вам мы становимся лучше.</h4>
+									<div class="uk-card uk-card-person-2">
+										<div class="uk-card-top">
+											<div class="uk-card-person-avatar">
+												<img src="/static/img/content/person.jpg" alt="">
+											</div>
+										</div>
+										<div class="uk-card-body">
+											<div class="uk-card-person-name">Пучков Олег Алексеевич</div>
+											<div class="uk-card-person-position">Генеральный директор холдинга Солли Плюс</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="uk-section uk-section-shopping-map">
+						<div class="uk-container">
+							<h2 class="uk-section-title uk-text-center">Солли Плюс — это холдинг объеденяющий в себе
+								25 автомобильных компаний</h2>
+						</div>
+						<div class="uk-section uk-section-map-country">
+							<div class="uk-section-background uk-map-country">
+									<!-- TODO: ссылки на карты менять в самом файле map.svg -->
+									<img data-uk-svg class="uk-preserve" src="%=static=%img/general/map.svg" alt="">
+							</div>
+							<div class="uk-section-foreground uk-width-2-3@s uk-width-1-2@m">
+								<div class="uk-container">
+									<div class="uk-grid uk-child-width-1-2@s" uk-grid="masonry: true" data-uk-grid>
+										<div class="uk-sity-shops-block">
+											<h4 class="uk-sity-name">Харьков</h4>
+											<ul class="uk-shops-list">
+												<li><a href="#">Mercedes-Benz</a></li>
+												<li><a href="#">Volkswagen</a></li>
+												<li><a href="#">Renault</a></li>
+												<li><a href="#">Škoda</a></li>
+												<li><a href="#">Mitsubishi</a></li>
+												<li><a href="#">Ravon</a></li>
+												<li><a href="#">Opel</a></li>
+												<li><a href="#">ParDrive</a></li>
+												<li><a href="#">Bosh Сервис</a></li>
+												<li><a href="#">Автоэлемент</a></li>
+												<li><a href="#">VIP TAXI</a></li>
+												<li><a href="#">IVECO</a></li>
+												<li><a href="#">Mercedes-Benz Truck</a></li>
+												<li><a href="#">ISUZU</a></li>
+												<li><a href="#">DAF Сервис</a></li>
+												<li><a href="#">Hyundai Truck Сервис</a></li>
+												<li><a href="#">Ford Truck Сервис</a></li>
+												<li><a href="#">Кияшко Прицепы</a></li>
+											</ul>
+										</div>
+										<div class="uk-sity-shops-block">
+											<h4 class="uk-sity-name">Полтава</h4>
+											<ul class="uk-shops-list">
+												<li><a href="#">Renault</a></li>
+												<li><a href="#">ParkDrive</a></li>
+											</ul>
+										</div>
+										<div class="uk-sity-shops-block">
+											<h4 class="uk-sity-name">Кременчуг</h4>
+											<ul class="uk-shops-list">
+												<li><a href="#">Renault</a></li>
+												<li><a href="#">ParkDrive</a></li>
+											</ul>
+										</div>
+										<div class="uk-sity-shops-block">
+											<h4 class="uk-sity-name">Запорожье</h4>
+											<ul class="uk-shops-list">
+												<li><a href="#">Volkswagen</a></li>
+												<li><a href="#">Škoda</a></li>
+												<li><a href="#">ParkDrive</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					{{> footer/footer visible=true}}
+				</div>
+
+			</div>
+
+        {{> scripts/scripts}}
+    </body>
+
+</html>
