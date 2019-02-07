@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body>
+        %=symbols=%
+
+			<div class="uk-page">
+
+				<div class="uk-page-left">
+					{{> header/header dealers=false}}
+				</div>
+
+				<div class="uk-page-body">
+					{{> navbar/navbar}}
+
+					<section class="uk-section uk-section-partnership">
+						<div class="uk-container">
+							<div class="uk-heading uk-text-center">
+								<h1 class="uk-heading-title">Сотрудничество</h1>
+								<p>Солли Плюс реализует почти весь модельный ряд легковых автомобилей и внедорожников. Mercedes-Benz предоставляет сервис, качество которого контролируется компанией.</p>
+							</div>
+							<div class="uk-grid">
+								<div class="uk-row">
+									<div class="uk-col uk-width-1-3@s"></div>
+									<div class="uk-col uk-width-2-3@s"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+						
+					{{> footer/footer visible=true}}
+				</div>
+
+			</div>
+
+        {{> scripts/scripts}}
+    </body>
+
+</html>
