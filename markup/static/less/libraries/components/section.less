@@ -75,4 +75,11 @@
 .hook-section-secondary() {}
 .hook-section-primary() {}
 .hook-section-overlap() {}
-.hook-section-misc() {}
+.hook-section-misc() {
+  @media (max-width: @breakpoint-xsmall-max) {
+    .uk-section-xlarge {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+  }
+}

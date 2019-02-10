@@ -4,7 +4,14 @@ import 'nouislider';
 import Swiper from 'swiper';
 import Choices from 'choices.js';
 
+import $ from 'jquery';
+import drilldown from 'jquery-drilldown';
+
+
 function choicesInit() {
+
+    if (document.querySelectorAll('.uk-select').length === 0) return 
+
     const strToEl = (function() {
         const tmpEl = document.createElement('div');
         return function(str) {
@@ -295,7 +302,15 @@ function priceInit() {
     });
 }
 
+function drilldownInit() {
+    let options = {};
+    $('.drilldown').drilldown(options);
+}
+
 priceInit();
 swiperInit();
 swiperCarInit();
 choicesInit();
+drilldownInit();
+
+

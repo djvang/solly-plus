@@ -129,9 +129,26 @@
     padding-top: 40px;
     padding-bottom: 40px;
 
-    @media (max-width: @breakpoint-xsmall-max) {
-      padding-top: 8px;
-      padding-bottom: 8px;
+    @media (max-width: @breakpoint-small-max) {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    &.uk-sticky {
+      &.uk-active {
+        background-color: #fff;
+        color: @global-color;
+        box-shadow: 0px 5px 20px rgba(48, 48, 50, 0.07);
+
+        .uk-light .uk-navbar-nav > li.uk-active > a,
+        .uk-navbar-nav > li > a {
+          color: #303032
+        }
+
+        .uk-logo-description {
+          color: #ACACAE;
+        }
+      }
     }
   }
 
