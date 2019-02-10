@@ -1,0 +1,57 @@
+.drilldown {
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.drilldown-sub {
+  display: none;
+}
+
+.drilldown-root {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+
+  > li {
+    > a {
+      display: flex;
+      padding: 20px 25px;
+      color: @global-color;
+      line-height: normal;
+      
+      svg {
+        width: 1em;
+        height: 1em;
+        font-size: 1.2em;
+        margin-left: auto;
+        polyline {
+          stroke-width: 1.5
+        } 
+      }
+    }
+
+    &:not(:last-child) {
+      > a {
+        border-bottom: 1px solid #D9DADD;
+      }
+    }
+
+    &.drilldown-back {
+      > a {
+        color: #A5A8AD;
+        font-weight: 500;
+        svg {
+          order: -1;
+          margin-left: -0.3em;
+          margin-right: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+.drilldown-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin-right: 15px;
+}

@@ -48,6 +48,11 @@
     .uk-section-foreground {
       display: flex;
       align-items: flex-end;
+      pointer-events: none;
+
+      [class*='uk-width'] {
+        pointer-events: all;
+      }
     }
 
     @media (min-width: @breakpoint-small) {
