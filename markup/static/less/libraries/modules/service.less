@@ -1,0 +1,32 @@
+.hook-card-misc() {
+  
+  .uk-card-servise-news {
+    .uk-card-img {
+      height: 235px;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.hook-section-misc() {
+  .uk-section-service {
+    padding-top: 10px;
+  }
+}
+
+.hook-grid-misc() {
+  .uk-list-servise-news {
+    list-style: none;
+    padding-left: 0;
+  
+    li:nth-child(2n) {
+      .uk-card-servise-news {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
