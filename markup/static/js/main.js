@@ -6,6 +6,8 @@ import Choices from 'choices.js';
 
 import $ from 'jquery';
 import drilldown from 'jquery-drilldown';
+import datepicker from '@chenfengyuan/datepicker';
+$('[data-toggle="datepicker"]').datepicker();
 
 
 function choicesInit() {
