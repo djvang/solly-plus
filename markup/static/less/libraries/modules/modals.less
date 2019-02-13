@@ -1,0 +1,75 @@
+.uk-container-small {
+  max-width: 710px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+
+.uk-modal-test-drive {
+  overflow: hidden;
+  h6 {
+    font-weight: 300;
+  }
+
+  .uk-form-test-drive {
+    margin: 0 auto;
+  }
+}
+
+.uk-modal-record-service {
+  .uk-form-test-drive-record {
+    @media (min-width: @breakpoint-small) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .uk-col-left {
+      
+      @media (min-width: @breakpoint-small) {
+        width: 60%;
+        margin-right: 40px;
+      }
+    }
+
+    h6 {
+      font-weight: 300;
+    }
+
+    .uk-col-right {
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-grow: 1;
+
+      @media (min-width: @breakpoint-small) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .uk-form-choice-service {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.uk-modal-application-financial-service {
+  .uk-form-select {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  h6 {
+    font-weight: 300;
+  }
+
+  .uk-textarea {
+    height: 150px;
+    resize: none;
+    @media (min-width: @breakpoint-small) {
+      height: 230px;
+    }
+
+  }
+}

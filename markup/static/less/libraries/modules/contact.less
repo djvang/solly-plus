@@ -41,9 +41,26 @@
 	.uk-section-shopping-map {
 		.uk-section-map-country {
 			.uk-section-background {
-				right: auto;
-				left: -47%;
-				top: 0;
+				
+				@media (min-width: @breakpoint-small) {
+					right: 47%;
+					left: -47%;
+					top: 0;
+				}
+
+				@media (min-width: @breakpoint-medium) {
+					right: 40%;
+					left: -40%;
+				}
+
+				@media (min-width: 1450px) {
+					right: 25%;
+					left: -25%;
+				}
+				@media (min-width: @breakpoint-xlarge) {
+					right: 10%;
+					left: -10%;
+				}
 			}
 			.uk-section-foreground {
 				margin-left: auto;
