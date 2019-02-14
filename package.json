@@ -7,6 +7,7 @@
   "dependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
+    "@chenfengyuan/datepicker": "^1.0.6",
     "choices.js": "^4.1.4",
     "jquery": "^3.3.1",
     "jquery-drilldown": "^1.1.2",
