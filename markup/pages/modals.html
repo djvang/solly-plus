@@ -2,7 +2,7 @@
 <html class="no-js" lang="ru">
 
     <head>
-        {{> head/head head.defaults}}
+				{{> head/head head.defaults}}
     </head>
 
     <body>
@@ -17,15 +17,316 @@
 
                 <!-- This is the modal -->
                 <div id="modal-example" uk-modal>
-                    <div class="uk-modal-dialog uk-modal-body">
-                        <button class="uk-modal-close-outside" type="button" data-uk-close></button>
-                        <h2 class="uk-modal-title">Записаться на тест-драйв</h2>
-                        <form action="#" class="uk-form uk-form-testdrive">
-                          
-                        </form>
-                    </div>
+									
                 </div>
-    
+								
+
+								<div class="uk-container-small">
+									<div class="uk-modal-test-drive ">
+										<!-- <button class="uk-modal-close-outside" type="button" data-uk-close></button> -->
+										<h2 class="uk-modal-title">Записаться на тест-драйв</h2>
+										<form action="#" class="uk-form uk-form-test-drive uk-form-width-large">
+											<div>
+												<select class="uk-select uk-select-primary">
+													<option value="" disabled selected>Выберите марку авто</option>
+													<option value="Mercedes-Benz">Mercedes-Benz</option>
+													<option value="Volkswagen">Volkswagen</option>
+													<option value="Renault">Renault</option>
+													<option value="Opel">Opel</option>
+													<option value="Skoda">Skoda</option>
+													<option value="Ravon">Ravon</option>
+												</select>
+											</div>
+										</form>
+										<h6 class="uk-text-center uk-margin-medium-bottom">Выберите модель</h6>
+										<div class="swiper-container uk-models-hightlight uk-margin-large-bottom">
+												<!-- Additional required wrapper -->
+												<div class="swiper-wrapper uk-grid uk-child-width-1-3@s uk-grid-match" data-uk-grid="">
+														<!-- Slides -->
+														<div class="swiper-slide uk-first-column">
+																<a href="#" class="uk-card-model">
+																		<div class="uk-card-img">
+																				<img src="/static/img/content/img-1.png" alt="car-1">
+																		</div>
+																		<div class="uk-card-body">
+																				<h6 class="uk-card-title">Новый Logan</h6>
+																				<span>от 1 323 013 грн</span>
+																		</div>
+																</a>
+														</div>
+														<div class="swiper-slide">
+																<a href="#" class="uk-card-model">
+																		<div class="uk-card-img">
+																				<img src="/static/img/content/img-2.png" alt="car-1">
+																		</div>
+																		<div class="uk-card-body">
+																				<h6 class="uk-card-title">Новый Logan</h6>
+																				<span>от 1 323 013 грн</span>
+																		</div>
+																</a>
+														</div>
+														<div class="swiper-slide">
+																<a href="#" class="uk-card-model">
+																		<div class="uk-card-img">
+																				<img src="/static/img/content/img-3.png" alt="car-1">
+																		</div>
+																		<div class="uk-card-body">
+																				<h6 class="uk-card-title">Новый Logan</h6>
+																				<span>от 1 323 013 грн</span>
+																		</div>
+																</a>
+														</div>
+														<div class="swiper-slide">
+																<a href="#" class="uk-card-model">
+																		<div class="uk-card-img">
+																				<img src="/static/img/content/img-4.png" alt="car-1">
+																		</div>
+																		<div class="uk-card-body">
+																				<h6 class="uk-card-title">Новый Logan</h6>
+																				<span>от 1 323 013 грн</span>
+																		</div>
+																</a>
+														</div>
+														<div class="swiper-slide">
+																<a href="#" class="uk-card-model">
+																		<div class="uk-card-img">
+																				<img src="/static/img/content/img-1.png" alt="car-1">
+																		</div>
+																		<div class="uk-card-body">
+																				<h6 class="uk-card-title">Новый Logan</h6>
+																				<span>от 1 323 013 грн</span>
+																		</div>
+																</a>
+														</div>
+														<div class="swiper-slide">
+																<a href="#" class="uk-card-model">
+																		<div class="uk-card-img">
+																				<img src="/static/img/content/img-2.png" alt="car-1">
+																		</div>
+																		<div class="uk-card-body">
+																				<h6 class="uk-card-title">Новый Logan</h6>
+																				<span>от 1 323 013 грн</span>
+																		</div>
+																</a>
+														</div>
+														<div class="swiper-slide">
+																<a href="#" class="uk-card-model">
+																		<div class="uk-card-img">
+																				<img src="/static/img/content/img-3.png" alt="car-1">
+																		</div>
+																		<div class="uk-card-body">
+																				<h6 class="uk-card-title">Новый Logan</h6>
+																				<span>от 1 323 013 грн</span>
+																		</div>
+																</a>
+														</div>
+														<div class="swiper-slide">
+																<a href="#" class="uk-card-model">
+																		<div class="uk-card-img">
+																				<img src="/static/img/content/img-4.png" alt="car-1">
+																		</div>
+																		<div class="uk-card-body">
+																				<h6 class="uk-card-title">Новый Logan</h6>
+																				<span>от 1 323 013 грн</span>
+																		</div>
+																</a>
+														</div>
+												</div>
+												<!-- If we need pagination -->
+												<div class="swiper-pagination"></div>
+
+												<!-- If we need navigation buttons -->
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-button-next"></div>
+
+												<!-- If we need scrollbar -->
+												<div class="swiper-scrollbar"></div>
+										</div>
+										<div class="uk-grid uk-child-width-1-2@s">
+											<div class="uk-col">
+												<h6>Желаемая дата</h6>
+												<form action="#" class="uk-form-datepicker">
+													<input data-toggle="datepicker" class="uk-input">
+												</form>
+											</div>
+											<div class="uk-col">
+												<h6>Контактная информация</h6>
+												<form action="#" class="uk-form uk-form-test-drive-record uk-grid uk-child-width-1-1" data-uk-grid>
+													<div>
+														<input type="text" class="uk-input" placeholder="Ваше имя">
+													</div>
+													<div>
+														<input type="tel" class="uk-input" placeholder="Телефон">
+													</div>
+													<div>
+														<button class="uk-button uk-button-primary uk-button-small">Записаться на тест-драйв</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+
+									<div class="uk-modal-record-service">
+										<h2 class="uk-modal-title">Записаться на сервис</h2>
+										<form action="#" class="uk-form uk-form-choice-service uk-form-width-large uk-margin-large-bottom">
+											<div>
+												<select class="uk-select">
+													<option value="" disabled selected>Выберите сервисную станцию</option>
+													<option value="Mercedes-Benz">Mercedes-Benz</option>
+													<option value="Volkswagen">Volkswagen</option>
+													<option value="Renault">Renault</option>
+													<option value="Opel">Opel</option>
+													<option value="Skoda">Skoda</option>
+													<option value="Ravon">Ravon</option>
+												</select>
+											</div>
+										</form>
+										<form action="#" class="uk-form-test-drive-record">
+											<div class="uk-col uk-col-left uk-grid" data-uk-grid>
+												<h6>Информация об авто</h6>
+												<div class="uk-width-1-1">
+													<input type="text" class="uk-input" placeholder="Ваш автомобиль">
+												</div>
+												<div class="uk-width-1-2@s">
+													<input type="text" class="uk-input" placeholder="Год выпуска">
+												</div>
+												<div class="uk-width-1-2@s">
+														<input type="text" class="uk-input" placeholder="Пробег">
+												</div>
+												<div class="uk-width-1-1">
+													<input type="text" class="uk-input" placeholder="Гос. номер">
+												</div>
+											</div>
+											<div class="uk-col uk-col-right uk-grid" data-uk-grid>
+												<h6>Желаемая дата</h6>
+												<div class="uk-form-datepicker">
+													<input data-toggle="datepicker" class="uk-input">
+												</div>
+											</div>
+											<div class="uk-width-1-1 uk-margin-large-top">
+												<div class="uk-col-bottom uk-grid" data-uk-grid>
+													<h6 class="uk-width-1-1 uk-text-center">Контактная информация</h6>
+													<div class="uk-width-1-2@s">
+														<input type="text" class="uk-input" placeholder="Ваше имя">
+													</div>
+													<div class="uk-width-1-2@s">
+															<input type="tel" class="uk-input" placeholder="Телефон">
+													</div>
+													<div class="uk-width-1-1 uk-text-center">
+														<button class="uk-button uk-button-primary uk-button-small">Записаться на тест-драйв</button>
+													</div>
+												</div>
+											</div>
+											
+										</form>
+									</div>
+
+									<div class="uk-modal-application-financial-service">
+										<h2 class="uk-modal-title">Заявка на финансовый сервис</h2>
+										<form action="#" class="uk-form uk-form-application-financial-service">
+											<div class="uk-form-select uk-margin-large-bottom">
+												<div>
+													<select class="uk-select">
+														<option value="" disabled selected>Кредит, страхование, лизинг, trade-in</option>
+														<option value="Mercedes-Benz">Кредит</option>
+														<option value="Volkswagen">Страхование</option>
+														<option value="Renault">Лизинг</option>
+														<option value="Opel">Trade-in</option>
+													</select>
+												</div>
+											</div>
+											<h6 class="uk-text-center">Задайте вопрос нашему консультанту</h6>
+											<div class="uk-margin-large-bottom">
+												<textarea class="uk-input uk-textarea" placeholder="Текст сообщения"></textarea>
+											</div>
+											<div class="uk-width-1-1 uk-margin-large-top">
+												<div class="uk-col-bottom uk-grid" data-uk-grid>
+													<h6 class="uk-width-1-1 uk-text-center">Контактная информация</h6>
+													<div class="uk-width-1-2@s">
+														<input type="text" class="uk-input" placeholder="Ваше имя">
+													</div>
+													<div class="uk-width-1-2@s">
+															<input type="tel" class="uk-input" placeholder="Телефон">
+													</div>
+													<div class="uk-width-1-1 uk-text-center">
+														<button class="uk-button uk-button-primary uk-button-small">Записаться на тест-драйв</button>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+
+									<div class="uk-modal-summary">
+										<h2 class="uk-modal-title">Предложить свое резюме</h2>
+										<form action="#" class="uk-grid" data-uk-grid>
+											<div class="uk-col uk-width-1-2@s">
+												<h6>Контактная информация</h6>
+												<div class="uk-grid uk-child-width-1-1" data-uk-grid>
+													<div>
+														<input type="text" class="uk-input" placeholder="Ваше имя">
+													</div>
+													<div>
+														<input type="tel" class="uk-input" placeholder="Телефон">
+													</div>
+												</div>
+											</div>
+											<div class="uk-col uk-width-1-2@s">
+												<h6>Загрузка файлов</h6>
+												<div class="uk-resume-loading uk-margin-medium-bottom">
+													<a href="#" class="uk-loading">Прикрепите резюме</a>
+													<span class="uk-note">Загрузить файл (pdf, doc, txt)</span>
+												</div>
+												<div class="uk-photo-loading">
+													<a href="#" class="uk-loading">Прикрепите ваше фото</a>
+													<span class="uk-uploaded-file">myphoto.jpg</span>
+												</div>
+											</div>
+											<div class="uk-width-1-1 uk-text-center">
+												<button class="uk-button uk-button-primary uk-button-small">Оставить заявку консультанту</button>
+											</div>
+										</form>
+									</div>
+
+									<div class="uk-modal-application-cars">
+										<h2 class="uk-modal-title">Заявка на авто в наличии</h2>
+										<form action="#" class="uk-form uk-form-application-cars uk-grid uk-child-width-1-2@s" data-uk-grid>
+											<div class="uk-col">
+												<h6>Контактная информация</h6>
+												<div class="uk-grid uk-child-width-1-1" data-uk-grid>
+													<div>
+														<input type="text" class="uk-input" placeholder="Ваше имя">
+													</div>
+													<div>
+														<input type="tel" class="uk-input" placeholder="Телефон">
+													</div>
+													<div>
+														<button class="uk-button uk-button-primary uk-button-small">Отправить заявку</button>
+													</div>
+												</div>
+											</div>
+											<div class="uk-col">
+												<div>
+													<div class="uk-card-car">
+														<div class="uk-card-img"><img src="%=static=%img/content/car-img-1.jpg" alt="car"></div>
+														<div class="uk-card-body">
+															<h6 class="uk-card-title">Volkswagen New Touareg 3.6 TDI Comfortline AT 2018</h6>
+															<ul class="uk-card-specification">
+																<li>Двигатель:<span class="uk-specification-indicator">2.0, Бензин</span></li>
+																<li>Коробка передач:<span class="uk-specification-indicator">Автомат</span></li>
+																<li>Привод:<span class="uk-specification-indicator">Передний</span></li>
+																<li>Комплектация:<span class="uk-specification-indicator">Comfort</span></li>
+															</ul>
+															<div class="uk-price-holder">
+																<span class="uk-card-price">16 360 000 грн</span>
+																<span class="uk-card-real-price"><strike>13 360 000 грн</strike></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
             </div>
 
         </div>
