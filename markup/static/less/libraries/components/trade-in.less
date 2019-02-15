@@ -1,0 +1,75 @@
+.hook-card-misc() {
+  .uk-card-sequencing {
+    font-weight: 500;
+    padding-top: 30px;
+
+    .uk-card-body {
+      padding: 30px 0;
+    }
+
+    .uk-card-img {
+      svg {
+        width: 42px;
+        height: 42px;
+        fill: #376BC7;
+      }
+    }
+  }
+}
+
+.hook-section-misc() {
+  .uk-section-trade-in {
+    padding-top: 10px;
+    font-size: 16px;
+
+    .uk-heading {
+      font-size: 18px;
+    }
+
+    .uk-subtitle {
+      color: @global-muted-color;
+      font-weight: 300;
+    }
+
+    .uk-img-block {
+      height: 315px;
+      overflow: hidden;
+      border-radius: 10px;
+      img {
+        height: 100%;
+        width: 100%;
+        max-width: none;
+        object-fit: cover;
+      }
+    }
+    .uk-block-title {
+      font-weight: 500;
+    }
+
+    .uk-list-sequencing {
+      margin-top: -30px;
+      li {
+        position: relative;
+        &:before {
+          position: absolute;
+          content: "";
+          height: 30px;
+          width: 1px;
+          background: #D9DADD;
+          bottom: -30px;
+          left: 51px;
+          @media (min-width: @breakpoint-large) {
+            left: 61;
+            bottom: -40px;
+            height: 40px;
+          }
+        }
+        &:last-child {
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
