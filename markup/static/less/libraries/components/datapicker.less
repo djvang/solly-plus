@@ -1,0 +1,22 @@
+@import (less) "air-datepicker/dist/css/datepicker.css";
+
+.datepicker {
+  width: 100%;
+  border: 1px dashed #EAEBED;
+}
+
+.datepicker--day-name {
+  color: inherit;
+}
+
+.datepicker--cell.-selected-,
+.datepicker--cell.-selected-.-current-,
+.datepicker--cell.-selected-.-focus- {
+  background: @global-primary-background;
+}
+
+.datepicker--cell.-current-,
+.datepicker--cell.-current-.-focus-,
+.datepicker--cell.-current-.-in-range- {
+  color: @global-primary-background;
+}

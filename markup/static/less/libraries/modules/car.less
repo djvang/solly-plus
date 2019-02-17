@@ -1,15 +1,42 @@
 .hook-card-misc() {
+
+  label.uk-card-model {
+    cursor: pointer;
+
+    .uk-card-img {
+      border: 2px solid transparent;
+      border-radius: 10px;
+    }
+
+    > [type="checked"],
+    > [type="radio"] {
+      display: none;
+    }
+
+    input:checked {
+      ~ .uk-card-img {
+        border-color: #FBF659;
+      }
+      ~ * .uk-card-title {
+        color: @global-link-hover-color;
+      }
+    }
+
+  }
+
   .uk-card-model {
     font-size: @base-h6-font-size;
     color: @global-muted-color;
     text-align: center;
     display: block;
 
-    &:hover {
-      text-decoration: none;
-      color: @global-muted-color;
-      .uk-card-title {
-        color: @global-link-hover-color;
+    &[href] {
+      &:hover {
+        text-decoration: none;
+        color: @global-muted-color;
+        .uk-card-title {
+          color: @global-link-hover-color;
+        }
       }
     }
 
@@ -45,6 +72,35 @@
 
     &:hover {
       text-decoration: none;
+
+      &:not(.uk-card-car-preview) {
+        .uk-card-body {
+          margin-top: -220px;
+          background: linear-gradient(180deg, rgba(39, 146, 255, 0) -40%, rgba(39, 146, 255, 1) 60.28%, #2792FF 100%);
+          color: #fff;
+        }
+
+        .uk-card-title {
+          color: inherit;
+        }
+
+        .uk-card-real-price {
+          color: inherit;
+          opacity: 0.8;
+        }
+
+        .uk-card-price {
+          background-color: #fff;
+          color: @global-color;
+        }
+      }
+
+    }
+
+    &:not(:hover):not(.uk-card-car-preview) {
+      .uk-card-specification {
+        display: none;
+      }
     }
 
     .uk-card-img {
@@ -66,7 +122,7 @@
       flex-grow: 1;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-end;
 
       &:before, &:after {
         display: none;
@@ -76,8 +132,9 @@
     .uk-card-specification {
       list-style: none;
       padding-left: 0;
-      color: @global-color;
       margin-top: 0;
+      font-size: 14px;
+
       .uk-specification-indicator {
         font-weight: 500;
         padding-left: 3px;
@@ -93,7 +150,7 @@
 
     .uk-card-price {
       display: inline-block;
-      padding: 5px 7px;
+      padding: 6px 10px;
       background-color: @global-success-background;
       color: @global-inverse-color;
       font-size: 16px;
@@ -105,6 +162,20 @@
     .uk-card-real-price {
       font-size: 14px;
       color: @global-muted-color;
+    }
+  }
+
+  .uk-card-car-preview {
+    box-shadow: none;
+    .uk-card-img {
+      img {
+        border-radius: 10px;
+      }
+    }
+
+    .uk-card-body {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
@@ -329,8 +400,7 @@
     line-height: normal;
     display: flex;
     align-items: center;
-    margin-left: 0;
-    margin-right: 0;
+    margin: -10px;
 
     > * {
       margin: 10px;

@@ -2,6 +2,15 @@
 }
 
 .hook-section-misc() {
+	.uk-hero-contacts-map {
+		.uk-hero-foreground {
+			pointer-events: none;
+			 .uk-hero-header,
+			 .uk-hero-body .uk-container {
+				 pointer-events: auto;
+			 }
+		}
+	}
 	.uk-hero-contacts {
 		.uk-hero-foreground {
 			@media (min-width: @breakpoint-medium) {
@@ -21,7 +30,7 @@
 		}
 		
 		.uk-hero-overlay {
-			opacity: .6;
+			opacity: 1;
 		}
 
 		.uk-col-contacts {
@@ -75,6 +84,7 @@
 			}
 			.uk-section-foreground {
 				margin-left: auto;
+				pointer-events: auto;
 			}
 			.uk-sity-shops-block {
 				.uk-sity-name {

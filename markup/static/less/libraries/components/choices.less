@@ -50,7 +50,7 @@
 
   .uk-select-primary {
     ~ .choices__list--dropdown {
-      box-shadow: 0 5px 20px rgba(39, 146, 255, 0.07);
+      box-shadow: 0px 5px 10px rgba(39, 146, 255, 0.3);
       background-color: @global-primary-background;
       border-color: rgba(255, 255, 255, 0.15);
       border-left-color: transparent;
@@ -106,6 +106,9 @@
   
   .choices__item--selectable {
     cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   .is-highlighted {

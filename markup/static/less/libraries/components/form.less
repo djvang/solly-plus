@@ -179,11 +179,21 @@
   }
   .uk-select-primary:not([multiple]):not([size]) {
     background-image: url(@internal-form-select-image-inverse);
+    box-shadow: 0px 5px 10px rgba(39, 146, 255, 0.3);
   }
 
   .uk-form-width-large {
     @media (max-width: @breakpoint-xsmall-max) {
-      width: 240px;
+      width: 230px;
+    }
+  }
+
+  .uk-form-label {
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    @media (max-width: @breakpoint-xsmall-max) {
+      margin-bottom: 24px;
     }
   }
 }
