@@ -122,6 +122,37 @@
 
 .hook-section-misc() {
 
+  .uk-section-background-decore {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    svg {
+      width: auto;
+      height: auto;
+    }
+    @media (min-width: @breakpoint-small) {
+      display: block; 
+    } 
+  }
+
+  .uk-section-about-us {
+    .uk-section-background-decore {
+      top: auto;
+      right: auto;
+      
+    } 
+    .uk-section-background {
+      bottom: 150px;
+    }
+    .uk-section-foreground {
+      z-index: 1;
+    }
+  }
+
   .uk-section-car {
     padding-top: 10px;
   }
@@ -133,6 +164,15 @@
   .uk-section-cars-empty {
     padding-top: 10px;
     padding-bottom: 0;
+
+    .uk-section-background-decore {
+      top: auto;
+      left: auto;
+      bottom: -50px;
+    } 
+    .uk-section-foreground {
+      z-index: 1;
+    }
   }
 
   .uk-car-heading {
