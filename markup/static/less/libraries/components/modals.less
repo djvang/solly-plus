@@ -72,7 +72,9 @@
 }
 .hook-modal-full() {}
 .hook-modal-header() {}
-.hook-modal-body() {}
+.hook-modal-body() {
+  overflow: hidden;
+}
 .hook-modal-footer() {}
 .hook-modal-title() {
   font-weight: normal;
@@ -83,8 +85,26 @@
 .hook-modal-close-hover() {}
 .hook-modal-close-default() {}
 .hook-modal-close-default-hover() {}
-.hook-modal-close-outside() {}
-.hook-modal-close-outside-hover() {}
+.hook-modal-close-outside() {
+  svg {
+    width: 1em;
+    height: 1em;
+    font-size: 24px;
+    opacity: 0.5;
+  }
+}
+.hook-modal-close-outside-hover() {
+  svg {
+    opacity: 1;
+  }
+}
 .hook-modal-close-full() {}
 .hook-modal-close-full-hover() {}
-.hook-modal-misc() {}
+.hook-modal-misc() {
+  .uk-modal-close-outside {
+    @media (min-width: @breakpoint-medium) {
+      top: 35px;
+      right: -15px;
+    }
+  }
+}

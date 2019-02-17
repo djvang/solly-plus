@@ -21,7 +21,9 @@ module.exports = {
         "webpack": {
             "useHMR": false,
             "providePlugin": {
-                noUiSlider: 'nouislider'
+                noUiSlider: 'nouislider',
+                $: "jquery",
+                jQuery: "jquery",
             }
         },
         "jsPathsToConcatBeforeModulesJs": [],

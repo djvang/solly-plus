@@ -3,9 +3,13 @@
     color: @global-color;
     font-size: 12px;
 
-    &:hover {
-      .uk-card-title {
-        color: @global-link-hover-color;
+    &[href] {
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+        .uk-card-title {
+          color: @global-link-hover-color;
+        }
       }
     }
 

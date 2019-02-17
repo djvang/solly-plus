@@ -6,8 +6,15 @@ import Choices from 'choices.js';
 
 import $ from 'jquery';
 import drilldown from 'jquery-drilldown';
-import datepicker from '@chenfengyuan/datepicker';
-$('[data-toggle="datepicker"]').datepicker();
+import datepicker from 'air-datepicker';
+import Inputmask from "inputmask";
+
+
+UIkit.util.on('[data-uk-modal]', 'shown', function () {
+    window.dispatchEvent(new Event('resize'));
+});
+
+Inputmask().mask(document.querySelectorAll("input"));
 
 
 function choicesInit() {
@@ -180,6 +187,7 @@ function swiperCarInit() {
 
     let general = new Swiper('.uk-car-gallery-general', {
         spaceBetween: 10,
+        freeMode: false,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -202,7 +210,7 @@ function swiperCarInit() {
 }
 
 function swiperInit() {
-    document.querySelectorAll('.swiper-container').forEach(function(swiper) {
+    document.querySelectorAll('.swiper-container:not(.uk-car-gallery-general)').forEach(function(swiper) {
         new Swiper(swiper, {
             scrollbar: {
                 el: swiper.querySelector('.swiper-scrollbar'),
@@ -309,10 +317,16 @@ function drilldownInit() {
     $('.drilldown').drilldown(options);
 }
 
+function datepickerInit() {
+    $('[data-toggle="datepicker"]').datepicker({
+        inline: true
+    });
+}
+
 priceInit();
 swiperInit();
 swiperCarInit();
 choicesInit();
 drilldownInit();
-
+datepickerInit();
 
