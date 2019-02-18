@@ -1,146 +1,155 @@
 <!doctype html>
 <html class="no-js" lang="ru">
 
-    <head>
-        {{> head/head head.defaults}}
-    </head>
+<head>
+    {{> head/head head.defaults}}
+</head>
 
-    <body>
-        %=symbols=%
+<body>
+    %=symbols=%
 
-        <div class="uk-page">
+    <div class="uk-page">
 
-            <div class="uk-page-left">
-              {{> header/header dealers=false}}
-            </div>
-
-            <div class="uk-page-body">
-							{{> navbar/navbar}}
-							
-							<section class="uk-section-news-overview uk-section">
-								<div class="uk-container">
-									<div class="uk-heading">
-										<h1 class="uk-heading-title">Новости Mitsubishi Харьков</h1>
-									</div>
-									<form action="#" class="uk-filter-news">
-										<div class="uk-margin-medium uk-child-width-1-3@m">
-											<select class="uk-select uk-select-secondary">
-												<option>Mitsubishi</option>
-												<option>Skoda</option>
-												<option>Renault</option>
-											</select>
-										</div>
-										<div class="uk-grid uk-child-width-auto" data-uk-grid>
-											<div>
-												<label><input class="uk-radio" type="radio" name="radio">Новости бренда</label>
-											</div>
-											<div>
-												<label><input class="uk-radio" type="radio" name="radio">Новости дилера</label>
-											</div>
-											<div>
-												<label><input class="uk-checkbox" type="checkbox">Новости</label>
-											</div>
-											<div>
-												<label><input class="uk-checkbox" type="checkbox">Мероприятия</label>
-											</div>
-										</div>
-									</form>
-									<div class="uk-grid uk-list-news uk-grid-match" data-uk-grid>
-										<article class="uk-news-item">
-											<div class="uk-card uk-card-news">
-												<a href="#" class="uk-card-img"><img src="%=static=%img/content/news-img-1.jpg" alt="img"></a>
-												<div class="uk-card-body">
-													<div class="uk-body-top">
-														<span class="uk-card-date">27 августа 2017</span>
-														<h5 class="uk-card-title"><a href="#">ŠKODA уже 14 лет является официальным партнером самой масштабной велогонки мира</a></h5>
-													</div>
-													<a href="#" class="uk-card-city">Автоцентр Škoda Харьков</a>
-												</div>
-											</div>
-										</article>
-										<article class="uk-news-item">
-											<div class="uk-card uk-card-news">
-												<a href="#" class="uk-card-img"><img src="%=static=%img/content/news-img-2.jpg" alt="img"></a>
-												<div class="uk-card-body">
-													<div class="uk-body-top">
-														<span class="uk-card-date">27 августа 2017</span>
-														<h5 class="uk-card-title"><a href="#">Гольф турнир MercedesTrophy в Украине сделает паузу в 2018 году</a></h5>
-													</div>
-													<a href="#" class="uk-card-city">Грузовики Mercedes-Benz Харьков</a>
-												</div>
-											</div>
-										</article>
-										<article class="uk-news-item">
-											<div class="uk-card uk-card-news">
-												<a href="#" class="uk-card-img"><img src="%=static=%img/content/renault-2.png" alt="img"></a>
-												<div class="uk-card-body">
-													<div class="uk-body-top">
-														<span class="uk-card-date">27 августа 2017</span>
-														<h5 class="uk-card-title"><a href="#">Renault объявила финалистов конкурса молодых дизайнеров «Будущее автономного транспорта в Украины»</a></h5>
-													</div>
-													<a href="#" class="uk-card-city">Автоцентр Renault Полтава</a>
-												</div>
-											</div>
-										</article>
-										<article class="uk-news-item">
-											<div class="uk-card uk-card-news">
-												<a href="#" class="uk-card-img"><img src="%=static=%img/content/news-img-3.jpg" alt="img"></a>
-												<div class="uk-card-body">
-													<div class="uk-body-top">
-														<span class="uk-card-date">27 августа 2017</span>
-														<h5 class="uk-card-title"><a href="#">На выставке коммерческого транспорта IAA IVECO вошла в историю, полностью отказавшись от дизельных автомобилей на своем стенде</a></h5>
-													</div>
-													<a href="#" class="uk-card-city">Грузовики IVECO Харьков</a>
-												</div>
-											</div>
-										</article>
-										<article class="uk-news-item">
-											<div class="uk-card uk-card-news">
-												<a href="#" class="uk-card-img"><img src="%=static=%img/content/news-img-4.jpg" alt="img"></a>
-												<div class="uk-card-body">
-													<div class="uk-body-top">
-														<span class="uk-card-date">27 августа 2017</span>
-														<h5 class="uk-card-title"><a href="#">Пикапы Mitsubishi: 40 лет успеха во всем мире</a></h5>
-													</div>
-													<a href="#" class="uk-card-city">Автоцентр Mitsubishi Харьков</a>
-												</div>
-											</div>
-										</article>
-										<article class="uk-news-item">
-											<div class="uk-card uk-card-news">
-												<a href="#" class="uk-card-img"><img src="%=static=%img/content/news-img-5.jpg" alt="img"></a>
-												<div class="uk-card-body">
-													<div class="uk-body-top">
-														<span class="uk-card-date">27 августа 2017</span>
-														<h5 class="uk-card-title"><a href="#">Восставший из, или какой смысл в «cамом дешевом автомобиле с автоматом»?</a></h5>
-													</div>
-													<a href="#" class="uk-card-city">Автоцентр Ravon Харьков</a>
-												</div>
-											</div>
-										</article>
-										<article class="uk-news-item">
-											<div class="uk-card uk-card-news">
-												<a href="#" class="uk-card-img"><img src="%=static=%img/content/news-img-6.jpg" alt="img"></a>
-												<div class="uk-card-body">
-													<div class="uk-body-top">
-														<span class="uk-card-date">27 августа 2017</span>
-														<h5 class="uk-card-title"><a href="#">Компания Volkswagen впервые в истории создает кроссовер, в котором не к чему придраться</a></h5>
-													</div>
-													<a href="#" class="uk-card-city">Автоцентр Volkswagen Полтава</a>
-												</div>
-											</div>
-										</article>
-									</div>
-									<a href="#" class="uk-load-more uk-load-more-secondary uk-text-center"><span class="uk-btn-icon">{{Icon iconName="arrow-rotate"}}</span> Показать еще</a>
-								</div>
-							</section>
-                
-              {{> footer/footer visible=true}}
-            </div>
-
+        <div class="uk-page-left">
+            {{> header/header dealers=false}}
         </div>
 
-        {{> scripts/scripts}}
-    </body>
+        <div class="uk-page-body">
+            {{> navbar/navbar}}
+
+            <section class="uk-section-news-overview uk-section">
+                <div class="uk-container">
+                    <div class="uk-heading">
+                        <h1 class="uk-heading-title">Новости Mitsubishi Харьков</h1>
+                    </div>
+                    <form action="#" class="uk-filter-news">
+                        <div class="uk-margin-medium uk-child-width-1-3@m">
+                            <select class="uk-select uk-select-secondary">
+                                <option>Mitsubishi</option>
+                                <option>Skoda</option>
+                                <option>Renault</option>
+                            </select>
+                        </div>
+                        <div class="uk-grid uk-child-width-auto" data-uk-grid>
+                            <div>
+                                <label><input class="uk-radio" type="radio" name="radio">Новости бренда</label>
+                            </div>
+                            <div>
+                                <label><input class="uk-radio" type="radio" name="radio">Новости дилера</label>
+                            </div>
+                            <div>
+                                <label><input class="uk-checkbox" type="checkbox">Новости</label>
+                            </div>
+                            <div>
+                                <label><input class="uk-checkbox" type="checkbox">Мероприятия</label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="uk-grid uk-list-news uk-grid-match" data-uk-grid>
+                        <article class="uk-news-item">
+                            <div class="uk-card uk-card-news">
+                                <a href="#" class="uk-card-img"><img src="%=static=%img/content/news-img-1.jpg" alt="img"></a>
+                                <div class="uk-card-body">
+                                    <div class="uk-body-top">
+                                        <span class="uk-card-date">27 августа 2017</span>
+                                        <h5 class="uk-card-title"><a href="#">ŠKODA уже 14 лет является официальным
+                                                партнером самой масштабной велогонки мира</a></h5>
+                                    </div>
+                                    <a href="#" class="uk-card-city">Автоцентр Škoda Харьков</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="uk-news-item">
+                            <div class="uk-card uk-card-news">
+                                <a href="#" class="uk-card-img"><img src="%=static=%img/content/news-img-2.jpg" alt="img"></a>
+                                <div class="uk-card-body">
+                                    <div class="uk-body-top">
+                                        <span class="uk-card-date">27 августа 2017</span>
+                                        <h5 class="uk-card-title"><a href="#">Гольф турнир MercedesTrophy в Украине
+                                                сделает паузу в 2018 году</a></h5>
+                                    </div>
+                                    <a href="#" class="uk-card-city">Грузовики Mercedes-Benz Харьков</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="uk-news-item">
+                            <div class="uk-card uk-card-news">
+                                <a href="#" class="uk-card-img"><img src="%=static=%img/content/renault-2.png" alt="img"></a>
+                                <div class="uk-card-body">
+                                    <div class="uk-body-top">
+                                        <span class="uk-card-date">27 августа 2017</span>
+                                        <h5 class="uk-card-title"><a href="#">Renault объявила финалистов конкурса
+                                                молодых дизайнеров «Будущее автономного транспорта в Украины»</a></h5>
+                                    </div>
+                                    <a href="#" class="uk-card-city">Автоцентр Renault Полтава</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="uk-news-item">
+                            <div class="uk-card uk-card-news">
+                                <a href="#" class="uk-card-img"><img src="%=static=%img/content/news-img-3.jpg" alt="img"></a>
+                                <div class="uk-card-body">
+                                    <div class="uk-body-top">
+                                        <span class="uk-card-date">27 августа 2017</span>
+                                        <h5 class="uk-card-title"><a href="#">На выставке коммерческого транспорта IAA
+                                                IVECO вошла в историю, полностью отказавшись от дизельных автомобилей
+                                                на своем стенде</a></h5>
+                                    </div>
+                                    <a href="#" class="uk-card-city">Грузовики IVECO Харьков</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="uk-news-item">
+                            <div class="uk-card uk-card-news">
+                                <a href="#" class="uk-card-img"><img src="%=static=%img/content/news-img-4.jpg" alt="img"></a>
+                                <div class="uk-card-body">
+                                    <div class="uk-body-top">
+                                        <span class="uk-card-date">27 августа 2017</span>
+                                        <h5 class="uk-card-title"><a href="#">Пикапы Mitsubishi: 40 лет успеха во всем
+                                                мире</a></h5>
+                                    </div>
+                                    <a href="#" class="uk-card-city">Автоцентр Mitsubishi Харьков</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="uk-news-item">
+                            <div class="uk-card uk-card-news">
+                                <a href="#" class="uk-card-img"><img src="%=static=%img/content/news-img-5.jpg" alt="img"></a>
+                                <div class="uk-card-body">
+                                    <div class="uk-body-top">
+                                        <span class="uk-card-date">27 августа 2017</span>
+                                        <h5 class="uk-card-title"><a href="#">Восставший из, или какой смысл в «cамом
+                                                дешевом автомобиле с автоматом»?</a></h5>
+                                    </div>
+                                    <a href="#" class="uk-card-city">Автоцентр Ravon Харьков</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="uk-news-item">
+                            <div class="uk-card uk-card-news">
+                                <a href="#" class="uk-card-img"><img src="%=static=%img/content/news-img-6.jpg" alt="img"></a>
+                                <div class="uk-card-body">
+                                    <div class="uk-body-top">
+                                        <span class="uk-card-date">27 августа 2017</span>
+                                        <h5 class="uk-card-title"><a href="#">Компания Volkswagen впервые в истории
+                                                создает кроссовер, в котором не к чему придраться</a></h5>
+                                    </div>
+                                    <a href="#" class="uk-card-city">Автоцентр Volkswagen Полтава</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <a href="#" class="uk-load-more uk-load-more-secondary uk-text-center"><span class="uk-btn-icon">{{Icon
+                            iconName="arrow-rotate"}}</span> Показать еще</a>
+                </div>
+            </section>
+
+            {{> footer/footer visible=true}}
+        </div>
+
+    </div>
+
+    {{> scripts/scripts}}
+</body>
 
 </html>

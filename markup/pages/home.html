@@ -1,857 +1,909 @@
 <!doctype html>
 <html class="no-js" lang="ru">
 
-    <head>
-        {{> head/head head.defaults}}
-    </head>
+<head>
+    {{> head/head head.defaults}}
+</head>
 
-    <body>
-        %=symbols=%
+<body>
+    %=symbols=%
 
-        <div class="uk-page">
+    <div class="uk-page">
 
-            <div class="uk-page-left">
-                {{> header/header dealers=false}}
-            </div>
-
-            <div class="uk-page-body">
-                <div class="uk-hero uk-hero-main">
-                    <div class="uk-hero-background">
-                        <img class="uk-hero-object" src="%=static=%img/content/hero-image.jpg" alt="">
-                    </div>
-                    <div class="uk-hero-overlay uk-background-primary"></div>
-                    <div class="uk-hero-foreground">
-                        <div class="uk-hero-header uk-light">
-                            {{> navbar/navbar inverse=true}}
-                        </div>
-                        <div class="uk-hero-body uk-light">
-                            <div class="uk-container">
-                                <div class="uk-hero-heading">Солли Плюс</div>
-                                <div class="uk-hero-description">Международный автомобильный холдинг </div>
-                                <div class="uk-hero-arrow">{{Icon iconName="arrow-bottom"}}</div>
-                            </div>
-                        </div>
-                        <div class="uk-hero-footer">
-                            <div class="uk-container">
-                                <div class="uk-grid uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid>
-                                    <div>
-                                        <a href="#" class="uk-card uk-card-feature">
-                                            <div class="uk-card-left">
-                                                <div class="uk-card-icon">
-                                                    {{Icon iconName="steering-wheel"}}
-                                                </div>
-                                            </div>
-                                            <div class="uk-card-body">
-                                                <div class="uk-card-title">Записаться на тест-драйв</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="uk-card uk-card-feature">
-                                            <div class="uk-card-left">
-                                                <div class="uk-card-icon">
-                                                    {{Icon iconName="cogwheels"}}
-                                                </div>
-                                            </div>
-                                            <div class="uk-card-body">
-                                                <div class="uk-card-title">Записаться на сервис</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <a href="#" class="uk-card uk-card-feature">
-                                            <div class="uk-card-left">
-                                                <div class="uk-card-icon">
-                                                    {{Icon iconName="manager"}}
-                                                </div>
-                                            </div>
-                                            <div class="uk-card-body">
-                                                <div class="uk-card-title">Финансовый сервис</div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="uk-section uk-section-xlarge uk-section-brands-highlight">
-                    <div class="uk-section-foreground">
-                        <div class="uk-container">
-                            <div class="swiper-container uk-brands-highlight">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper uk-grid uk-child-width-1-5@s uk-grid-match" data-uk-grid>
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/mercedes-benz.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Mercedes-Benz</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/vw.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Volkswagen</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/renault.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Renault</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/skoda.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Skoda</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#"class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/mitsubushi.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Mitsubushi</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/mercedes-benz.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Mercedes-Benz</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/vw.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Volkswagen</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/renault.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Renault</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/skoda.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Skoda</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#"class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/mitsubushi.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Mitsubushi</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/mercedes-benz.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Mercedes-Benz</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/vw.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Volkswagen</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/renault.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Renault</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/skoda.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Skoda</h5>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#"class="uk-card uk-card-brand">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/mitsubushi.png" alt="">
-                                            </div>
-                                            <h5 class="uk-card-title">Mitsubushi</h5>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="uk-section uk-section-filter-cars">
-                    <div class="uk-section-background uk-background-muted"></div>
-					<div class="uk-section-background-decore">{{Icon iconName="bg-decore-2"}}</div>
-                    <div class="uk-section-foreground">
-                        <div class="uk-container">
-                            <div class="uk-heading">
-                                <h2 class="uk-heading-title">Подобрать автомобиль в наличии</h2>
-                            </div>
-                            <form action="#" class="uk-filter uk-filter-cars">
-
-                                <div class="uk-grid uk-flex-center uk-filter-controls" data-uk-grid>
-                                    <div>
-                                        <select class="uk-select uk-form-width-large uk-select-primary">
-                                            <option value="" disabled selected>Выберите марку авто</option>
-                                            <option value="Mercedes-Benz">Mercedes-Benz</option>
-                                            <option value="Volkswagen">Volkswagen</option>
-                                            <option value="Renault">Renault</option>
-                                            <option value="Opel">Opel</option>
-                                            <option value="Skoda">Skoda</option>
-                                            <option value="Ravon">Ravon</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <select class="uk-select uk-select-secondary uk-form-width-medium">
-                                            <option value="" disabled selected>Тип КПП</option>
-                                            <option value="1">Тип КПП 1</option>
-                                            <option value="2">Тип КПП 2</option>
-                                            <option value="3">Тип КПП 3</option>
-                                            <option value="4">Тип КПП 4</option>
-                                            <option value="5">Тип КПП 5</option>
-                                            <option value="6">Тип КПП 6</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <select class="uk-select uk-select-secondary uk-form-width-medium">
-                                            <option value="" disabled selected>Кузов</option>
-                                            <option value="1">Кузов 1</option>
-                                            <option value="2">Кузов 2</option>
-                                            <option value="3">Кузов 3</option>
-                                            <option value="4">Кузов 4</option>
-                                            <option value="5">Кузов 5</option>
-                                            <option value="6">Кузов 6</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="uk-price uk-filter-price" data-nouislider>
-                                    <div class="uk-price-inputs">
-                                        <input type="text" data-nouislider-from class="uk-input uk-input-secondary">
-                                        <div class="uk-price-divider"></div>
-                                        <input type="text" data-nouislider-to class="uk-input uk-input-secondary">
-                                    </div>
-                                    <div class="uk-price-range">
-                                        <div data-nouislider-range></div>
-                                    </div>
-                                </div>
-
-                                <div class="uk-filter-result">Найдено 482 варианта</div>
-
-                                <div class="uk-filter-actions">
-                                    <button type="submit" class="uk-button uk-button-primary uk-button-small">Показать</button>
-                                </div>
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="uk-section uk-section-models-highlight">
-                    <div class="uk-section-foreground">
-                        <div class="uk-container">
-                            <div class="uk-heading uk-text-center">
-                                <h3 class="uk-heading-title">Модельный ряд автосалонов Солли Плюс</h3>
-                            </div>
-                            <div class="swiper-container uk-models-hightlight">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper uk-grid uk-child-width-1-3@s uk-grid-match" data-uk-grid>
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-model">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/img-1.png" alt="car-1">
-                                            </div>
-                                            <div class="uk-card-body">
-                                                <h6 class="uk-card-title">Новый Logan</h6>
-                                                <span>от 1 323 013 грн</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-model">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/img-2.png" alt="car-1">
-                                            </div>
-                                            <div class="uk-card-body">
-                                                <h6 class="uk-card-title">Новый Logan</h6>
-                                                <span>от 1 323 013 грн</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-model">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/img-3.png" alt="car-1">
-                                            </div>
-                                            <div class="uk-card-body">
-                                                <h6 class="uk-card-title">Новый Logan</h6>
-                                                <span>от 1 323 013 грн</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-model">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/img-4.png" alt="car-1">
-                                            </div>
-                                            <div class="uk-card-body">
-                                                <h6 class="uk-card-title">Новый Logan</h6>
-                                                <span>от 1 323 013 грн</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-model">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/img-1.png" alt="car-1">
-                                            </div>
-                                            <div class="uk-card-body">
-                                                <h6 class="uk-card-title">Новый Logan</h6>
-                                                <span>от 1 323 013 грн</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-model">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/img-2.png" alt="car-1">
-                                            </div>
-                                            <div class="uk-card-body">
-                                                <h6 class="uk-card-title">Новый Logan</h6>
-                                                <span>от 1 323 013 грн</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-model">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/img-3.png" alt="car-1">
-                                            </div>
-                                            <div class="uk-card-body">
-                                                <h6 class="uk-card-title">Новый Logan</h6>
-                                                <span>от 1 323 013 грн</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-model">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/img-4.png" alt="car-1">
-                                            </div>
-                                            <div class="uk-card-body">
-                                                <h6 class="uk-card-title">Новый Logan</h6>
-                                                <span>от 1 323 013 грн</span>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- If we need pagination -->
-                                <div class="swiper-pagination"></div>
-
-                                <!-- If we need navigation buttons -->
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-
-                                <!-- If we need scrollbar -->
-                                <div class="swiper-scrollbar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="uk-section uk-section-info">
-                    <div class="uk-section-foreground">
-                        <div class="uk-container">
-                            <div class="uk-info-box">
-                                <div class="uk-row">
-                                    <div class="uk-col">
-                                        <div class="uk-card uk-card-info uk-light">
-                                            <div class="uk-card-background">
-                                                <img src="%=static=%img/content/img-1.jpg" alt="img">
-                                            </div>
-                                            <div class="uk-card-overlay uk-background-13"></div>
-                                            <div class="uk-card-foreground">
-                                                <div class="uk-card-body">
-                                                    <h2 class="uk-card-title">Страхование</h2>
-                                                    <p>Мы предлагаем вам самые актуальные и выгодные условия на рынке автостраховани</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-col">
-                                        <div class="uk-card uk-card-info uk-card-info-2">
-                                            <div class="uk-card-foreground">
-                                                <div class="uk-card-body">
-                                                    <span class="uk-card-icon">{{Icon iconName="crediting"}}</span>
-                                                    <h2 class="uk-card-title">Кредитование</h2>
-                                                    <p>Cпециальные кредитные программы разработанные совместно с нашими финансовыми партнерами</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="uk-row">
-                                    <div class="uk-col">
-                                        <div class="uk-card uk-card-info">
-                                            <div class="uk-card-background">
-                                                <img src="%=static=%img/content/img-2.jpg" alt="img">
-                                            </div>
-                                            <div class="uk-card-overlay uk-background-14"></div>
-                                            <div class="uk-card-foreground">
-                                                <div class="uk-card-body">
-                                                    <h2 class="uk-card-title">Лизинг</h2>
-                                                    <p>Право собственности на автомобиль переходит к клиенту сразу после окончания срока лизинга</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-col">
-                                        <div class="uk-card uk-card-info uk-card-info-2">
-                                            <div class="uk-card-foreground">
-                                                <div class="uk-card-body">
-                                                    <span class="uk-card-icon">{{Icon iconName="trade-in"}}</span>
-                                                    <h2 class="uk-card-title">Trade-in</h2>
-                                                    <p>Вы сдаете нам свой подержанный автомобиль и уезжаете от нас на новом</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="uk-section uk-section-services-highlight">
-                    <div class="uk-section-foreground">
-                        <div class="uk-container">
-                            <div class="uk-heading uk-text-center">
-                                <h3 class="uk-heading-title">Услуги сервиса Солли Плюс</h3>
-                            </div>
-                            <div class="uk-grid uk-child-width-1-3@s uk-grid-match uk-services-highlight" data-uk-grid>
-                                <div>
-                                    <a href="#" class="uk-card-service">
-                                        <strong>Техническое	обслуживание</strong>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#" class="uk-card-service">
-                                        <strong>Диагностика авто</strong>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#" class="uk-card-service">
-                                        <strong>Дополнительное оборудование</strong>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#" class="uk-card-service">
-                                        <strong>Установка ГБО</strong>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#" class="uk-card-service">
-                                        <strong>Кузовные работы</strong>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#" class="uk-card-service">
-                                        <strong>Мойка</strong>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#" class="uk-card-service">
-                                        <strong>Озоновая обработка</strong>
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#" class="uk-card-service">
-                                        <strong>Assistance</strong>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="uk-section uk-section-stocks-highlight">
-                    <div class="uk-section-foreground">
-                        <div class="uk-container">
-                            <div class="uk-heading uk-text-center">
-                                <h3 class="uk-heading-title">Акции и специальные предложения</h3>
-                            </div>
-                            <div class="swiper-container uk-stocks-hightlight">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper uk-grid uk-child-width-1-3@s uk-grid-match" data-uk-grid>
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-background-2 uk-light">
-                                            <span class="city">Renault Харьков, Полтава</span>
-                                            <strong>Техническая помощь на дорогах</strong>
-                                            <span class="date">с 1 ноября по 22 декабря 2018</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-background-3 uk-light">
-                                            <span class="city">Mitsubishi Харьков</span>
-                                            <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
-                                            <span class="date">с 1 декабря 2018 по 1 февраля 2019</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-background-4 uk-light">
-                                            <span class="city">Renault Полтава</span>
-                                            <strong>Предложение для новых участников MY Renault</strong>
-                                            <span class="date">с 1 ноября по 22 декабря 2018</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-background-5 uk-light">
-                                            <span class="city">Volkswagen Харьков</span>
-                                            <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному предложению от Солли Плюс</strong>
-                                            <span class="date">с 1 ноября по 22 декабря 2018</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-background-6 uk-light">
-                                            <span class="city">Mercedes-Benz</span>
-                                            <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
-                                            <span class="date">с 1 ноября по 22 декабря 2018</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-background-7 uk-light">
-                                            <span class="city">IVECO Харьков</span>
-                                            <strong>Техническая помощь на дорогах</strong>
-                                            <span class="date">с 1 ноября по 22 декабря 2018</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-background-8 uk-light">
-                                            <span class="city">Hyundai Trucks Сервис Харьков</span>
-                                            <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному предложению от Солли Плюс</strong>
-                                            <span class="date">с 1 ноября по 22 декабря 2018</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-background-9 uk-light">
-                                            <span class="city">Ravon Харьков</span>
-                                            <strong>Предложение для новых участников MY Renault</strong>
-                                            <span class="date">Бессрочно</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-background-10 uk-light">
-                                            <span class="city">Ford Trucks Сервис Харьков</span>
-                                            <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному предложению от Солли Плюс</strong>
-                                            <span class="date">с 1 ноября по 22 декабря 2018</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-background-11 uk-light">
-                                            <span class="city">Ravon Харьков</span>
-                                            <strong>Предложение для новых участников MY Renault</strong>
-                                            <span class="date">с 1 декабря 2018 по 1 февраля 2019</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-background-12 uk-light">
-                                            <span class="city">Opel Харьков</span>
-                                            <strong>Техническая помощь на дорогах</strong>
-                                            <span class="date">с 1 ноября по 22 декабря 2018</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-disabled">
-                                            <span class="city">Mercedes-Benz Харьков</span>
-                                            <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
-                                            <span class="date">Акция завершена</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-disabled">
-                                            <span class="city">Renault Харьков</span>
-                                            <strong>Предложение для новых участников MY Renault</strong>
-                                            <span class="date">Акция завершена</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-disabled">
-                                            <span class="city">Volkswagen Харьков, Запорожье</span>
-                                            <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному предложению от Солли Плюс</strong>
-                                            <span class="date">Акция завершена</span>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card-stock uk-disabled">
-                                            <span class="city">Mercedes-Benz Харьков</span>
-                                            <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
-                                            <span class="date">Акция завершена</span>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- If we need pagination -->
-                                <div class="swiper-pagination"></div>
-
-                                <!-- If we need navigation buttons -->
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
-
-                                <!-- If we need scrollbar -->
-                                <div class="swiper-scrollbar"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="uk-section uk-section-about-us">
-                    <div class="uk-section-background uk-background-muted"></div>
-					<div class="uk-section-background-decore">{{Icon iconName="bg-decore-3"}}</div>
-                    <div class="uk-section-foreground">
-                        <div class="uk-container">
-                            <h3 class="uk-heading">Главная цель компании «Солли Плюс» — установить долгосрочные партнерские отношения</h3>
-                            <div class="uk-grid uk-child-width-1-2@m" data-uk-grid>
-                                <div>
-                                    <p>В лице компании «Солли-Плюс» вы всегда найдете ответственного партнера, который несет обязательства по отношению к своим клиентам и проявляет заботу о них.</p>
-                                    <p><a href="#">История компании</a></p>
-                                </div>
-                                <div>
-                                    <div class="uk-card-statistic">
-                                        <div class="uk-card-value">39 700 клиентов</div>
-                                        <div class="uk-card-description">Главная цель компании «Солли-Плюс» — установить долгосрочные партнерские отношения</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="uk-grid uk-flex-right@m uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l" data-uk-grid>
-                                <div>
-                                    <div class="uk-card-statistic-secondary">
-                                        <div class="uk-card-value">25 лет</div>
-                                        <div class="uk-card-description">На автомобильном рынке Украины</div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="uk-card-statistic-secondary">
-                                        <div class="uk-card-value">574</div>
-                                        <div class="uk-card-description">Новых автомобилей в наличии</div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="uk-card-statistic-secondary">
-                                        <div class="uk-card-value">17</div>
-                                        <div class="uk-card-description">Салонов и сервисных центров</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="uk-section uk-section-partners-highlight">
-                    <div class="uk-section-foreground">
-                        <div class="uk-container">
-                            <div class="swiper-container uk-partners-highlight">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper uk-grid uk-child-width-1-5@s uk-grid-match" data-uk-grid>
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-partner">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/mercedes-benz.png" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-partner">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/vw.png" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-partner">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/renault.png" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-partner">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/skoda.png" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-partner">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/mercedes-benz.png" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-partner">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/vw.png" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-partner">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/renault.png" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-partner">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/skoda.png" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-partner">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/mercedes-benz.png" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-partner">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/vw.png" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-partner">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/renault.png" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="uk-card uk-card-partner">
-                                            <div class="uk-card-img">
-                                                <img src="%=static=%img/content/skoda.png" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="uk-section uk-section-info">
-                    <div class="uk-section-foreground">
-                        <div class="uk-container">
-                            <div class="uk-info-box uk-info-2">
-                                <div class="uk-row">
-                                    <div class="uk-col">
-                                        <div class="uk-card uk-card-info uk-light">
-                                            <div class="uk-card-background">
-                                                <img src="%=static=%img/content/img-3.jpg" alt="img">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-col">
-                                        <div class="uk-card uk-card-info uk-card-info-2">
-                                            <div class="uk-card-foreground">
-                                                <div class="uk-card-body">
-                                                    <p>В Харькове расположен первый и единственный в Украине концептуальный центр Mercedes, спроектированный немецкими архитекторами</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="uk-row">
-                                    <div class="uk-col">
-                                        <div class="uk-card uk-card-info">
-                                            <div class="uk-card-background">
-                                                <img src="%=static=%img/content/img-4.jpg" alt="img">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-col">
-                                        <div class="uk-card-info uk-card-info-2">
-                                            <div class="uk-card-foreground">
-                                                <div class="uk-card-body">
-                                                    <p>А недавно открыл свои двери новый концептуальный центр Renault</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="uk-section uk-section-map-country">
-                    <div class="uk-section-background uk-map-country">
-                        <!-- TODO: ссылки на карты менять в самом файле map.svg -->
-                        <img data-uk-svg class="uk-preserve" src="%=static=%img/general/map.svg" alt="">
-                    </div>
-                    <div class="uk-section-foreground">
-                        <div class="uk-container">
-                            <div class="uk-width-2-3@s uk-width-1-2@m">
-                                <p class="uk-text-lead">
-                                    Солли Плюс — открытая и дружелюбная команда профессионалов. Нам важно мнение наших клиентов. Благодаря вам мы становимся лучше.
-                                </p>
-                                <div class="uk-card uk-card-person-2">
-                                    <div class="uk-card-top">
-                                        <div class="uk-card-person-avatar">
-                                            <img src="%=static=%img/content/person.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="uk-card-body">
-                                        <div class="uk-card-person-name">Пучков Олег Алексеевич</div>
-                                        <div class="uk-card-person-position">Генеральный директор холдинга Солли Плюс</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                {{> footer/footer visible=true}}
-            </div>
-
+        <div class="uk-page-left">
+            {{> header/header dealers=false}}
         </div>
 
-        {{> scripts/scripts}}
-    </body>
+        <div class="uk-page-body">
+            <div class="uk-hero uk-hero-main">
+                <div class="uk-hero-background">
+                    <img class="uk-hero-object" src="%=static=%img/content/hero-image.jpg" alt="">
+                </div>
+                <div class="uk-hero-overlay uk-background-primary"></div>
+                <div class="uk-hero-foreground">
+                    <div class="uk-hero-header uk-light">
+                        {{> navbar/navbar inverse=true}}
+                    </div>
+                    <div class="uk-hero-body uk-light">
+                        <div class="uk-container">
+                            <div class="uk-hero-heading">Солли Плюс</div>
+                            <div class="uk-hero-description">Международный автомобильный холдинг </div>
+                            <div class="uk-hero-arrow">{{Icon iconName="arrow-bottom"}}</div>
+                        </div>
+                    </div>
+                    <div class="uk-hero-footer">
+                        <div class="uk-container">
+                            <div class="uk-grid uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m" data-uk-grid>
+                                <div>
+                                    <a href="#" class="uk-card uk-card-feature">
+                                        <div class="uk-card-left">
+                                            <div class="uk-card-icon">
+                                                {{Icon iconName="steering-wheel"}}
+                                            </div>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <div class="uk-card-title">Записаться на тест-драйв</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="uk-card uk-card-feature">
+                                        <div class="uk-card-left">
+                                            <div class="uk-card-icon">
+                                                {{Icon iconName="cogwheels"}}
+                                            </div>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <div class="uk-card-title">Записаться на сервис</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <a href="#" class="uk-card uk-card-feature">
+                                        <div class="uk-card-left">
+                                            <div class="uk-card-icon">
+                                                {{Icon iconName="manager"}}
+                                            </div>
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <div class="uk-card-title">Финансовый сервис</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-xlarge uk-section-brands-highlight">
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="swiper-container uk-brands-highlight">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper uk-grid uk-child-width-1-5@s uk-grid-match" data-uk-grid>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/mercedes-benz.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Mercedes-Benz</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/vw.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Volkswagen</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/renault.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Renault</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/skoda.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Skoda</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/mitsubushi.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Mitsubushi</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/mercedes-benz.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Mercedes-Benz</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/vw.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Volkswagen</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/renault.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Renault</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/skoda.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Skoda</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/mitsubushi.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Mitsubushi</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/mercedes-benz.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Mercedes-Benz</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/vw.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Volkswagen</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/renault.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Renault</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/skoda.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Skoda</h5>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-brand">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/mitsubushi.png" alt="">
+                                        </div>
+                                        <h5 class="uk-card-title">Mitsubushi</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-filter-cars">
+                <div class="uk-section-background uk-background-muted"></div>
+                <div class="uk-section-background-decore">{{Icon iconName="bg-decore-2"}}</div>
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="uk-heading">
+                            <h2 class="uk-heading-title">Подобрать автомобиль в наличии</h2>
+                        </div>
+                        <form action="#" class="uk-filter uk-filter-cars">
+
+                            <div class="uk-grid uk-flex-center uk-filter-controls" data-uk-grid>
+                                <div>
+                                    <select class="uk-select uk-form-width-large uk-select-primary">
+                                        <option value="" disabled selected>Выберите марку авто</option>
+                                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                        <option value="Volkswagen">Volkswagen</option>
+                                        <option value="Renault">Renault</option>
+                                        <option value="Opel">Opel</option>
+                                        <option value="Skoda">Skoda</option>
+                                        <option value="Ravon">Ravon</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select class="uk-select uk-select-secondary uk-form-width-medium">
+                                        <option value="" disabled selected>Тип КПП</option>
+                                        <option value="1">Тип КПП 1</option>
+                                        <option value="2">Тип КПП 2</option>
+                                        <option value="3">Тип КПП 3</option>
+                                        <option value="4">Тип КПП 4</option>
+                                        <option value="5">Тип КПП 5</option>
+                                        <option value="6">Тип КПП 6</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select class="uk-select uk-select-secondary uk-form-width-medium">
+                                        <option value="" disabled selected>Кузов</option>
+                                        <option value="1">Кузов 1</option>
+                                        <option value="2">Кузов 2</option>
+                                        <option value="3">Кузов 3</option>
+                                        <option value="4">Кузов 4</option>
+                                        <option value="5">Кузов 5</option>
+                                        <option value="6">Кузов 6</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="uk-price uk-filter-price" data-nouislider>
+                                <div class="uk-price-inputs">
+                                    <input type="text" data-nouislider-from class="uk-input uk-input-secondary">
+                                    <div class="uk-price-divider"></div>
+                                    <input type="text" data-nouislider-to class="uk-input uk-input-secondary">
+                                </div>
+                                <div class="uk-price-range">
+                                    <div data-nouislider-range></div>
+                                </div>
+                            </div>
+
+                            <div class="uk-filter-result">Найдено 482 варианта</div>
+
+                            <div class="uk-filter-actions">
+                                <button type="submit" class="uk-button uk-button-primary uk-button-small">Показать</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-models-highlight">
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="uk-heading uk-text-center">
+                            <h3 class="uk-heading-title">Модельный ряд автосалонов Солли Плюс</h3>
+                        </div>
+                        <div class="swiper-container uk-models-hightlight">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper uk-grid uk-child-width-1-3@s uk-grid-match" data-uk-grid>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-model">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/img-1.png" alt="car-1">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h6 class="uk-card-title">Новый Logan</h6>
+                                            <span>от 1 323 013 грн</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-model">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/img-2.png" alt="car-1">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h6 class="uk-card-title">Новый Logan</h6>
+                                            <span>от 1 323 013 грн</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-model">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/img-3.png" alt="car-1">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h6 class="uk-card-title">Новый Logan</h6>
+                                            <span>от 1 323 013 грн</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-model">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/img-4.png" alt="car-1">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h6 class="uk-card-title">Новый Logan</h6>
+                                            <span>от 1 323 013 грн</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-model">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/img-1.png" alt="car-1">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h6 class="uk-card-title">Новый Logan</h6>
+                                            <span>от 1 323 013 грн</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-model">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/img-2.png" alt="car-1">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h6 class="uk-card-title">Новый Logan</h6>
+                                            <span>от 1 323 013 грн</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-model">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/img-3.png" alt="car-1">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h6 class="uk-card-title">Новый Logan</h6>
+                                            <span>от 1 323 013 грн</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-model">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/img-4.png" alt="car-1">
+                                        </div>
+                                        <div class="uk-card-body">
+                                            <h6 class="uk-card-title">Новый Logan</h6>
+                                            <span>от 1 323 013 грн</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-info">
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="uk-info-box">
+                            <div class="uk-row">
+                                <div class="uk-col">
+                                    <div class="uk-card uk-card-info uk-light">
+                                        <div class="uk-card-background">
+                                            <img src="%=static=%img/content/img-1.jpg" alt="img">
+                                        </div>
+                                        <div class="uk-card-overlay uk-background-13"></div>
+                                        <div class="uk-card-foreground">
+                                            <div class="uk-card-body">
+                                                <h2 class="uk-card-title">Страхование</h2>
+                                                <p>Мы предлагаем вам самые актуальные и выгодные условия на рынке
+                                                    автостраховани</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-col">
+                                    <div class="uk-card uk-card-info uk-card-info-2">
+                                        <div class="uk-card-foreground">
+                                            <div class="uk-card-body">
+                                                <span class="uk-card-icon">{{Icon iconName="crediting"}}</span>
+                                                <h2 class="uk-card-title">Кредитование</h2>
+                                                <p>Cпециальные кредитные программы разработанные совместно с нашими
+                                                    финансовыми партнерами</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-row">
+                                <div class="uk-col">
+                                    <div class="uk-card uk-card-info">
+                                        <div class="uk-card-background">
+                                            <img src="%=static=%img/content/img-2.jpg" alt="img">
+                                        </div>
+                                        <div class="uk-card-overlay uk-background-14"></div>
+                                        <div class="uk-card-foreground">
+                                            <div class="uk-card-body">
+                                                <h2 class="uk-card-title">Лизинг</h2>
+                                                <p>Право собственности на автомобиль переходит к клиенту сразу после
+                                                    окончания срока лизинга</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-col">
+                                    <div class="uk-card uk-card-info uk-card-info-2">
+                                        <div class="uk-card-foreground">
+                                            <div class="uk-card-body">
+                                                <span class="uk-card-icon">{{Icon iconName="trade-in"}}</span>
+                                                <h2 class="uk-card-title">Trade-in</h2>
+                                                <p>Вы сдаете нам свой подержанный автомобиль и уезжаете от нас на новом</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-services-highlight">
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="uk-heading uk-text-center">
+                            <h3 class="uk-heading-title">Услуги сервиса Солли Плюс</h3>
+                        </div>
+                        <div class="uk-grid uk-child-width-1-3@s uk-grid-match uk-services-highlight" data-uk-grid>
+                            <div>
+                                <a href="#" class="uk-card-service">
+                                    <strong>Техническое обслуживание</strong>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-service">
+                                    <strong>Диагностика авто</strong>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-service">
+                                    <strong>Дополнительное оборудование</strong>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-service">
+                                    <strong>Установка ГБО</strong>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-service">
+                                    <strong>Кузовные работы</strong>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-service">
+                                    <strong>Мойка</strong>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-service">
+                                    <strong>Озоновая обработка</strong>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="uk-card-service">
+                                    <strong>Assistance</strong>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-stocks-highlight">
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="uk-heading uk-text-center">
+                            <h3 class="uk-heading-title">Акции и специальные предложения</h3>
+                        </div>
+                        <div class="swiper-container uk-stocks-hightlight">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper uk-grid uk-child-width-1-3@s uk-grid-match" data-uk-grid>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-2 uk-light">
+                                        <span class="city">Renault Харьков, Полтава</span>
+                                        <strong>Техническая помощь на дорогах</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-3 uk-light">
+                                        <span class="city">Mitsubishi Харьков</span>
+                                        <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
+                                        <span class="date">с 1 декабря 2018 по 1 февраля 2019</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-4 uk-light">
+                                        <span class="city">Renault Полтава</span>
+                                        <strong>Предложение для новых участников MY Renault</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-5 uk-light">
+                                        <span class="city">Volkswagen Харьков</span>
+                                        <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному
+                                            предложению от Солли Плюс</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-6 uk-light">
+                                        <span class="city">Mercedes-Benz</span>
+                                        <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-7 uk-light">
+                                        <span class="city">IVECO Харьков</span>
+                                        <strong>Техническая помощь на дорогах</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-8 uk-light">
+                                        <span class="city">Hyundai Trucks Сервис Харьков</span>
+                                        <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному
+                                            предложению от Солли Плюс</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-9 uk-light">
+                                        <span class="city">Ravon Харьков</span>
+                                        <strong>Предложение для новых участников MY Renault</strong>
+                                        <span class="date">Бессрочно</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-10 uk-light">
+                                        <span class="city">Ford Trucks Сервис Харьков</span>
+                                        <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному
+                                            предложению от Солли Плюс</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-11 uk-light">
+                                        <span class="city">Ravon Харьков</span>
+                                        <strong>Предложение для новых участников MY Renault</strong>
+                                        <span class="date">с 1 декабря 2018 по 1 февраля 2019</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-background-12 uk-light">
+                                        <span class="city">Opel Харьков</span>
+                                        <strong>Техническая помощь на дорогах</strong>
+                                        <span class="date">с 1 ноября по 22 декабря 2018</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-disabled">
+                                        <span class="city">Mercedes-Benz Харьков</span>
+                                        <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
+                                        <span class="date">Акция завершена</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-disabled">
+                                        <span class="city">Renault Харьков</span>
+                                        <strong>Предложение для новых участников MY Renault</strong>
+                                        <span class="date">Акция завершена</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-disabled">
+                                        <span class="city">Volkswagen Харьков, Запорожье</span>
+                                        <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному
+                                            предложению от Солли Плюс</strong>
+                                        <span class="date">Акция завершена</span>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card-stock uk-disabled">
+                                        <span class="city">Mercedes-Benz Харьков</span>
+                                        <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
+                                        <span class="date">Акция завершена</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-about-us">
+                <div class="uk-section-background uk-background-muted"></div>
+                <div class="uk-section-background-decore">{{Icon iconName="bg-decore-3"}}</div>
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <h3 class="uk-heading">Главная цель компании «Солли Плюс» — установить долгосрочные партнерские
+                            отношения</h3>
+                        <div class="uk-grid uk-child-width-1-2@m" data-uk-grid>
+                            <div>
+                                <p>В лице компании «Солли-Плюс» вы всегда найдете ответственного партнера, который
+                                    несет обязательства по отношению к своим клиентам и проявляет заботу о них.</p>
+                                <p><a href="#">История компании</a></p>
+                            </div>
+                            <div>
+                                <div class="uk-card-statistic">
+                                    <div class="uk-card-value">39 700 клиентов</div>
+                                    <div class="uk-card-description">Главная цель компании «Солли-Плюс» — установить
+                                        долгосрочные партнерские отношения</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-grid uk-flex-right@m uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l"
+                            data-uk-grid>
+                            <div>
+                                <div class="uk-card-statistic-secondary">
+                                    <div class="uk-card-value">25 лет</div>
+                                    <div class="uk-card-description">На автомобильном рынке Украины</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card-statistic-secondary">
+                                    <div class="uk-card-value">574</div>
+                                    <div class="uk-card-description">Новых автомобилей в наличии</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card-statistic-secondary">
+                                    <div class="uk-card-value">17</div>
+                                    <div class="uk-card-description">Салонов и сервисных центров</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-partners-highlight">
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="swiper-container uk-partners-highlight">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper uk-grid uk-child-width-1-5@s uk-grid-match" data-uk-grid>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-partner">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/mercedes-benz.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-partner">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/vw.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-partner">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/renault.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-partner">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/skoda.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-partner">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/mercedes-benz.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-partner">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/vw.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-partner">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/renault.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-partner">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/skoda.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-partner">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/mercedes-benz.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-partner">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/vw.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-partner">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/renault.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="uk-card uk-card-partner">
+                                        <div class="uk-card-img">
+                                            <img src="%=static=%img/content/skoda.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-info">
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="uk-info-box uk-info-2">
+                            <div class="uk-row">
+                                <div class="uk-col">
+                                    <div class="uk-card uk-card-info uk-light">
+                                        <div class="uk-card-background">
+                                            <img src="%=static=%img/content/img-3.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-col">
+                                    <div class="uk-card uk-card-info uk-card-info-2">
+                                        <div class="uk-card-foreground">
+                                            <div class="uk-card-body">
+                                                <p>В Харькове расположен первый и единственный в Украине концептуальный
+                                                    центр Mercedes, спроектированный немецкими архитекторами</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-row">
+                                <div class="uk-col">
+                                    <div class="uk-card uk-card-info">
+                                        <div class="uk-card-background">
+                                            <img src="%=static=%img/content/img-4.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-col">
+                                    <div class="uk-card-info uk-card-info-2">
+                                        <div class="uk-card-foreground">
+                                            <div class="uk-card-body">
+                                                <p>А недавно открыл свои двери новый концептуальный центр Renault</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-section uk-section-map-country">
+                <div class="uk-section-background uk-map-country">
+                    <!-- TODO: ссылки на карты менять в самом файле map.svg -->
+                    <img data-uk-svg class="uk-preserve" src="%=static=%img/general/map.svg" alt="">
+                </div>
+                <div class="uk-section-foreground">
+                    <div class="uk-container">
+                        <div class="uk-width-2-3@s uk-width-1-2@m">
+                            <p class="uk-text-lead">
+                                Солли Плюс — открытая и дружелюбная команда профессионалов. Нам важно мнение наших
+                                клиентов. Благодаря вам мы становимся лучше.
+                            </p>
+                            <div class="uk-card uk-card-person-2">
+                                <div class="uk-card-top">
+                                    <div class="uk-card-person-avatar">
+                                        <img src="%=static=%img/content/person.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="uk-card-body">
+                                    <div class="uk-card-person-name">Пучков Олег Алексеевич</div>
+                                    <div class="uk-card-person-position">Генеральный директор холдинга Солли Плюс</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-list-features uk-grid uk-grid-small">
+                <div>
+                    <a href="#" class="uk-card uk-card-feature">
+                        <div class="uk-card-left">
+                            <div class="uk-card-icon">
+                                {{Icon iconName="steering-wheel"}}
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="uk-card-title">Записаться на тест-драйв</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="uk-card uk-card-feature">
+                        <div class="uk-card-left">
+                            <div class="uk-card-icon">
+                                {{Icon iconName="cogwheels"}}
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="uk-card-title">Записаться на сервис</div>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="uk-card uk-card-feature">
+                        <div class="uk-card-left">
+                            <div class="uk-card-icon">
+                                {{Icon iconName="manager"}}
+                            </div>
+                        </div>
+                        <div class="uk-card-body">
+                            <div class="uk-card-title">Финансовый сервис</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            {{> footer/footer visible=true}}
+        </div>
+
+    </div>
+
+    {{> scripts/scripts}}
+</body>
 
 </html>

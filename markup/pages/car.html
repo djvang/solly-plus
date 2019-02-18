@@ -1,175 +1,197 @@
 <!doctype html>
 <html class="no-js" lang="ru">
 
-    <head>
-        {{> head/head head.defaults}}
-    </head>
+<head>
+    {{> head/head head.defaults}}
+</head>
 
-    <body>
-        %=symbols=%
+<body>
+    %=symbols=%
 
-        <div class="uk-page">
+    <div class="uk-page">
 
-            <div class="uk-page-left">
-                {{> header/header dealers=false}}
-            </div>
+        <div class="uk-page-left">
+            {{> header/header dealers=false}}
+        </div>
 
-            <div class="uk-page-body">
-                {{> navbar/navbar}}
+        <div class="uk-page-body">
+            {{> navbar/navbar}}
 
-                <div class="uk-section uk-section-car">
-                    <div class="uk-section-foregound">
-                        <div class="uk-container">
-                            <div class="uk-car uk-grid" data-uk-grid>
-                                <div class="uk-car-left uk-width-2-5@s">
-                                    <div class="uk-car-heading">
-                                        <h1 class="uk-car-title uk-h3">Mercedes-Benz A-Class 200 AT 4matic Brabus 2018</h1>
-                                        <div class="uk-car-id">ID: 45632</div>
-                                    </div>
-                                    <div class="uk-car-prices">
-                                        <span class="uk-car-price">973 850 грн</span>
-                                        <span class="uk-car-price-old">1 003 850 грн</span>
-                                    </div>
-                                    <table class="uk-car-info uk-visible@s">
-                                        <tr>
-                                            <td class="uk-car-info-label">Двигатель:</td>
-                                            <td class="uk-car-info-text">2.0, Бензин</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Коробка передач:</td>
-                                            <td class="uk-car-info-text">Автомат <span class="uk-text-muted">(DSG)</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Привод:</td>
-                                            <td class="uk-car-info-text">Полный</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Тип транспорта:</td>
-                                            <td class="uk-car-info-text">Легковой, Хэтчбэк</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Комплектация:</td>
-                                            <td class="uk-car-info-text">Progressive</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Безопасность:</td>
-                                            <td class="uk-car-info-text">ABD, ABS, ESP, Иммобилайзер, Подушка безопасности (Airbag), Серворуль, Центральный замок</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Комфорт:</td>
-                                            <td class="uk-car-info-text">Бортовой компьютер, Датчик света, Климат контроль, Круиз контроль, Мультируль, Парктроник, Подогрев зеркал, Подогрев сидений, Сенсор дождя, Усилитель руля, Эл. стеклоподъемники, Электропакет</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Год:</td>
-                                            <td class="uk-car-info-text">2018</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Пробег:</td>
-                                            <td class="uk-car-info-text">216 км <span class="uk-text-muted">(тест-драйв)</span></td>
-                                        </tr>
-                                    </table>
+            <div class="uk-section uk-section-car">
+                <div class="uk-section-foregound">
+                    <div class="uk-container">
+                        <div class="uk-car uk-grid" data-uk-grid>
+                            <div class="uk-car-left uk-width-2-5@s">
+                                <div class="uk-car-heading">
+                                    <h1 class="uk-car-title uk-h3">Mercedes-Benz A-Class 200 AT 4matic Brabus 2018</h1>
+                                    <div class="uk-car-id">ID: 45632</div>
                                 </div>
-                                <div class="uk-car-body uk-width-3-5@s">
-                                    <div class="uk-car-gallery">
-                                        <div class="swiper-container uk-car-gallery-general">
-                                            <div class="swiper-wrapper" data-uk-lightbox>
-                                                <a href="%=static=%img/content/big-image.jpg" data-caption="Caption 1" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
-                                                <a href="%=static=%img/content/big-image.jpg" data-caption="Caption 2" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
-                                                <a href="%=static=%img/content/big-image.jpg" data-caption="Caption 3" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
-                                                <a href="%=static=%img/content/big-image.jpg" data-caption="Caption 4" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
-                                                <a href="%=static=%img/content/big-image.jpg" data-caption="Caption" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
-                                                <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
-                                                <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
-                                                <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
-                                                <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
-                                                <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
-                                            </div>
-                                            <!-- Add Arrows -->
-                                            <div class="swiper-button-next swiper-button-white"></div>
-                                            <div class="swiper-button-prev swiper-button-white"></div>
+                                <div class="uk-car-prices">
+                                    <span class="uk-car-price">973 850 грн</span>
+                                    <span class="uk-car-price-old">1 003 850 грн</span>
+                                </div>
+                                <table class="uk-car-info uk-visible@s">
+                                    <tr>
+                                        <td class="uk-car-info-label">Двигатель:</td>
+                                        <td class="uk-car-info-text">2.0, Бензин</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Коробка передач:</td>
+                                        <td class="uk-car-info-text">Автомат <span class="uk-text-muted">(DSG)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Привод:</td>
+                                        <td class="uk-car-info-text">Полный</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Тип транспорта:</td>
+                                        <td class="uk-car-info-text">Легковой, Хэтчбэк</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Комплектация:</td>
+                                        <td class="uk-car-info-text">Progressive</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Безопасность:</td>
+                                        <td class="uk-car-info-text">ABD, ABS, ESP, Иммобилайзер, Подушка безопасности
+                                            (Airbag), Серворуль, Центральный замок</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Комфорт:</td>
+                                        <td class="uk-car-info-text">Бортовой компьютер, Датчик света, Климат контроль,
+                                            Круиз контроль, Мультируль, Парктроник, Подогрев зеркал, Подогрев сидений,
+                                            Сенсор дождя, Усилитель руля, Эл. стеклоподъемники, Электропакет</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Год:</td>
+                                        <td class="uk-car-info-text">2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Пробег:</td>
+                                        <td class="uk-car-info-text">216 км <span class="uk-text-muted">(тест-драйв)</span></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="uk-car-body uk-width-3-5@s">
+                                <div class="uk-car-gallery">
+                                    <div class="swiper-container uk-car-gallery-general">
+                                        <div class="swiper-wrapper" data-uk-lightbox>
+                                            <a href="%=static=%img/content/big-image.jpg" data-caption="Caption 1"
+                                                class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                            <a href="%=static=%img/content/big-image.jpg" data-caption="Caption 2"
+                                                class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                            <a href="%=static=%img/content/big-image.jpg" data-caption="Caption 3"
+                                                class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                            <a href="%=static=%img/content/big-image.jpg" data-caption="Caption 4"
+                                                class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                            <a href="%=static=%img/content/big-image.jpg" data-caption="Caption" class="swiper-slide"
+                                                style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                            <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                            <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                            <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                            <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
+                                            <a href="%=static=%img/content/big-image.jpg" class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></a>
                                         </div>
-                                        <div class="swiper-container uk-car-gallery-thumbs">
-                                            <div class="swiper-wrapper">
-                                                <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
-                                                <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
-                                                <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
-                                                <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
-                                                <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
-                                                <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
-                                                <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
-                                                <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
-                                                <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
-                                                <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
-                                            </div>
-                                        </div>
+                                        <!-- Add Arrows -->
+                                        <div class="swiper-button-next swiper-button-white"></div>
+                                        <div class="swiper-button-prev swiper-button-white"></div>
                                     </div>
-                                    <table class="uk-car-info uk-hidden@s">
-                                        <tr>
-                                            <td class="uk-car-info-label">Двигатель:</td>
-                                            <td class="uk-car-info-text">2.0, Бензин</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Коробка передач:</td>
-                                            <td class="uk-car-info-text">Автомат <span class="uk-text-muted">(DSG)</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Привод:</td>
-                                            <td class="uk-car-info-text">Полный</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Тип транспорта:</td>
-                                            <td class="uk-car-info-text">Легковой, Хэтчбэк</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Комплектация:</td>
-                                            <td class="uk-car-info-text">Progressive</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Безопасность:</td>
-                                            <td class="uk-car-info-text">ABD, ABS, ESP, Иммобилайзер, Подушка безопасности (Airbag), Серворуль, Центральный замок</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Комфорт:</td>
-                                            <td class="uk-car-info-text">Бортовой компьютер, Датчик света, Климат контроль, Круиз контроль, Мультируль, Парктроник, Подогрев зеркал, Подогрев сидений, Сенсор дождя, Усилитель руля, Эл. стеклоподъемники, Электропакет</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Год:</td>
-                                            <td class="uk-car-info-text">2018</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="uk-car-info-label">Пробег:</td>
-                                            <td class="uk-car-info-text">216 км <span class="uk-text-muted">(тест-драйв)</span></td>
-                                        </tr>
-                                    </table>
-                                    <div class="uk-car-about">
-                                        <h5 class="uk-car-about-title">Описание авто</h5>
-                                        <p>Индивидуальная комплектация: Видеокамера заднего вида; Активная система; облегчения паркования; Система экстренного торможения; Мультифункциональное рулевое колесо; Аудиосистема Audio 20 CD вкл. подготовку для Garmin® MAP PILOT; Передние сиденья с электрорегулировкой; Автоматизированная система кондиционирования воздуха THERMATIC; Адаптивные фары дальнего света Plus; Светодиодная система освещения Intelligent Light System; Декоративные элементы: ясень крупнопористый коричневый; Легкосплавные колесные диски 18 дюймов; Велюровые коврики; Гарантия 2 года без ограничения по пробегу. Самые выгодные условия приобретения нового автомобиля у единственного официального дилера Mercedes-benz в Харькове. Возможность кредита, лизинга, страхования и услуги Trade-in.</p>
+                                    <div class="swiper-container uk-car-gallery-thumbs">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                            <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                            <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                            <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                            <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                            <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                            <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                            <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                            <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                            <div class="swiper-slide" style="background-image:url(%=static=%img/content/big-image.jpg)"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="uk-car-actions uk-width-1-1">
-                                    <button class="uk-button uk-button-small uk-button-primary">Оставить заявку на авто</button>
-                                    <div class="uk-text-muted uk-text-small uk-margin-auto-right">Менеджер автосалона свяжется с вами</div>
-                                    <div class="uk-car-dealer">
-                                        <div class="uk-car-dealer-logo">
-                                            <img src="%=static=%img/content/mercedes-benz.png" alt="">
-                                        </div>
-                                        <div class="uk-car-dealer-body">
-                                            <div class="uk-car-dealer-title">Mercedes-Benz Харьков</div>
-                                            <a class="uk-car-dealer-link" href="#">Перейти на страницу автосалона</a>
-                                        </div>
+                                <table class="uk-car-info uk-hidden@s">
+                                    <tr>
+                                        <td class="uk-car-info-label">Двигатель:</td>
+                                        <td class="uk-car-info-text">2.0, Бензин</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Коробка передач:</td>
+                                        <td class="uk-car-info-text">Автомат <span class="uk-text-muted">(DSG)</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Привод:</td>
+                                        <td class="uk-car-info-text">Полный</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Тип транспорта:</td>
+                                        <td class="uk-car-info-text">Легковой, Хэтчбэк</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Комплектация:</td>
+                                        <td class="uk-car-info-text">Progressive</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Безопасность:</td>
+                                        <td class="uk-car-info-text">ABD, ABS, ESP, Иммобилайзер, Подушка безопасности
+                                            (Airbag), Серворуль, Центральный замок</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Комфорт:</td>
+                                        <td class="uk-car-info-text">Бортовой компьютер, Датчик света, Климат контроль,
+                                            Круиз контроль, Мультируль, Парктроник, Подогрев зеркал, Подогрев сидений,
+                                            Сенсор дождя, Усилитель руля, Эл. стеклоподъемники, Электропакет</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Год:</td>
+                                        <td class="uk-car-info-text">2018</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-car-info-label">Пробег:</td>
+                                        <td class="uk-car-info-text">216 км <span class="uk-text-muted">(тест-драйв)</span></td>
+                                    </tr>
+                                </table>
+                                <div class="uk-car-about">
+                                    <h5 class="uk-car-about-title">Описание авто</h5>
+                                    <p>Индивидуальная комплектация: Видеокамера заднего вида; Активная система;
+                                        облегчения паркования; Система экстренного торможения; Мультифункциональное
+                                        рулевое колесо; Аудиосистема Audio 20 CD вкл. подготовку для Garmin® MAP PILOT;
+                                        Передние сиденья с электрорегулировкой; Автоматизированная система
+                                        кондиционирования воздуха THERMATIC; Адаптивные фары дальнего света Plus;
+                                        Светодиодная система освещения Intelligent Light System; Декоративные элементы:
+                                        ясень крупнопористый коричневый; Легкосплавные колесные диски 18 дюймов;
+                                        Велюровые коврики; Гарантия 2 года без ограничения по пробегу. Самые выгодные
+                                        условия приобретения нового автомобиля у единственного официального дилера
+                                        Mercedes-benz в Харькове. Возможность кредита, лизинга, страхования и услуги
+                                        Trade-in.</p>
+                                </div>
+                            </div>
+                            <div class="uk-car-actions uk-width-1-1">
+                                <button class="uk-button uk-button-small uk-button-primary">Оставить заявку на авто</button>
+                                <div class="uk-text-muted uk-text-small uk-margin-auto-right">Менеджер автосалона
+                                    свяжется с вами</div>
+                                <div class="uk-car-dealer">
+                                    <div class="uk-car-dealer-logo">
+                                        <img src="%=static=%img/content/mercedes-benz.png" alt="">
+                                    </div>
+                                    <div class="uk-car-dealer-body">
+                                        <div class="uk-car-dealer-title">Mercedes-Benz Харьков</div>
+                                        <a class="uk-car-dealer-link" href="#">Перейти на страницу автосалона</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                {{> footer/footer visible=true}}
             </div>
 
+            {{> footer/footer visible=true}}
         </div>
 
-        {{> scripts/scripts}}
-    </body>
+    </div>
+
+    {{> scripts/scripts}}
+</body>
 
 </html>

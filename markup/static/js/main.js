@@ -334,10 +334,58 @@ function datepickerInit() {
     });
 }
 
-priceInit();
-swiperInit();
-swiperCarInit();
-choicesInit();
-drilldownInit();
-datepickerInit();
+const raf = 
+    window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    function( callback ) {
+        window.setTimeout( callback, 1000 / 60 )
+    }
+
+const isInView = el => {
+	const scroll = window.scrollY || window.pageYOffset
+	const boundsTop = el.getBoundingClientRect().top + scroll
+	
+	const viewport = {
+		top: scroll,
+		bottom: scroll + window.innerHeight,
+	}
+	
+    const bounds = {
+		top: boundsTop,
+		bottom: boundsTop + el.clientHeight,
+	}
+	
+	return ( bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom ) 
+		|| ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
+}
+
+
+document.addEventListener( 'DOMContentLoaded', () => {
+
+    priceInit();
+    swiperInit();
+    swiperCarInit();
+    choicesInit();
+    drilldownInit();
+    datepickerInit();
+
+    const features = document.querySelector('.uk-list-features');
+    const main = document.querySelector('.uk-hero-main');
+
+	const handler = () => raf(() =>  {
+
+        let isIn = isInView(main);
+
+        if(!isIn) {
+            features.classList.add('uk-inview')
+        } else {
+            features.classList.remove('uk-inview')
+        }
+        
+    })
+	
+	handler()
+	window.addEventListener( 'scroll', handler )
+} )
 

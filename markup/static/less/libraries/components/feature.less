@@ -61,4 +61,52 @@
       }
     }
   }
+
+  .uk-list-features {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    right: 16px;
+    z-index: 100;
+    bottom: 16px;
+    opacity: 1;
+    transition: opacity 0.2s;
+
+    > * + * {
+      margin-top: 8px;
+      @media (min-width: @breakpoint-small) {
+        margin-top: 30px;
+      }
+    }
+
+    &:not(.uk-inview) {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .uk-card-feature {
+      padding: 7px;
+      border-radius: 30px;
+
+      &:not(:hover) {
+        box-shadow: none;
+
+        .uk-card-body {
+          display: none;
+        }
+      }
+      
+      > * {
+        margin: 8px;
+      }
+    }
+    .uk-card-icon {
+     font-size: 30px;
+    }
+    .uk-card-title {
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
 }

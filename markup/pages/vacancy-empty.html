@@ -1,65 +1,67 @@
 <!doctype html>
 <html class="no-js" lang="ru">
 
-    <head>
-        {{> head/head head.defaults}}
-    </head>
+<head>
+    {{> head/head head.defaults}}
+</head>
 
-    <body>
-        %=symbols=%
+<body>
+    %=symbols=%
 
-        <div class="uk-page">
+    <div class="uk-page">
 
-					<div class="uk-page-left">
-							{{> header/header dealers=false}}
-					</div>
-
-					<div class="uk-page-body">
-						{{> navbar/navbar}}
-
-						<section class="uk-section-vacancy uk-section">
-							<div class="uk-container">
-								<div class="uk-heading">
-									<h1 class="uk-heading-title">Вакансии</h1>
-								</div>
-								<div class="uk-grid uk-flex-row-reverse" data-uk-grid>
-									<div class="uk-width-2-5@m uk-filter-vacancy-holder">
-										<form action="#" class="uk-filter-vacancy">
-											<div>
-												<select class="uk-select uk-select-secondary">
-													<option>Ravon</option>
-													<option>Skoda</option>
-													<option>Renault</option>
-												</select>
-											</div>
-										</form>
-										<div><a href="#" class="uk-button uk-button-primary uk-button-small">Предложить свое резюме</a></div>
-									</div>
-									<div class="uk-width-3-5@m">
-										<div class="uk-not-found-block uk-margin-large-bottom">
-											<div class="uk-section-background-decore">{{Icon iconName="bg-decore-7"}}</div>
-											<h3>К сожалению, на данный момент актуальных вакансий нет</h3>
-											<p>Подпишитесь на нашу рассылку. Вы будете одними из первых узнавать о новых вакансиях Солли Плюс.</p>
-											<form action="#" class="uk-form uk-form-subscription uk-grid" data-uk-grid="margin: uk-margin-small-top">
-												<div class="uk-width-2-3@m">
-													<label><input class="uk-input" type="email" placeholder="Введите ваш e-mail"></label>
-												</div>
-												<div>
-													<button class="uk-button-link uk-button"><span class="uk-btn-icon">{{Icon iconName="send"}}</span> Подписаться</button>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
-						
-						{{> footer/footer}}
-					</div>
-
+        <div class="uk-page-left">
+            {{> header/header dealers=false}}
         </div>
 
-        {{> scripts/scripts}}
-    </body>
+        <div class="uk-page-body">
+            {{> navbar/navbar}}
+
+            <section class="uk-section-vacancy uk-section">
+                <div class="uk-container">
+                    <div class="uk-heading">
+                        <h1 class="uk-heading-title">Вакансии</h1>
+                    </div>
+                    <div class="uk-grid uk-flex-row-reverse" data-uk-grid>
+                        <div class="uk-width-2-5@m uk-filter-vacancy-holder">
+                            <form action="#" class="uk-filter-vacancy">
+                                <div>
+                                    <select class="uk-select uk-select-secondary">
+                                        <option>Ravon</option>
+                                        <option>Skoda</option>
+                                        <option>Renault</option>
+                                    </select>
+                                </div>
+                            </form>
+                            <div><a href="#" class="uk-button uk-button-primary uk-button-small">Предложить свое резюме</a></div>
+                        </div>
+                        <div class="uk-width-3-5@m">
+                            <div class="uk-not-found-block uk-margin-large-bottom">
+                                <div class="uk-section-background-decore">{{Icon iconName="bg-decore-7"}}</div>
+                                <h3>К сожалению, на данный момент актуальных вакансий нет</h3>
+                                <p>Подпишитесь на нашу рассылку. Вы будете одними из первых узнавать о новых вакансиях
+                                    Солли Плюс.</p>
+                                <form action="#" class="uk-form uk-form-subscription uk-grid" data-uk-grid="margin: uk-margin-small-top">
+                                    <div class="uk-width-2-3@m">
+                                        <label><input class="uk-input" type="email" placeholder="Введите ваш e-mail"></label>
+                                    </div>
+                                    <div>
+                                        <button class="uk-button-link uk-button"><span class="uk-btn-icon">{{Icon
+                                                iconName="send"}}</span> Подписаться</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {{> footer/footer visible=true}}
+        </div>
+
+    </div>
+
+    {{> scripts/scripts}}
+</body>
 
 </html>
