@@ -1,67 +1,69 @@
 <!doctype html>
 <html class="no-js" lang="ru">
 
-    <head>
-        {{> head/head head.defaults}}
-    </head>
+<head>
+    {{> head/head head.defaults}}
+</head>
 
-    <body>
-        %=symbols=%
+<body>
+    %=symbols=%
 
-        <div class="uk-page">
+    <div class="uk-page">
 
-            <div class="uk-page-left">
-                {{> header/header dealers=false}}
-            </div>
+        <div class="uk-page-left">
+            {{> header/header dealers=false}}
+        </div>
 
-            <div class="uk-page-body">
-                <div class="uk-hero uk-hero-person uk-light">
-                    <div class="uk-hero-background">
-                        <img class="uk-hero-object" srcset="%=static=%img/content/full-person.jpg 480w, %=static=%img/content/full-person.jpg" sizes="(max-width: 480px) 440px" src="%=static=%img/content/full-person.jpg" alt="">
+        <div class="uk-page-body">
+            <div class="uk-hero uk-hero-person uk-light">
+                <div class="uk-hero-background">
+                    <img class="uk-hero-object" srcset="%=static=%img/content/full-person.jpg 480w, %=static=%img/content/full-person.jpg"
+                        sizes="(max-width: 480px) 440px" src="%=static=%img/content/full-person.jpg" alt="">
+                </div>
+                <div class="uk-hero-overlay uk-background-secondary"></div>
+                <div class="uk-hero-foreground">
+                    <div class="uk-hero-header">
+                        {{> navbar/navbar inverse=true}}
                     </div>
-                    <div class="uk-hero-overlay uk-background-secondary"></div>
-                    <div class="uk-hero-foreground">
-                        <div class="uk-hero-header">
-                            {{> navbar/navbar inverse=true}}
-                        </div>
-                        <div class="uk-hero-body">
-                            <div class="uk-container">
-                                <div class="uk-full-person uk-width-2-3@m">
-                                    <div class="uk-full-person-name">Пучков <br> Олег Алексеевич</div>
-                                    <div class="uk-full-person-position">Генеральный директор холдинга Солли Плюс</div>
-                                    <div class="uk-full-person-contacts">
-                                        <div class="uk-full-person-contact">
-                                            <div class="uk-full-person-contact-label">Телефон</div>
-                                            <a href="tel:(057) 000-00-00" class="uk-full-person-contact-phone">(057) 000-00-00</a>
-                                        </div>
-                                        <div class="uk-full-person-contact">
-                                            <div class="uk-full-person-contact-label">Эл. почта</div>
-                                            <a href="mailto:renault@sollyplus.com.ua" class="uk-full-person-contact-email">renault@sollyplus.com.ua</a>
-                                        </div>
+                    <div class="uk-hero-body">
+                        <div class="uk-container">
+                            <div class="uk-full-person uk-width-2-3@m">
+                                <div class="uk-full-person-name">Пучков <br> Олег Алексеевич</div>
+                                <div class="uk-full-person-position">Генеральный директор холдинга Солли Плюс</div>
+                                <div class="uk-full-person-contacts">
+                                    <div class="uk-full-person-contact">
+                                        <div class="uk-full-person-contact-label">Телефон</div>
+                                        <a href="tel:(057) 000-00-00" class="uk-full-person-contact-phone">(057)
+                                            000-00-00</a>
+                                    </div>
+                                    <div class="uk-full-person-contact">
+                                        <div class="uk-full-person-contact-label">Эл. почта</div>
+                                        <a href="mailto:renault@sollyplus.com.ua" class="uk-full-person-contact-email">renault@sollyplus.com.ua</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="uk-hero-footer">
-                            <div class="uk-container">
-                                <div class="uk-hero-actions">
-                                    <a href="#" class="uk-back">{{Icon iconName="arrow-left"}}Руководство</a>
-                                    <div class="uk-hero-pager">
-                                        <a href="#" uk-slidenav-previous></a>
-                                        <a href="#" uk-slidenav-next></a>
-                                    </div>
+                    </div>
+                    <div class="uk-hero-footer">
+                        <div class="uk-container">
+                            <div class="uk-hero-actions">
+                                <a href="#" class="uk-back">{{Icon iconName="arrow-left"}}Руководство</a>
+                                <div class="uk-hero-pager">
+                                    <a href="#" uk-slidenav-previous></a>
+                                    <a href="#" uk-slidenav-next></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                {{> footer/footer visible=false}}
             </div>
 
+            {{> footer/footer visible=false}}
         </div>
 
-        {{> scripts/scripts}}
-    </body>
+    </div>
+
+    {{> scripts/scripts}}
+</body>
 
 </html>

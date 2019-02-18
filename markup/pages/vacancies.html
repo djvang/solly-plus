@@ -1,221 +1,226 @@
 <!doctype html>
 <html class="no-js" lang="ru">
 
-    <head>
-        {{> head/head head.defaults}}
-    </head>
+<head>
+    {{> head/head head.defaults}}
+</head>
 
-    <body>
-        %=symbols=%
+<body>
+    %=symbols=%
 
-        <div class="uk-page">
+    <div class="uk-page">
 
-					<div class="uk-page-left">
-							{{> header/header dealers=false}}
-					</div>
-
-					<div class="uk-page-body">
-						{{> navbar/navbar}}
-						
-						<section class="uk-section-vacancies uk-section">
-							<div class="uk-container">
-								<div class="uk-heading">
-									<h1 class="uk-heading-title">Вакансии</h1>
-								</div>
-								<div class="uk-grid uk-flex-row-reverse" data-uk-grid>
-									<div class="uk-width-2-5@m uk-filter-vacancy-holder">
-										<div class="uk-section-background-decore">{{Icon iconName="bg-decore-3"}}</div>
-										<form action="#" class="uk-filter-vacancy">
-											<div>
-												<select class="uk-select uk-select-secondary">
-													<option>Ravon</option>
-													<option>Skoda</option>
-													<option>Renault</option>
-												</select>
-											</div>
-										</form>
-										<div><a href="#" class="uk-button uk-button-primary uk-button-small">Предложить свое резюме</a></div>
-									</div>
-									<div class="uk-width-3-5@m">
-										<ul class="uk-list-vacancy uk-grid uk-child-width-1-1" data-uk-grid>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer"><img src="%=static=%img/content/skoda.png" alt="skoda"></div>
-													<h6 class="uk-card-title">Финансовый консультант по кредитованию и страхованию</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Škoda</li>
-														<li class="uk-footer-item">Харьков</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer"><img src="%=static=%img/content/ravon.png" alt="ravon"></div>
-													<h6 class="uk-card-title">Автомойщик</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Ravon</li>
-														<li class="uk-footer-item">Харьков</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer"><img src="%=static=%img/content/mitsubushi.png" alt="mitsubushi"></div>
-													<h6 class="uk-card-title">Менеджер по продажам автомобилей</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Mitsubishi</li>
-														<li class="uk-footer-item">Полтава</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer"><img src="%=static=%img/content/renault.png" alt="renault"></div>
-													<h6 class="uk-card-title">Администратор автосалона</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Renault</li>
-														<li class="uk-footer-item">Полтава</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer"><img src="%=static=%img/content/vw.png" alt="volkswagen"></div>
-													<h6 class="uk-card-title">Менеджер по работе с клиентами (администратор сервиса)</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Volkswagen</li>
-														<li class="uk-footer-item">Запорожье</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer">{{Icon iconName="arrow-right"}}</div>
-													<h6 class="uk-card-title">Ведущий маркетолог</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Солли Плюс</li>
-														<li class="uk-footer-item">Харьков</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer"><img src="%=static=%img/content/mercedes-benz.png" alt="mercedes-benz"></div>
-													<h6 class="uk-card-title">Специалист отдела корпоративных продаж</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Mercedes-Benz</li>
-														<li class="uk-footer-item">Харьков</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer">{{Icon iconName="arrow-right"}}</div>
-													<h6 class="uk-card-title">Ведущий маркетолог</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Солли Плюс</li>
-														<li class="uk-footer-item">Харьков</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer">{{Icon iconName="arrow-right"}}</div>
-													<h6 class="uk-card-title">Ведущий маркетолог</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Солли Плюс</li>
-														<li class="uk-footer-item">Харьков</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer"><img src="%=static=%img/content/vw.png" alt="volkswagen"></div>
-													<h6 class="uk-card-title">Менеджер по работе с клиентами (администратор сервиса)</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Volkswagen</li>
-														<li class="uk-footer-item">Запорожье</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer"><img src="%=static=%img/content/skoda.png" alt="skoda"></div>
-													<h6 class="uk-card-title">Финансовый консультант по кредитованию и страхованию</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Škoda</li>
-														<li class="uk-footer-item">Харьков</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer"><img src="%=static=%img/content/ravon.png" alt="ravon"></div>
-													<h6 class="uk-card-title">Автомойщик</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Ravon</li>
-														<li class="uk-footer-item">Харьков</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer"><img src="%=static=%img/content/mitsubushi.png" alt="mitsubushi"></div>
-													<h6 class="uk-card-title">Менеджер по продажам автомобилей</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Mitsubishi</li>
-														<li class="uk-footer-item">Полтава</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer"><img src="%=static=%img/content/renault.png" alt="renault"></div>
-													<h6 class="uk-card-title">Администратор автосалона</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Renault</li>
-														<li class="uk-footer-item">Полтава</li>
-													</ul>
-												</a>
-											</li>
-											<li class="uk-list-item">
-												<a href="#" class="uk-card-vacancy">
-													<div class="uk-logo-dealer"><img src="%=static=%img/content/vw.png" alt="volkswagen"></div>
-													<h6 class="uk-card-title">Менеджер по работе с клиентами (администратор сервиса)</h6>
-													<ul class="uk-card-footer">
-														<li class="uk-footer-item">от 5 000 грн</li>
-														<li class="uk-footer-item">Volkswagen</li>
-														<li class="uk-footer-item">Запорожье</li>
-													</ul>
-												</a>
-											</li>
-										</ul>
-										<a href="#" class="uk-load-more uk-text-center"><span class="uk-btn-icon">{{Icon iconName="arrow-rotate"}}</span> Показать еще</a>
-									</div>
-								</div>
-							</div>
-						</section>
-						
-						{{> footer/footer visible=true}}
-					</div>
-
+        <div class="uk-page-left">
+            {{> header/header dealers=false}}
         </div>
 
-        {{> scripts/scripts}}
-    </body>
+        <div class="uk-page-body">
+            {{> navbar/navbar}}
+
+            <section class="uk-section-vacancies uk-section">
+                <div class="uk-container">
+                    <div class="uk-heading">
+                        <h1 class="uk-heading-title">Вакансии</h1>
+                    </div>
+                    <div class="uk-grid uk-flex-row-reverse" data-uk-grid>
+                        <div class="uk-width-2-5@m uk-filter-vacancy-holder">
+                            <div class="uk-section-background-decore">{{Icon iconName="bg-decore-3"}}</div>
+                            <form action="#" class="uk-filter-vacancy">
+                                <div>
+                                    <select class="uk-select uk-select-secondary">
+                                        <option>Ravon</option>
+                                        <option>Skoda</option>
+                                        <option>Renault</option>
+                                    </select>
+                                </div>
+                            </form>
+                            <div><a href="#" class="uk-button uk-button-primary uk-button-small">Предложить свое резюме</a></div>
+                        </div>
+                        <div class="uk-width-3-5@m">
+                            <ul class="uk-list-vacancy uk-grid uk-child-width-1-1" data-uk-grid>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer"><img src="%=static=%img/content/skoda.png" alt="skoda"></div>
+                                        <h6 class="uk-card-title">Финансовый консультант по кредитованию и страхованию</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Škoda</li>
+                                            <li class="uk-footer-item">Харьков</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer"><img src="%=static=%img/content/ravon.png" alt="ravon"></div>
+                                        <h6 class="uk-card-title">Автомойщик</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Ravon</li>
+                                            <li class="uk-footer-item">Харьков</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer"><img src="%=static=%img/content/mitsubushi.png" alt="mitsubushi"></div>
+                                        <h6 class="uk-card-title">Менеджер по продажам автомобилей</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Mitsubishi</li>
+                                            <li class="uk-footer-item">Полтава</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer"><img src="%=static=%img/content/renault.png" alt="renault"></div>
+                                        <h6 class="uk-card-title">Администратор автосалона</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Renault</li>
+                                            <li class="uk-footer-item">Полтава</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer"><img src="%=static=%img/content/vw.png" alt="volkswagen"></div>
+                                        <h6 class="uk-card-title">Менеджер по работе с клиентами (администратор
+                                            сервиса)</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Volkswagen</li>
+                                            <li class="uk-footer-item">Запорожье</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer">{{Icon iconName="arrow-right"}}</div>
+                                        <h6 class="uk-card-title">Ведущий маркетолог</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Солли Плюс</li>
+                                            <li class="uk-footer-item">Харьков</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer"><img src="%=static=%img/content/mercedes-benz.png"
+                                                alt="mercedes-benz"></div>
+                                        <h6 class="uk-card-title">Специалист отдела корпоративных продаж</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Mercedes-Benz</li>
+                                            <li class="uk-footer-item">Харьков</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer">{{Icon iconName="arrow-right"}}</div>
+                                        <h6 class="uk-card-title">Ведущий маркетолог</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Солли Плюс</li>
+                                            <li class="uk-footer-item">Харьков</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer">{{Icon iconName="arrow-right"}}</div>
+                                        <h6 class="uk-card-title">Ведущий маркетолог</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Солли Плюс</li>
+                                            <li class="uk-footer-item">Харьков</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer"><img src="%=static=%img/content/vw.png" alt="volkswagen"></div>
+                                        <h6 class="uk-card-title">Менеджер по работе с клиентами (администратор
+                                            сервиса)</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Volkswagen</li>
+                                            <li class="uk-footer-item">Запорожье</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer"><img src="%=static=%img/content/skoda.png" alt="skoda"></div>
+                                        <h6 class="uk-card-title">Финансовый консультант по кредитованию и страхованию</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Škoda</li>
+                                            <li class="uk-footer-item">Харьков</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer"><img src="%=static=%img/content/ravon.png" alt="ravon"></div>
+                                        <h6 class="uk-card-title">Автомойщик</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Ravon</li>
+                                            <li class="uk-footer-item">Харьков</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer"><img src="%=static=%img/content/mitsubushi.png" alt="mitsubushi"></div>
+                                        <h6 class="uk-card-title">Менеджер по продажам автомобилей</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Mitsubishi</li>
+                                            <li class="uk-footer-item">Полтава</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer"><img src="%=static=%img/content/renault.png" alt="renault"></div>
+                                        <h6 class="uk-card-title">Администратор автосалона</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Renault</li>
+                                            <li class="uk-footer-item">Полтава</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li class="uk-list-item">
+                                    <a href="#" class="uk-card-vacancy">
+                                        <div class="uk-logo-dealer"><img src="%=static=%img/content/vw.png" alt="volkswagen"></div>
+                                        <h6 class="uk-card-title">Менеджер по работе с клиентами (администратор
+                                            сервиса)</h6>
+                                        <ul class="uk-card-footer">
+                                            <li class="uk-footer-item">от 5 000 грн</li>
+                                            <li class="uk-footer-item">Volkswagen</li>
+                                            <li class="uk-footer-item">Запорожье</li>
+                                        </ul>
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="uk-load-more uk-text-center"><span class="uk-btn-icon">{{Icon
+                                    iconName="arrow-rotate"}}</span> Показать еще</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {{> footer/footer visible=true}}
+        </div>
+
+    </div>
+
+    {{> scripts/scripts}}
+</body>
 
 </html>

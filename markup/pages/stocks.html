@@ -1,160 +1,164 @@
 <!doctype html>
 <html class="no-js" lang="ru">
 
-    <head>
-        {{> head/head head.defaults}}
-    </head>
+<head>
+    {{> head/head head.defaults}}
+</head>
 
-    <body>
-        %=symbols=%
+<body>
+    %=symbols=%
 
-			<div class="uk-page">
+    <div class="uk-page">
 
-				<div class="uk-page-left">
-					{{> header/header dealers=false}}
-				</div>
+        <div class="uk-page-left">
+            {{> header/header dealers=false}}
+        </div>
 
-				<div class="uk-page-body">
-					{{> navbar/navbar}}
+        <div class="uk-page-body">
+            {{> navbar/navbar}}
 
-					<section class="uk-section-stock uk-section">
-						<div class="uk-container">
-							<div class="uk-heading">
-								<h1 class="uk-heading-title">Акции</h1>
-							</div>
-							<form action="#" class="uk-filter-stock">
-								<div class="uk-grid uk-flex-middle" data-uk-grid>
-									<div class="uk-width-1-3@m">
-										<select class="uk-select uk-select-secondary">
-											<option>Все бренды</option>
-											<option>Skoda</option>
-											<option>Renault</option>
-										</select>
-									</div>
-									<div>
-										<label><input class="uk-checkbox" type="checkbox">Акции автосалона</label>
-									</div>
-									<div>
-										<label><input class="uk-checkbox" type="checkbox">Акции сервиса</label>
-									</div>
-								</div>
-							</form>
-							<ul class="uk-grid uk-list-stock uk-child-width-1-2@s" data-uk-grid>
-								<li>
-									<a href="#" class="uk-card-stock uk-background-2 uk-light">
-										<span class="city">Renault Харьков, Полтава</span>
-										<strong>Техническая помощь на дорогах</strong>
-										<span class="date">с 1 ноября по 22 декабря 2018</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-background-3 uk-light">
-										<span class="city">Mitsubishi Харьков</span>
-										<strong>Ваш автомобиль Renault старше 4-х лет?</strong>
-										<span class="date">с 1 декабря 2018 по 1 февраля 2019</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-background-4 uk-light">
-										<span class="city">Renault Полтава</span>
-										<strong>Предложение для новых участников MY Renault</strong>
-										<span class="date">с 1 ноября по 22 декабря 2018</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-background-5 uk-light">
-										<span class="city">Volkswagen Харьков</span>
-										<strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному предложению от Солли Плюс</strong>
-										<span class="date">с 1 ноября по 22 декабря 2018</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-background-6 uk-light">
-										<span class="city">Mercedes-Benz</span>
-										<strong>Ваш автомобиль Renault старше 4-х лет?</strong>
-										<span class="date">с 1 ноября по 22 декабря 2018</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-background-7 uk-light">
-										<span class="city">IVECO Харьков</span>
-										<strong>Техническая помощь на дорогах</strong>
-										<span class="date">с 1 ноября по 22 декабря 2018</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-background-8 uk-light">
-										<span class="city">Hyundai Trucks Сервис Харьков</span>
-										<strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному предложению от Солли Плюс</strong>
-										<span class="date">с 1 ноября по 22 декабря 2018</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-background-9 uk-light">
-										<span class="city">Ravon Харьков</span>
-										<strong>Предложение для новых участников MY Renault</strong>
-										<span class="date">Бессрочно</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-background-10 uk-light">
-										<span class="city">Ford Trucks Сервис Харьков</span>
-										<strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному предложению от Солли Плюс</strong>
-										<span class="date">с 1 ноября по 22 декабря 2018</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-background-11 uk-light">
-										<span class="city">Ravon Харьков</span>
-										<strong>Предложение для новых участников MY Renault</strong>
-										<span class="date">с 1 декабря 2018 по 1 февраля 2019</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-background-12 uk-light">
-										<span class="city">Opel Харьков</span>
-										<strong>Техническая помощь на дорогах</strong>
-										<span class="date">с 1 ноября по 22 декабря 2018</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-disabled">
-										<span class="city">Mercedes-Benz Харьков</span>
-										<strong>Ваш автомобиль Renault старше 4-х лет?</strong>
-										<span class="date">Акция завершена</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-disabled">
-										<span class="city">Renault Харьков</span>
-										<strong>Предложение для новых участников MY Renault</strong>
-										<span class="date">Акция завершена</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-disabled">
-										<span class="city">Volkswagen Харьков, Запорожье</span>
-										<strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному предложению от Солли Плюс</strong>
-										<span class="date">Акция завершена</span>
-									</a>
-								</li>
-								<li>
-									<a href="#" class="uk-card-stock uk-disabled">
-										<span class="city">Mercedes-Benz Харьков</span>
-										<strong>Ваш автомобиль Renault старше 4-х лет?</strong>
-										<span class="date">Акция завершена</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</section>
-					
-					{{> footer/footer visible=true}}
-				</div>
+            <section class="uk-section-stock uk-section">
+                <div class="uk-container">
+                    <div class="uk-heading">
+                        <h1 class="uk-heading-title">Акции</h1>
+                    </div>
+                    <form action="#" class="uk-filter-stock">
+                        <div class="uk-grid uk-flex-middle" data-uk-grid>
+                            <div class="uk-width-1-3@m">
+                                <select class="uk-select uk-select-secondary">
+                                    <option>Все бренды</option>
+                                    <option>Skoda</option>
+                                    <option>Renault</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label><input class="uk-checkbox" type="checkbox">Акции автосалона</label>
+                            </div>
+                            <div>
+                                <label><input class="uk-checkbox" type="checkbox">Акции сервиса</label>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="uk-grid uk-list-stock uk-child-width-1-2@s" data-uk-grid>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-background-2 uk-light">
+                                <span class="city">Renault Харьков, Полтава</span>
+                                <strong>Техническая помощь на дорогах</strong>
+                                <span class="date">с 1 ноября по 22 декабря 2018</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-background-3 uk-light">
+                                <span class="city">Mitsubishi Харьков</span>
+                                <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
+                                <span class="date">с 1 декабря 2018 по 1 февраля 2019</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-background-4 uk-light">
+                                <span class="city">Renault Полтава</span>
+                                <strong>Предложение для новых участников MY Renault</strong>
+                                <span class="date">с 1 ноября по 22 декабря 2018</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-background-5 uk-light">
+                                <span class="city">Volkswagen Харьков</span>
+                                <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному
+                                    предложению от Солли Плюс</strong>
+                                <span class="date">с 1 ноября по 22 декабря 2018</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-background-6 uk-light">
+                                <span class="city">Mercedes-Benz</span>
+                                <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
+                                <span class="date">с 1 ноября по 22 декабря 2018</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-background-7 uk-light">
+                                <span class="city">IVECO Харьков</span>
+                                <strong>Техническая помощь на дорогах</strong>
+                                <span class="date">с 1 ноября по 22 декабря 2018</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-background-8 uk-light">
+                                <span class="city">Hyundai Trucks Сервис Харьков</span>
+                                <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному
+                                    предложению от Солли Плюс</strong>
+                                <span class="date">с 1 ноября по 22 декабря 2018</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-background-9 uk-light">
+                                <span class="city">Ravon Харьков</span>
+                                <strong>Предложение для новых участников MY Renault</strong>
+                                <span class="date">Бессрочно</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-background-10 uk-light">
+                                <span class="city">Ford Trucks Сервис Харьков</span>
+                                <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному
+                                    предложению от Солли Плюс</strong>
+                                <span class="date">с 1 ноября по 22 декабря 2018</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-background-11 uk-light">
+                                <span class="city">Ravon Харьков</span>
+                                <strong>Предложение для новых участников MY Renault</strong>
+                                <span class="date">с 1 декабря 2018 по 1 февраля 2019</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-background-12 uk-light">
+                                <span class="city">Opel Харьков</span>
+                                <strong>Техническая помощь на дорогах</strong>
+                                <span class="date">с 1 ноября по 22 декабря 2018</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-disabled">
+                                <span class="city">Mercedes-Benz Харьков</span>
+                                <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
+                                <span class="date">Акция завершена</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-disabled">
+                                <span class="city">Renault Харьков</span>
+                                <strong>Предложение для новых участников MY Renault</strong>
+                                <span class="date">Акция завершена</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-disabled">
+                                <span class="city">Volkswagen Харьков, Запорожье</span>
+                                <strong>Успейте приобрести оригинальные аксессуары Volkswagen по специальному
+                                    предложению от Солли Плюс</strong>
+                                <span class="date">Акция завершена</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-card-stock uk-disabled">
+                                <span class="city">Mercedes-Benz Харьков</span>
+                                <strong>Ваш автомобиль Renault старше 4-х лет?</strong>
+                                <span class="date">Акция завершена</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-			</div>
+            {{> footer/footer visible=true}}
+        </div>
 
-			{{> scripts/scripts}}
-    </body>
+    </div>
+
+    {{> scripts/scripts}}
+</body>
 
 </html>
