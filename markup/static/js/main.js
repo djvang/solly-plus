@@ -334,32 +334,7 @@ function datepickerInit() {
     });
 }
 
-const raf = 
-    window.requestAnimationFrame ||
-    window.webkitRequestAnimationFrame ||
-    window.mozRequestAnimationFrame ||
-    function( callback ) {
-        window.setTimeout( callback, 1000 / 60 )
-    }
-
-const isInView = el => {
-	const scroll = window.scrollY || window.pageYOffset
-	const boundsTop = el.getBoundingClientRect().top + scroll
-	
-	const viewport = {
-		top: scroll,
-		bottom: scroll + window.innerHeight,
-	}
-	
-    const bounds = {
-		top: boundsTop,
-		bottom: boundsTop + el.clientHeight,
-	}
-	
-	return ( bounds.bottom >= viewport.top && bounds.bottom <= viewport.bottom ) 
-		|| ( bounds.top <= viewport.bottom && bounds.top >= viewport.top );
-}
-
+const raf = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function( callback ) { window.setTimeout( callback, 1000 / 60 ) }
 
 document.addEventListener( 'DOMContentLoaded', () => {
 
@@ -373,17 +348,17 @@ document.addEventListener( 'DOMContentLoaded', () => {
     const features = document.querySelector('.uk-list-features');
     const main = document.querySelector('.uk-hero-main');
 
-	const handler = () => raf(() =>  {
+	const handler = () => {
 
-        let isIn = isInView(main);
+        let isOut = window.pageYOffset > (main ? main.clientHeight : 200);
 
-        if(!isIn) {
+        if(isOut) {
             features.classList.add('uk-inview')
         } else {
             features.classList.remove('uk-inview')
         }
         
-    })
+    }
 	
 	handler()
 	window.addEventListener( 'scroll', handler )
