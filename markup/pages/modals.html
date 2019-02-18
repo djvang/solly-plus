@@ -18,6 +18,8 @@
 										<div><button class="uk-button uk-button-primary uk-margin-small-right" type="button" uk-toggle="target: #modal-3">Заявка на финансовый сервис</button></div>
 										<div><button class="uk-button uk-button-primary uk-margin-small-right" type="button" uk-toggle="target: #modal-4">Предложить свое резюме</button></div>
 										<div><button class="uk-button uk-button-primary uk-margin-small-right" type="button" uk-toggle="target: #modal-5">Заявка на авто в наличии</button></div>
+										<div><button class="uk-button uk-button-primary uk-margin-small-right" type="button" uk-toggle="target: #modal-6">Подобрать автомобиль в наличии</button></div>
+										<div><button class="uk-button uk-button-primary uk-margin-small-right" type="button" uk-toggle="target: #modal-7">Ваша заявка принята!</button></div>
 									</div>
                 </div>
 
@@ -358,6 +360,115 @@
 													</div>
 												</div>
 											</form>
+										</div>
+									</div>
+								</div>
+								
+								<div class="uk-modal uk-modal-container" id="modal-6" data-uk-modal>
+									<div class="uk-modal-dialog">
+										<div class="uk-modal-body">
+											<button class="uk-modal-close-outside" type="button" data-uk-close></button>
+											<form action="#" class="uk-filter uk-filter-cars">
+													<h2 class="uk-modal-title">Подобрать автомобиль в наличии</h2>
+													<div class="uk-grid uk-flex-center uk-margin-bottom" data-uk-grid>
+														<div>Тип транспорта:</div>
+														<div>
+																<label>
+																		<input type="radio" class="uk-radio" name="type"> Легковые
+																</label>
+														</div>
+														<div>
+															<label>
+																	<input type="radio"  class="uk-radio" name="type"> Грузовые
+															</label>
+														</div>
+													</div>
+													<div class="uk-grid uk-flex-center uk-filter-controls" data-uk-grid>
+															<div>
+																	<select class="uk-select uk-form-width-large uk-select-primary">
+																			<option value="" disabled selected>Выберите марку авто</option>
+																			<option value="Mercedes-Benz">Mercedes-Benz</option>
+																			<option value="Volkswagen">Volkswagen</option>
+																			<option value="Renault">Renault</option>
+																			<option value="Opel">Opel</option>
+																			<option value="Skoda">Skoda</option>
+																			<option value="Ravon">Ravon</option>
+																	</select>
+															</div>
+															<div>
+																	<select class="uk-select uk-select-secondary uk-form-width-medium">
+																			<option value="" disabled selected>Тип КПП</option>
+																			<option value="1">Тип КПП 1</option>
+																			<option value="2">Тип КПП 2</option>
+																			<option value="3">Тип КПП 3</option>
+																			<option value="4">Тип КПП 4</option>
+																			<option value="5">Тип КПП 5</option>
+																			<option value="6">Тип КПП 6</option>
+																	</select>
+															</div>
+															<div>
+																	<select class="uk-select uk-select-secondary uk-form-width-medium">
+																			<option value="" disabled selected>Кузов</option>
+																			<option value="1">Кузов 1</option>
+																			<option value="2">Кузов 2</option>
+																			<option value="3">Кузов 3</option>
+																			<option value="4">Кузов 4</option>
+																			<option value="5">Кузов 5</option>
+																			<option value="6">Кузов 6</option>
+																	</select>
+															</div>
+															<div>
+																	<select class="uk-select uk-select-secondary uk-form-width-medium">
+																			<option value="" disabled selected>Двигатель</option>
+																			<option value="1">Двигатель 1</option>
+																			<option value="2">Двигатель 2</option>
+																			<option value="3">Двигатель 3</option>
+																			<option value="4">Двигатель 4</option>
+																			<option value="5">Двигатель 5</option>
+																			<option value="6">Двигатель 6</option>
+																	</select>
+															</div>
+															<div>
+																	<select class="uk-select uk-select-secondary uk-form-width-medium">
+																			<option value="" disabled selected>Привод</option>
+																			<option value="1">Привод 1</option>
+																			<option value="2">Привод 2</option>
+																			<option value="3">Привод 3</option>
+																			<option value="4">Привод 4</option>
+																			<option value="5">Привод 5</option>
+																			<option value="6">Привод 6</option>
+																	</select>
+															</div>
+													</div>
+
+													<div class="uk-price uk-filter-price" data-nouislider>
+															<div class="uk-price-inputs">
+																	<input type="text" data-nouislider-from class="uk-input uk-input-secondary">
+																	<div class="uk-price-divider"></div>
+																	<input type="text" data-nouislider-to class="uk-input uk-input-secondary">
+															</div>
+															<div class="uk-price-range">
+																	<div data-nouislider-range></div>
+															</div>
+													</div>
+
+													<div class="uk-filter-actions">
+															<button type="submit" class="uk-button uk-button-primary uk-button-small">Показать</button>
+													</div>
+
+											</form>
+										</div>
+									</div>
+								</div>
+
+								<div class="uk-modal uk-modal-container-small" id="modal-7" data-uk-modal>
+									<div class="uk-modal-dialog">
+										<div class="uk-modal-body">
+											<button class="uk-modal-close-outside" type="button" data-uk-close></button>
+											<div class="uk-notify">
+													{{Icon iconName='form-checkbox' iconWidth='25' iconHeight='25'}}
+													<h3 class="uk-notify-title">Ваша заявка принята!</h3>
+											</div>
 										</div>
 									</div>
 								</div>
