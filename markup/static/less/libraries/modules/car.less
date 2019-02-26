@@ -365,14 +365,35 @@
   }
 
   .uk-car-gallery-thumbs {
-    height: 70px;
+    // height: 70px;
     margin-top: 20px;
   }
 
+  .uk-car-gallery-thumbs .swiper-wrapper {
+    transform: none !important;
+    width: auto;
+    margin-right: -21px;
+
+    &.swiper-opened {
+      flex-wrap: wrap !important;
+
+      .swiper-rest-active {
+        display: none;
+      }
+    }
+  }
+
   .uk-car-gallery-thumbs .swiper-slide {
-    width: 20%;
+    width: ~'calc(20% - 20px)';
     height: 100%;
     cursor: pointer;
+    height: 70px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    @media (max-width: 967px) {
+      width: ~'calc(33.33% - 20px)';
+    } 
   }
 
   .uk-car-gallery-thumbs .swiper-slide-thumb-active {

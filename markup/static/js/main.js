@@ -19,23 +19,23 @@ Inputmask().mask(document.querySelectorAll("input"));
 
 function choicesInit() {
 
-    if (document.querySelectorAll('.uk-select').length === 0) return 
+    if (document.querySelectorAll('.uk-select').length === 0) return
 
-    const strToEl = (function() {
+    const strToEl = (function () {
         const tmpEl = document.createElement('div');
-        return function(str) {
-          const cleanedInput = str.trim();
-          let r;
-          tmpEl.innerHTML = cleanedInput;
-          r = tmpEl.children[0];
-      
-          while (tmpEl.firstChild) {
-            tmpEl.removeChild(tmpEl.firstChild);
-          }
-      
-          return r;
+        return function (str) {
+            const cleanedInput = str.trim();
+            let r;
+            tmpEl.innerHTML = cleanedInput;
+            r = tmpEl.children[0];
+
+            while (tmpEl.firstChild) {
+                tmpEl.removeChild(tmpEl.firstChild);
+            }
+
+            return r;
         };
-      })();
+    })();
     const choices = new Choices('.uk-select', {
         silent: false,
         items: [],
@@ -117,15 +117,15 @@ function choicesInit() {
                     return strToEl(`
                       <div class="${this.passedElement.element.className}"></div>
                     `);
-                  }
+                }
             };
-          }
+        }
     });
 }
 
 function swiperCarInit() {
     function slideOtherGalleryTo(sGalleryName, nSlideIndex) {
-    sGalleryName.slideTo(nSlideIndex);
+        sGalleryName.slideTo(nSlideIndex);
     }
 
     let thumbs = new Swiper('.uk-car-gallery-thumbs', {
@@ -137,7 +137,7 @@ function swiperCarInit() {
         slideToClickedSlide: true,
         breakpoints: {
             967: {
-              slidesPerView: 3,
+                slidesPerView: 3,
             }
         },
         on: {
@@ -155,33 +155,38 @@ function swiperCarInit() {
 
                 this.endVisibleSlide = this.visibleSlides[this.visibleSlides.length - 1];
 
-                if(this.endVisibleSlide && !this.isEnd) {
-                    this.endVisibleSlide.querySelector('.swiper-rest').classList.add('swiper-rest-active');
+                if (this.endVisibleSlide && !this.isEnd) {
+                    let rest = this.endVisibleSlide.querySelector('.swiper-rest');
+                    let self = this;
+                    rest.classList.add('swiper-rest-active');
+                    rest.onclick = function() {
+                        console.log(self.$wrapperEl.addClass('swiper-opened'));
+                    }
                 }
 
 
             },
-            slideChange: function () {
+            // slideChange: function () {
 
-                this.endVisibleSlide.querySelector('.swiper-rest').classList.remove('swiper-rest-active');
+            //     this.endVisibleSlide.querySelector('.swiper-rest').classList.remove('swiper-rest-active');
 
-                this.endVisibleSlide = this.visibleSlides[this.visibleSlides.length - 1];
+            //     this.endVisibleSlide = this.visibleSlides[this.visibleSlides.length - 1];
 
-                if(this.endVisibleSlide && !this.isEnd) {
-                    this.endVisibleSlide.querySelector('.swiper-rest').classList.add('swiper-rest-active');
-                }
+            //     if (this.endVisibleSlide && !this.isEnd) {
+            //         this.endVisibleSlide.querySelector('.swiper-rest').classList.add('swiper-rest-active');
+            //     }
 
-            },
-            touchStart: function () {
+            // },
+            // touchStart: function () {
 
-                this.endVisibleSlide.querySelector('.swiper-rest').classList.remove('swiper-rest-active');
+            //     this.endVisibleSlide.querySelector('.swiper-rest').classList.remove('swiper-rest-active');
 
-                this.endVisibleSlide = this.visibleSlides[this.visibleSlides.length - 1];
+            //     this.endVisibleSlide = this.visibleSlides[this.visibleSlides.length - 1];
 
-                if(this.endVisibleSlide && !this.isEnd) {
-                    this.endVisibleSlide.querySelector('.swiper-rest').classList.add('swiper-rest-active');
-                }
-            }
+            //     if (this.endVisibleSlide && !this.isEnd) {
+            //         this.endVisibleSlide.querySelector('.swiper-rest').classList.add('swiper-rest-active');
+            //     }
+            // }
         }
     });
 
@@ -198,7 +203,7 @@ function swiperCarInit() {
         on: {
             init: function () {
                 if (this.slides.length < 2) {
-                this.$el.addClass('swiper-single');
+                    this.$el.addClass('swiper-single');
                 }
             },
             transitionStart: function () {
@@ -210,7 +215,7 @@ function swiperCarInit() {
 }
 
 function swiperInit() {
-    document.querySelectorAll('.swiper-container:not(.uk-car-gallery-general)').forEach(function(swiper) {
+    document.querySelectorAll('.swiper-container:not(.uk-car-gallery-general)').forEach(function (swiper) {
         new Swiper(swiper, {
             scrollbar: {
                 el: swiper.querySelector('.swiper-scrollbar'),
@@ -237,12 +242,12 @@ function priceInit() {
     function nouislider(root) {
         let price = root.querySelector('[data-nouislider-range]');
 
-        if(!price) return;
+        if (!price) return;
 
         let priceFrom = root.querySelector('[data-nouislider-from]');
         let priceTo = root.querySelector('[data-nouislider-to]');
         let inputs = [priceFrom, priceTo];
-        
+
         noUiSlider.create(price, {
             start: [0, 10000],
             step: 1,
@@ -252,75 +257,75 @@ function priceInit() {
                 'max': 10000
             }
         });
-        
+
         price.noUiSlider.on('update', function (values, handle) {
             inputs[handle].value = parseFloat(values[handle]) + ' грн';
         });
-        
-        
+
+
         inputs.forEach(function (input, handle) {
-        
+
             input.addEventListener('change', function () {
                 price.noUiSlider.setHandle(handle, this.value.replace(' грн', ''));
             });
-        
+
             input.addEventListener('keydown', function (e) {
-        
+
                 let values = price.noUiSlider.get();
                 let value = Number(values[handle]).replace(' грн', '');
-        
+
                 // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
                 let steps = price.noUiSlider.steps();
-        
+
                 // [down, up]
                 let step = steps[handle];
-        
+
                 let position;
-        
+
                 // 13 is enter,
                 // 38 is key up,
                 // 40 is key down.
                 switch (e.which) {
-        
+
                     case 13:
-                    price.noUiSlider.setHandle(handle, this.value.replace(' грн', ''));
+                        price.noUiSlider.setHandle(handle, this.value.replace(' грн', ''));
                         break;
-        
+
                     case 38:
-        
+
                         // Get step to go increase slider value (up)
                         position = step[1];
-        
+
                         // false = no step is set
                         if (position === false) {
                             position = 1;
                         }
-        
+
                         // null = edge of slider
                         if (position !== null) {
                             price.noUiSlider.setHandle(handle, value + position);
                         }
-        
+
                         break;
-        
+
                     case 40:
-        
+
                         position = step[0];
-        
+
                         if (position === false) {
                             position = 1;
                         }
-        
+
                         if (position !== null) {
                             price.noUiSlider.setHandle(handle, value - position);
                         }
-        
+
                         break;
                 }
             });
         });
     }
-    
+
 }
 
 function drilldownInit() {
@@ -334,9 +339,111 @@ function datepickerInit() {
     });
 }
 
-const raf = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function( callback ) { window.setTimeout( callback, 1000 / 60 ) }
+const raf = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (callback) {
+    window.setTimeout(callback, 1000 / 60)
+}
 
-document.addEventListener( 'DOMContentLoaded', () => {
+function videosInit() {
+
+    let element = document.querySelector('[data-videos]');
+    if(!element) return;
+
+    let prevVideo = null;
+    let currentVideo = 0;
+    let urls = element.dataset.videos.split(',');
+    let videos = urls
+        .reduce((videos, url, index) => {
+            let video = document.createElement('video');
+            let source = document.createElement('source')
+            source.src = url.trim();
+            source.type = "video/mp4";
+            video.muted = true;
+            video.playsinline = true;
+            video.preload = true;
+            video.append(source);
+
+            if (index === currentVideo) {
+                video.classList.add('uk-play');
+            }
+
+            videos.push(video);
+
+            return videos
+        }, []);
+
+
+    function videoHandler(e) {
+
+        if (currentVideo < urls.length - 1) {
+            currentVideo = currentVideo + 1;
+        } else {
+            currentVideo = 0;
+        }
+
+        setPlay(currentVideo)
+
+    }
+
+    function setPlay(index) {
+
+        if (prevVideo !== index) {
+            if (prevVideo !== null) videos[prevVideo].classList.remove('uk-play');
+            prevVideo = index;
+
+            videos[index].classList.add('uk-play');
+            videos[index].play();
+
+        }
+    }
+
+    setPlay(currentVideo)
+
+    videos.forEach(video => {
+        element.append(video);
+        video.addEventListener('ended', videoHandler, false);
+    })
+}
+
+function svgMapInit() {
+    const map = document.querySelector('.uk-map-country');
+    const countries = map.querySelectorAll('.kh, .zp, .pl');
+
+    console.log(countries);
+
+    countries.forEach(country => {
+        country.onmouseover = function() {
+            map.classList.add('uk-map-country-hover');
+        }
+        country.onmouseout = function() {
+            map.classList.remove('uk-map-country-hover');
+        }
+    })
+}
+
+function inviewInit() {
+    const features = document.querySelector('.uk-list-features');
+    const main = document.querySelector('.uk-hero-main');
+
+    if(!features) return
+
+    const handler = () => {
+
+        let isOut = window.pageYOffset > (main ? main.clientHeight : 200);
+
+        if (isOut) {
+            features.classList.add('uk-inview')
+        } else {
+            features.classList.remove('uk-inview')
+        }
+
+    }
+
+    handler()
+    window.addEventListener('scroll', handler)
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
 
     priceInit();
     swiperInit();
@@ -344,23 +451,8 @@ document.addEventListener( 'DOMContentLoaded', () => {
     choicesInit();
     drilldownInit();
     datepickerInit();
+    videosInit();
+    inviewInit();
+    svgMapInit();
 
-    const features = document.querySelector('.uk-list-features');
-    const main = document.querySelector('.uk-hero-main');
-
-	const handler = () => {
-
-        let isOut = window.pageYOffset > (main ? main.clientHeight : 200);
-
-        if(isOut) {
-            features.classList.add('uk-inview')
-        } else {
-            features.classList.remove('uk-inview')
-        }
-        
-    }
-	
-	handler()
-	window.addEventListener( 'scroll', handler )
-} )
-
+})
