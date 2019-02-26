@@ -406,6 +406,7 @@ function videosInit() {
 
 function svgMapInit() {
     const map = document.querySelector('.uk-map-country');
+    if(!map) return;
     const countries = map.querySelectorAll('.kh, .zp, .pl');
 
     console.log(countries);
