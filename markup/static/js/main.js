@@ -405,17 +405,27 @@ function videosInit() {
 }
 
 function svgMapInit() {
-    const map = document.querySelector('.uk-map-country');
-    if(!map) return;
-    const countries = map.querySelectorAll('.kh, .zp, .pl');
 
-    countries.forEach(country => {
-        country.onmouseover = function() {
-            map.classList.add('uk-map-country-hover');
-        }
-        country.onmouseout = function() {
-            map.classList.remove('uk-map-country-hover');
-        }
+    let country = null;
+    let timetID = null;
+
+    function setHover($this) {
+        $('.kh, .zp, .pl').removeClass('is-hover');
+        $this.addClass('is-hover');
+    }
+
+    $('.uk-map-country').on('mouseover', '.kh, .zp, .pl', function(e) {
+        let $this = $(this);
+        country = country ? country : $('.uk-map-country .kh');
+
+        setHover($this);
+
+        clearTimeout(timetID);
+
+        timetID = setTimeout(() => {
+            setHover(country);
+        }, 5000)
+
     })
 }
 
@@ -451,7 +461,6 @@ document.addEventListener('DOMContentLoaded', () => {
     datepickerInit();
     videosInit();
     inviewInit();
-    
-    setTimeout(() => svgMapInit(), 0)
+    svgMapInit();
 
 })
