@@ -70,25 +70,54 @@
     }
   }
 
-  .zp-hover {
-    opacity: 0;
-    &:hover {
-      opacity: 1;
+  .kh,
+  .zp,
+  .pl {
+    cursor: pointer;
+
+    [filter] path {
+      transition: fill 0.1s, stroke 0.1s;
+    }
+
+    &:not(:hover) {
+      [filter] {
+        filter: none;
+      }
     }
   }
 
-  .kh-hover {
-    opacity: 0;
-    &:hover {
-      opacity: 1;
+  .uk-map-country-hover {
+    .kh,
+    .zp,
+    .pl {
+      &:not(:hover) {
+        [filter] path {
+          fill: #E3F1FF;
+          stroke: #E3F1FF;
+        }
+      }
     }
   }
 
-  .pl-hover {
-    opacity: 0;
-    &:hover {
-      opacity: 1;
-    }
-  }
+  // .zp-hover {
+  //   opacity: 0;
+  //   &:hover {
+  //     opacity: 1;
+  //   }
+  // }
+
+  // .kh-hover {
+  //   opacity: 0;
+  //   &:hover {
+  //     opacity: 1;
+  //   }
+  // }
+
+  // .pl-hover {
+  //   opacity: 0;
+  //   &:hover {
+  //     opacity: 1;
+  //   }
+  // }
 }
 
