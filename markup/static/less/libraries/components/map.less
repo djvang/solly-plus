@@ -79,22 +79,16 @@
       transition: fill 0.1s, stroke 0.1s;
     }
 
-    &:not(:hover) {
+    &:not(.is-hover) {
       [filter] {
         filter: none;
       }
     }
-  }
 
-  .uk-map-country-hover {
-    .kh,
-    .zp,
-    .pl {
-      &:not(:hover) {
-        [filter] path {
-          fill: #E3F1FF;
-          stroke: #E3F1FF;
-        }
+    &.is-hover {
+      [filter] path {
+        fill: #2792FF;
+        stroke: #2792FF;
       }
     }
   }
