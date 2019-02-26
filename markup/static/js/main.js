@@ -437,7 +437,7 @@ function inviewInit() {
 
     const handler = () => {
 
-        let isOut = window.pageYOffset > (main ? main.clientHeight : 200);
+        let isOut = window.pageYOffset > (main ? main.clientHeight : -1);
 
         if (isOut) {
             features.classList.add('uk-inview')
