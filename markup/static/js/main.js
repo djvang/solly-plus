@@ -160,7 +160,7 @@ function swiperCarInit() {
                     let self = this;
                     rest.classList.add('swiper-rest-active');
                     rest.onclick = function() {
-                        console.log(self.$wrapperEl.addClass('swiper-opened'));
+                        self.$wrapperEl.addClass('swiper-opened');
                     }
                 }
 
@@ -215,7 +215,7 @@ function swiperCarInit() {
 }
 
 function swiperInit() {
-    document.querySelectorAll('.swiper-container:not(.uk-car-gallery-general)').forEach(function (swiper) {
+    document.querySelectorAll('.swiper-container:not(.uk-car-gallery-general):not(.uk-car-gallery-thumb)').forEach(function (swiper) {
         new Swiper(swiper, {
             scrollbar: {
                 el: swiper.querySelector('.swiper-scrollbar'),
@@ -409,8 +409,6 @@ function svgMapInit() {
     if(!map) return;
     const countries = map.querySelectorAll('.kh, .zp, .pl');
 
-    console.log(countries);
-
     countries.forEach(country => {
         country.onmouseover = function() {
             map.classList.add('uk-map-country-hover');
@@ -443,7 +441,6 @@ function inviewInit() {
     window.addEventListener('scroll', handler)
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
 
     priceInit();
@@ -454,6 +451,7 @@ document.addEventListener('DOMContentLoaded', () => {
     datepickerInit();
     videosInit();
     inviewInit();
-    svgMapInit();
+    
+    setTimeout(() => svgMapInit(), 0)
 
 })
