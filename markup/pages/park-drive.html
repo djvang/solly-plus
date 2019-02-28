@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body>
+        %=symbols=%
+
+        <div class="uk-page">
+
+					<div class="uk-page-left">
+						{{> header/header dealers=false}}
+					</div>
+
+					<div class="uk-page-body">
+						<div class="uk-hero uk-hero-park-drive uk-hero-secondary">
+							<div class="uk-hero-background">
+								<img src="%=static=%img/content/hero-image-5.jpg" alt="">
+							</div>
+							<div class="uk-hero-foreground">
+								{{> navbar/navbar}}
+							</div>
+						</div>
+						<div class="uk-container">
+							<div class="uk-section uk-section-park-drive">
+								<h1 class="uk-heading-title uk-margin-small-bottom">ParkDrive</h1>
+								<a href="#" class="uk-site-link">parkdrive.ua <span class="uk-site-link-decore">{{Icon iconName="link"}}</span></a>
+								<div class="uk-logo-park-drive uk-margin-medium"><img src="%=static=%img/content/park-drive-logo.png" alt=""></div>
+								<p class="uk-margin-medium-bottom">Всеукраинская сеть автомобилей с пробегом, которая предоставляет полный перечень услуг на различных этапах покупки или продажи автомобиля</p>
+								<ul class="uk-list-park-drive uk-grid uk-margin-large-bottom" data-uk-grid>
+									<li class="uk-width-1-2@s">
+										<div class="uk-card-sequencing">
+											<div class="uk-card-img">{{Icon iconName="crediting"}}</div>
+											<div class="uk-card-body">
+												<p>Как продать автомобиль	и выгодно, и одновременно быстро?</p>
+											</div>
+										</div>
+									</li>
+									<li class="uk-width-1-2@s">
+										<div class="uk-card-sequencing">
+											<div class="uk-card-img">{{Icon iconName="person"}}</div>
+											<div class="uk-card-body">
+												<p>Кто ответит на звонок, если я буду занят и не смогу взять трубку?</p>
+											</div>
+										</div>
+									</li>
+									<li class="uk-width-1-2@s">
+										<div class="uk-card-sequencing">
+											<div class="uk-card-img">{{Icon iconName="shield"}}</div>
+											<div class="uk-card-body">
+												<p>Как себя обезопасить от мошенников?</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<h4 class="uk-section-subtitle uk-margin-medium-bottom">Учитывая все пожелания клиентов, в 2010 году	была создана компания ParkDrive</h4>
+								<p>За  семь лет работы мы смогли проанализировать рынок продаж б/у автомобилей и найти оптимальную схему общения с каждым клиентом.	В основу нашей работы легли индивидуальный подход, высокий уровень подготовки сотрудников, профессионализм и качественное обслуживание.</p>
+							</div>
+						</div>
+						
+						{{> footer/footer visible=true}}
+					</div>
+
+        </div>
+
+        {{> scripts/scripts}}
+    </body>
+
+</html>
