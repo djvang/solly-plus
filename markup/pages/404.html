@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        {{> head/head head.defaults}}
+    </head>
+
+    <body>
+        %=symbols=%
+
+        <div class="uk-page">
+
+            <div class="uk-page-left">
+                {{> header/header dealers=false}}
+            </div>
+
+            <div class="uk-page-body">
+                <!-- content -->
+
+                <div class="uk-hero uk-hero-default uk-hero-404">
+                    <div class="uk-hero-decore">
+                        {{Icon iconName="bg-decore-9"}}
+                    </div>
+                    <div class="uk-hero-background">
+                        <img src="%=static=%img/general/404.png" alt="">
+                    </div>
+                    <div class="uk-hero-foreground">
+                        <div class="uk-hero-header">
+                            {{> navbar/navbar }}
+                        </div>
+                        <div class="uk-hero-body">
+                            <div class="uk-container">
+                                <div class="uk-404">
+                                    <h3 class="uk-404-title">Извините, страница не найдена</h3>
+                                    <p class="uk-404-description">С сайтом все нормально, просто страница, которую вы искали, перемещена, удалена или никогда не существовала. Такое бывает…</p>
+                                    <div class="uk-404-actions">
+                                        <a href="#" class="uk-button uk-button-small uk-button-primary">Перейти на главную</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                {{> footer/footer visible=true}}
+            </div>
+
+        </div>
+
+        {{> scripts/scripts}}
+    </body>
+
+</html>
