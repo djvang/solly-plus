@@ -962,6 +962,13 @@ b {
 .uk-link-secondary:before {
   border-color: #A5A8AD;
 }
+.uk-quote {
+  font-size: 28px;
+  color: #D9DADD;
+  line-height: 1.42;
+  padding: 16px;
+  font-weight: 400;
+}
 /* ========================================================================
    Component: Link
  ========================================================================== */
@@ -2898,12 +2905,25 @@ select.uk-form-width-xsmall {
   position: relative;
 }
 .uk-section-background,
-.uk-section-overlay {
+.uk-section-overlay,
+.uk-section-decor {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+.uk-section-decor-bottom-right {
+  top: auto;
+  left: auto;
+}
+.uk-section-decor-bottom-outer {
+  top: auto;
+  bottom: -100px;
+}
+.uk-section-decor svg {
+  width: auto;
+  height: auto;
 }
 .uk-section-overlay {
   opacity: 0.5;
@@ -4827,6 +4847,12 @@ select.uk-form-width-xsmall {
   -webkit-box-shadow: 0 0 0 2px #FBF659;
           box-shadow: 0 0 0 2px #FBF659;
 }
+.uk-list[class*="uk-column"]:not(.uk-list-block) > li {
+  display: inline-block;
+}
+.uk-list-block > li {
+  margin-top: 0 !important;
+}
 .uk-list li {
   padding-left: 30px;
   position: relative;
@@ -4835,7 +4861,7 @@ select.uk-form-width-xsmall {
 .uk-list li:first-child {
   margin-top: 0;
 }
-.uk-list li:last-child {
+.uk-list li:not(:last-child) {
   margin-top: 40px;
 }
 .uk-list li:before {
@@ -4849,6 +4875,11 @@ select.uk-form-width-xsmall {
   height: 8px;
   background-color: #E7E8EB;
   border-radius: 50%;
+}
+@media (max-width: 639px) {
+  .uk-list li:before {
+    top: 10px;
+  }
 }
 .uk-list li ul {
   padding-left: 0;
@@ -5075,6 +5106,24 @@ label.uk-card-model input:checked ~ * .uk-card-title {
   font-size: 14px;
   color: #A5A8AD;
 }
+.uk-card-car-secondary {
+  text-align: center;
+}
+.uk-card-car-secondary .uk-card-image {
+  margin-bottom: 20px;
+  height: 160px;
+}
+.uk-card-car-secondary .uk-card-image img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.uk-card-car-secondary .uk-card-title {
+  font-size: 16px;
+  font-weight: 500;
+}
 .uk-card-car-preview {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -5085,6 +5134,31 @@ label.uk-card-model input:checked ~ * .uk-card-title {
 .uk-card-car-preview .uk-card-body {
   padding-left: 0;
   padding-right: 0;
+}
+.uk-card-step .uk-card-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 500px;
+  background: #FFFFFF;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+  color: #303032;
+}
+.uk-card-step .uk-card-title {
+  font-size: 18px;
 }
 .uk-card-credit-amount .uk-credit-amount {
   font-size: 34px;
@@ -5874,6 +5948,11 @@ label.uk-card-model input:checked ~ * .uk-card-title {
     min-height: 375px;
   }
 }
+@media (max-width: 959px) {
+  .uk-card-info-2 {
+    min-height: 100px;
+  }
+}
 .uk-card-service {
   padding: 20px;
   border: 1px solid #EAEBED;
@@ -5886,13 +5965,42 @@ label.uk-card-model input:checked ~ * .uk-card-title {
           align-items: center;
   line-height: 1.55;
 }
-.uk-card-service:hover {
+.uk-card-service.uk-active,
+.uk-card-service[href]:hover {
   border-color: #FBF659;
   -webkit-box-shadow: 0px 0px 0px 2px #FBF659;
           box-shadow: 0px 0px 0px 2px #FBF659;
 }
 @media (min-width: 640px) {
   .uk-card-service {
+    padding: 35px;
+  }
+}
+.uk-card-service-secondary {
+  padding: 20px;
+  border: 3px solid #FBF659;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.55;
+  color: #303032;
+  font-weight: 500;
+}
+.uk-card-service-secondary.uk-active,
+.uk-card-service-secondary[href]:hover {
+  color: #303032;
+  text-decoration: none;
+  border-color: #FBF659;
+  background-color: #FBF659;
+  -webkit-box-shadow: 0px 0px 0px 2px #FBF659;
+          box-shadow: 0px 0px 0px 2px #FBF659;
+}
+@media (min-width: 640px) {
+  .uk-card-service-secondary {
     padding: 35px;
   }
 }
@@ -6029,15 +6137,29 @@ label.uk-card-model input:checked ~ * .uk-card-title {
 .uk-card-succes-story-4 {
   position: relative;
   border-radius: 10px;
-  overflow: hidden;
 }
 .uk-card-succes-story-4 .uk-title-decore {
   display: block;
   font-size: 16px;
   margin-bottom: 8px;
 }
+.uk-card-succes-story-4 .uk-card-overlay {
+  border-radius: 10px;
+}
+.uk-card-succes-story-4 .uk-card-background img {
+  border-radius: 10px;
+}
 .uk-card-succes-story-4 .uk-card-foreground {
   padding: 50px 40px;
+}
+@media (min-width: 640px) {
+  .uk-card-succes-story-4-large .uk-card-foreground {
+    padding-top: 80px;
+    padding-bottom: 110px;
+  }
+}
+.uk-card-succes-story-4-large .uk-card-icon {
+  font-size: 64px;
 }
 .uk-card-succes-story-1 {
   position: relative;
@@ -6482,12 +6604,47 @@ label.uk-card-model input:checked ~ * .uk-card-title {
   text-decoration: none;
   background-color: #E7E8EB;
 }
-.uk-card-statistic {
-  border: 3px solid #E7E8EB;
+.uk-card-statistic,
+.uk-card-statistic-tertiary {
   border-radius: 10px;
   padding: 46px 25px;
 }
-.uk-card-statistic .uk-card-value {
+@media (max-width: 639px) {
+  .uk-card-statistic,
+  .uk-card-statistic-tertiary {
+    padding: 23px 14px;
+  }
+}
+.uk-card-statistic .uk-card-label,
+.uk-card-statistic-tertiary .uk-card-label {
+  margin-bottom: 8px;
+}
+.uk-card-statistic .uk-card-decor,
+.uk-card-statistic-tertiary .uk-card-decor {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media (max-width: 639px) {
+  .uk-card-statistic .uk-card-decor,
+  .uk-card-statistic-tertiary .uk-card-decor {
+    opacity: 0.2;
+  }
+}
+.uk-card-statistic .uk-card-decor svg,
+.uk-card-statistic-tertiary .uk-card-decor svg {
+  width: auto;
+  height: auto;
+}
+.uk-card-statistic .uk-card-background,
+.uk-card-statistic-tertiary .uk-card-background,
+.uk-card-statistic .uk-card-overlay,
+.uk-card-statistic-tertiary .uk-card-overlay {
+  border-radius: inherit;
+  overflow: hidden;
+}
+.uk-card-statistic .uk-card-value,
+.uk-card-statistic-tertiary .uk-card-value {
   font-weight: 500;
   line-height: normal;
   font-size: 48px;
@@ -6495,13 +6652,40 @@ label.uk-card-model input:checked ~ * .uk-card-title {
   color: #376BC7;
 }
 @media (max-width: 639px) {
-  .uk-card-statistic .uk-card-value {
+  .uk-card-statistic .uk-card-value,
+  .uk-card-statistic-tertiary .uk-card-value {
     font-size: 24px;
   }
 }
-.uk-card-statistic .uk-card-description {
+.uk-card-statistic .uk-card-description,
+.uk-card-statistic-tertiary .uk-card-description {
   font-size: 16px;
   line-height: 1.6;
+}
+.uk-card-statistic.uk-light .uk-card-value,
+.uk-card-statistic-tertiary.uk-light .uk-card-value,
+.uk-card-statistic.uk-section-primary:not(.uk-preserve-color) .uk-card-value,
+.uk-card-statistic-tertiary.uk-section-primary:not(.uk-preserve-color) .uk-card-value,
+.uk-card-statistic.uk-section-secondary:not(.uk-preserve-color) .uk-card-value,
+.uk-card-statistic-tertiary.uk-section-secondary:not(.uk-preserve-color) .uk-card-value,
+.uk-card-statistic.uk-tile-primary:not(.uk-preserve-color) .uk-card-value,
+.uk-card-statistic-tertiary.uk-tile-primary:not(.uk-preserve-color) .uk-card-value,
+.uk-card-statistic.uk-tile-secondary:not(.uk-preserve-color) .uk-card-value,
+.uk-card-statistic-tertiary.uk-tile-secondary:not(.uk-preserve-color) .uk-card-value,
+.uk-card-statistic.uk-card-primary.uk-card-body .uk-card-value,
+.uk-card-statistic-tertiary.uk-card-primary.uk-card-body .uk-card-value,
+.uk-card-statistic.uk-card-primary > :not([class*='uk-card-media']) .uk-card-value,
+.uk-card-statistic-tertiary.uk-card-primary > :not([class*='uk-card-media']) .uk-card-value,
+.uk-card-statistic.uk-card-secondary.uk-card-body .uk-card-value,
+.uk-card-statistic-tertiary.uk-card-secondary.uk-card-body .uk-card-value,
+.uk-card-statistic.uk-card-secondary > :not([class*='uk-card-media']) .uk-card-value,
+.uk-card-statistic-tertiary.uk-card-secondary > :not([class*='uk-card-media']) .uk-card-value,
+.uk-card-statistic.uk-overlay-primary .uk-card-value,
+.uk-card-statistic-tertiary.uk-overlay-primary .uk-card-value {
+  color: inherit;
+}
+.uk-card-statistic {
+  border: 3px solid #E7E8EB;
 }
 .uk-card-statistic-secondary {
   background: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%), #376BC7;
@@ -7395,6 +7579,7 @@ ul.uk-nav-sub {
   /* 1 */
   position: relative;
   line-height: normal;
+  z-index: 2000;
 }
 /* Container
  ========================================================================== */
@@ -11914,6 +12099,10 @@ iframe.uk-cover {
 .uk-background-blend-luminosity {
   background-blend-mode: luminosity;
 }
+.uk-background-primary.is-shadow {
+  -webkit-box-shadow: 0px 0px 50px rgba(55, 107, 199, 0.4);
+          box-shadow: 0px 0px 50px rgba(55, 107, 199, 0.4);
+}
 .uk-background-muted {
   background-color: #F1F2F4;
 }
@@ -11975,6 +12164,10 @@ iframe.uk-cover {
 }
 .uk-background-14 {
   background: #FBF659;
+}
+.uk-background-14.is-shadow {
+  -webkit-box-shadow: 0px 0px 50px rgba(251, 246, 89, 0.6);
+          box-shadow: 0px 0px 50px rgba(251, 246, 89, 0.6);
 }
 .uk-background-15 {
   background: #303032;
@@ -16445,6 +16638,10 @@ iframe.uk-cover {
     font-size: 2rem;
   }
 }
+.uk-background-primary.is-shadow {
+  -webkit-box-shadow: 0px 0px 50px rgba(55, 107, 199, 0.4);
+          box-shadow: 0px 0px 50px rgba(55, 107, 199, 0.4);
+}
 .uk-background-muted {
   background-color: #F1F2F4;
 }
@@ -16506,6 +16703,10 @@ iframe.uk-cover {
 }
 .uk-background-14 {
   background: #FBF659;
+}
+.uk-background-14.is-shadow {
+  -webkit-box-shadow: 0px 0px 50px rgba(251, 246, 89, 0.6);
+          box-shadow: 0px 0px 50px rgba(251, 246, 89, 0.6);
 }
 .uk-background-15 {
   background: #303032;
@@ -17701,6 +17902,48 @@ iframe.uk-cover {
           align-items: center;
   text-align: center;
 }
+.uk-hero-company-history .uk-hero-background {
+  top: 100px;
+  z-index: 1;
+  pointer-events: none;
+}
+.uk-hero-company-history .uk-hero-background img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center right;
+     object-position: center right;
+}
+.uk-hero-company-history .uk-hero-body {
+  text-align: center;
+}
+.uk-hero-company-history .uk-hero-title {
+  font-size: 100px;
+  line-height: normal;
+  font-weight: bold;
+}
+@media (max-width: 959px) {
+  .uk-hero-company-history .uk-hero-title {
+    font-size: 50px;
+  }
+}
+.uk-hero-company-history .uk-hero-description {
+  font-size: 24px;
+}
+.uk-hero-company-history .uk-hero-image {
+  position: relative;
+  display: inline-block;
+}
+.uk-hero-company-history .uk-hero-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, right top, left top, from(#FFFFFF), color-stop(14.19%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, right top, from(#FFFFFF), color-stop(10.81%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, left top, left bottom, color-stop(52.98%, rgba(255, 255, 255, 0)), to(#FFFFFF));
+  background: -webkit-linear-gradient(right, #FFFFFF 0%, rgba(255, 255, 255, 0) 14.19%), -webkit-linear-gradient(left, #FFFFFF 0%, rgba(255, 255, 255, 0) 10.81%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 52.98%, #FFFFFF 100%);
+  background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 14.19%), linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 10.81%), linear-gradient(180deg, rgba(255, 255, 255, 0) 52.98%, #FFFFFF 100%);
+}
 .uk-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17786,6 +18029,16 @@ iframe.uk-cover {
 }
 .uk-panel-outline {
   border: 3px solid #F1F2F4;
+}
+.uk-panel-info {
+  border: 5px solid #FBF659;
+  border-radius: 10px;
+  padding: 80px;
+}
+@media (max-width: 959px) {
+  .uk-panel-info {
+    padding: 40px;
+  }
 }
 .uk-price {
   max-width: 440px;

@@ -15,30 +15,34 @@
         </div>
 
         <div class="uk-page-body">
-            <div class="uk-hero uk-hero-service uk-hero-secondary">
-                <div class="uk-hero-background">
-                    <img src="%=static=%img/content/hero-image-6.jpg" alt="">
+            <div class="uk-page-main">
+                <div class="uk-hero uk-hero-default uk-hero-service uk-hero-secondary">
+                    <div class="uk-hero-background">
+                        <div class="uk-hero-image-sticky" data-uk-sticky="bottom: .uk-page-main">
+                            <img src="%=static=%img/content/hero-image-6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="uk-hero-foreground">
+                        {{> navbar/navbar}}
+                    </div>
                 </div>
-                <div class="uk-hero-foreground">
-                    {{> navbar/navbar}}
-                </div>
-            </div>
-            <div class="uk-container">
-                <div class="uk-section uk-section-service">
-                    <h1 class="uk-heading-title uk-margin-small-bottom">АвтоЭлемент</h1>
-                    <a href="#" class="uk-site-link">auto-element.com.ua <span class="uk-site-link-decore">{{Icon
-                            iconName="link"}}</span></a>
-                    <div class="uk-logo-park-drive uk-margin-medium"><img src="%=static=%img/content/autoelement-logo.png"
-                            alt=""></div>
-                    <p class="uk-margin-medium-bottom">АвтоЭлемент – мультибрендовый лидер на рынке автозапчастей,
-                        технических жидкостей и эксплуатационных материалов для легковых автомобилей и коммерческого
-                        транспорта.</p>
-                    <div class="uk-list uk-list-autoelements">
-                        <li>Многолетний опыт наших сотрудников позволяет обеспечивать высококачественное
-                            профессиональное обслуживание</li>
-                        <li>Подбор автозапчастей необходимого качества</li>
-                        <li>Информирование о новых брендах запчастей и их качестве</li>
-                        <li>Консультанты подберут необходимые фильтра, масла и другие запчасти</li>
+                <div class="uk-container">
+                    <div class="uk-section uk-section-service">
+                        <h1 class="uk-heading-title uk-margin-small-bottom">АвтоЭлемент</h1>
+                        <a href="#" class="uk-site-link">auto-element.com.ua <span class="uk-site-link-decore">{{Icon
+                                iconName="link"}}</span></a>
+                        <div class="uk-logo-park-drive uk-margin-medium"><img src="%=static=%img/content/autoelement-logo.png"
+                                alt=""></div>
+                        <p class="uk-margin-medium-bottom">АвтоЭлемент – мультибрендовый лидер на рынке автозапчастей,
+                            технических жидкостей и эксплуатационных материалов для легковых автомобилей и коммерческого
+                            транспорта.</p>
+                        <div class="uk-list uk-list-autoelements">
+                            <li>Многолетний опыт наших сотрудников позволяет обеспечивать высококачественное
+                                профессиональное обслуживание</li>
+                            <li>Подбор автозапчастей необходимого качества</li>
+                            <li>Информирование о новых брендах запчастей и их качестве</li>
+                            <li>Консультанты подберут необходимые фильтра, масла и другие запчасти</li>
+                        </div>
                     </div>
                 </div>
             </div>

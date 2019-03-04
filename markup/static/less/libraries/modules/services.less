@@ -69,6 +69,10 @@
         @media (min-width: @breakpoint-medium) {
             min-height: 375px;
         }
+
+        @media (max-width: @breakpoint-small-max) {
+            min-height: 100px;
+        }
     }
 
     .uk-card-service {
@@ -79,8 +83,33 @@
         align-items: center;
         line-height: 1.55;
 
-        &:hover {
+        &.uk-active,
+        &[href]:hover {
             border-color: @global-warning-background;
+            box-shadow: 0px 0px 0px 2px @global-warning-background;
+        }
+
+        @media (min-width: @breakpoint-small) {
+            padding: 35px;
+        }
+    }
+
+    .uk-card-service-secondary {
+        padding: 20px;
+        border: 3px solid @global-warning-background;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        line-height: 1.55;
+        color: @global-color;
+        font-weight: 500;
+
+        &.uk-active,
+        &[href]:hover {
+            color: @global-color;
+            text-decoration: none;
+            border-color: @global-warning-background;
+            background-color: @global-warning-background;
             box-shadow: 0px 0px 0px 2px @global-warning-background;
         }
 
