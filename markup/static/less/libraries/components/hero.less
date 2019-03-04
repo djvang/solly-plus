@@ -196,3 +196,43 @@
     text-align: center;
   }
 }
+
+.uk-hero-company-history {
+  .uk-hero-background {
+    top: 100px;
+    z-index: 1;
+    pointer-events: none;
+    img {
+      object-fit: contain;
+      object-position: center right;
+    }
+  }
+  .uk-hero-body {
+    text-align: center;
+  }
+  .uk-hero-title {
+    font-size: 100px;
+    line-height: normal;
+    font-weight: bold;
+
+    @media (max-width: @breakpoint-small-max) {
+      font-size: 50px;
+    }
+  }
+  .uk-hero-description {
+    font-size: 24px;
+  }
+  .uk-hero-image {
+    position: relative;
+    display: inline-block;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 14.19%), linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 10.81%), linear-gradient(180deg, rgba(255, 255, 255, 0) 52.98%, #FFFFFF 100%);
+    }
+  }
+}

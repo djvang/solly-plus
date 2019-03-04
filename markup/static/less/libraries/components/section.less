@@ -52,12 +52,30 @@
   position: relative;
   
   &-background,
-  &-overlay {
+  &-overlay,
+  &-decor {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+  }
+
+  &-decor-bottom-right {
+    top: auto;
+    left: auto;
+  }
+
+  &-decor-bottom-outer {
+    top: auto;
+    bottom: -100px;
+  }
+
+  &-decor {
+    svg {
+      width: auto;
+      height: auto;
+    }
   }
 
   &-overlay {

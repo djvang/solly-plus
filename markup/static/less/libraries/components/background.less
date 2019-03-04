@@ -20,6 +20,11 @@
 .hook-background-misc;
 
 .hook-background-misc() {
+  .uk-background-primary {
+    &.is-shadow {
+      box-shadow: 0px 0px 50px rgba(55, 107, 199, 0.4);
+    }
+  }
   .uk-background-muted {
     background-color: @background-muted-background;
   }
@@ -70,6 +75,9 @@
   }
   .uk-background-14 {
     background: #FBF659;
+    &.is-shadow {
+      box-shadow: 0px 0px 50px rgba(251, 246, 89, 0.6);
+    }
   }
   .uk-background-15 {
     background: @background-secondary-background;

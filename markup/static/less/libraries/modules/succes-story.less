@@ -37,15 +37,37 @@
   .uk-card-succes-story-4 {
     position: relative;
     border-radius: 10px;
-    overflow: hidden;
+    // overflow: hidden;
 
     .uk-title-decore {
       display: block;
       font-size: 16px;
       margin-bottom: 8px;
     }
+    .uk-card-overlay {
+      border-radius: 10px;
+    }
+    .uk-card-background {
+      img {
+        border-radius: 10px;
+      }
+    }
     .uk-card-foreground {
       padding: 50px 40px;
+    }
+
+    &-large {
+      
+      @media (min-width: @breakpoint-small) {
+        .uk-card-foreground {
+          padding-top: 80px;
+          padding-bottom: 110px;
+        }
+      }
+
+      .uk-card-icon {
+        font-size: 64px;
+      }
     }
   }
 

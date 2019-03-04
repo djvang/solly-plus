@@ -13,6 +13,17 @@
   }
 
   .uk-list {
+    &[class*="uk-column"]:not(.uk-list-block) {
+      > li {
+        display: inline-block;
+      }
+    }
+
+    &-block {
+      > li {
+        margin-top: 0 !important;
+      }
+    }
     li {
       padding-left: 30px;
       position: relative;
@@ -22,7 +33,7 @@
         margin-top: 0;
       }
 
-      &:last-child {
+      &:not(:last-child) {
         margin-top: 40px;
       }
 
@@ -36,6 +47,10 @@
         height: 8px;
         background-color: #E7E8EB;
         border-radius: 50%;
+
+        @media (max-width: @breakpoint-xsmall-max) {
+          top: 10px;
+        }
       }
 
       ul {
