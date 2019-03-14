@@ -247,14 +247,18 @@ function priceInit() {
         let priceFrom = root.querySelector('[data-nouislider-from]');
         let priceTo = root.querySelector('[data-nouislider-to]');
         let inputs = [priceFrom, priceTo];
+        let priceFromValue = parseInt(priceFrom.value);
+        let priceToValue = parseInt(priceTo.value);
+        let priceValueMin = parseInt(priceFrom.dataset.nouisliderMin) || priceFromValue;
+        let priceValueMax = parseInt(priceTo.dataset.nouisliderMax) || priceToValue;
 
         noUiSlider.create(price, {
-            start: [0, 10000],
+            start: [priceFromValue, priceToValue],
             step: 1,
             connect: false,
             range: {
-                'min': [0],
-                'max': 10000
+                'min': priceValueMin,
+                'max': priceValueMax
             }
         });
 
