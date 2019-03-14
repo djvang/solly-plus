@@ -1,0 +1,235 @@
+.hook-card-misc() {
+  .uk-card-sport {
+    font-size: 16px;
+    color: @global-color;
+    .uk-card-title {
+      font-size: 16px;
+      margin: 0;
+    }
+    .uk-card-img {
+      height: 290px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .uk-card-statistic-3 {
+    background: @global-inverse-color;
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 40px 25px;
+    border-radius: 10px;
+    .uk-card-value {
+      font-size: 38px;
+      color: @background-primary-background;
+    }
+  }
+}
+
+.hook-section-misc() {
+  .uk-hero-about-team {
+    
+    @media (min-width: @breakpoint-medium) {
+      min-height: 640px;
+    }
+    .uk-hero-heading {
+      font-size: 36px;
+      font-weight: 200;
+      @media (min-width: @breakpoint-medium) {
+        font-size: 56px;
+      }
+    }
+    .uk-hero-body {
+      padding-top: 0;
+      position: relative;
+      display: flex;
+      .uk-hero-arrow {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateY(-50%);
+      }
+      .uk-hero-description {
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      .uk-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    .uk-hero-foreground {
+      z-index: 2;
+    }
+    .uk-hero-decore {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .uk-section-popular-sport {
+    @media (min-width: @breakpoint-medium) {
+      padding-top: 150px;
+    }
+
+    .uk-section-background {
+      position: absolute;
+      z-index: -1;
+      bottom: 37%;
+      overflow: hidden;
+      img {
+        max-width: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .uk-section-overlay {
+      opacity: 0.8;
+      z-index: -1;
+    }
+  }
+
+  .uk-swiper-sport {
+    overflow: visible;
+    .swiper-slide {
+      min-width: 250px;
+      @media (min-width: @breakpoint-medium) {
+        width: 40%;
+      }
+    }
+  }
+
+  .uk-section-info-team, 
+  .uk-section-info-team-2 {
+    overflow: hidden;
+   
+    @media (min-width: @breakpoint-medium) {
+      min-height: 245px;
+    }
+    .uk-section-background {
+      filter: blur(8px);
+      img {
+        max-width: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .uk-section-overlay {
+      opacity: 0.8;
+    }
+    .uk-section-foreground {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .uk-section-info-team-2 {
+    @media (min-width: @breakpoint-medium) {
+      min-height: 310px;
+    }
+  }
+
+  .uk-section-employees-hobby {
+    @media (min-width: @breakpoint-medium) {
+      padding: 150px 0;
+    }
+    .swiper-slide {
+      min-width: 250px;
+      @media (min-width: @breakpoint-small) {
+        width: 85%;
+      }
+    }
+    .uk-card-person-2 {
+      max-width: 100%;
+      flex-direction: column;
+      text-align: center;
+      @media (min-width: @breakpoint-small) {
+        flex-direction: row;
+        text-align: left;
+      }
+
+      .uk-card-top {
+        margin: 0 0 20px 0;
+        @media (min-width: @breakpoint-small) {
+          margin: 0 30px 0 0;
+        }
+      }
+
+      .uk-card-person-avatar {
+        width: 140px;
+        height: 140px;
+      }
+      .uk-card-person-name {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .uk-section-new-autocenters {
+    .uk-hero-background {
+      bottom: 50%;
+    }
+    .uk-row {
+      @media (min-width: @breakpoint-small) {
+        flex-wrap: nowrap;
+      }
+    }
+
+    .uk-col-1 {
+      
+      @media (min-width: @breakpoint-small) {
+        width: 45%;
+      }
+      @media (min-width: @breakpoint-medium) {
+        width: 35%;
+      }
+    }
+    .uk-col-2 {
+     
+      @media (min-width: @breakpoint-small) {
+        width: 55%;
+        align-self: flex-end;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+      @media (min-width: @breakpoint-medium) {
+        width: 65%;
+      }
+    }
+
+    .uk-section-decore {
+      position: absolute;
+      left: 40px;
+      right: 0;
+      bottom: -50px;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.hook-grid-misc() {
+  
+}
