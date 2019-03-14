@@ -38,7 +38,7 @@
 @form-height:                                   @global-control-height;
 @form-line-height:                              @form-height;
 @form-padding-horizontal:                       20px;
-@form-padding-vertical:                         4px;
+@form-padding-vertical:                         14px;
 
 @form-background:                               @global-background;
 @form-color:                                    @global-color;
@@ -144,7 +144,9 @@
   }
 }
 .hook-form-single-line() {}
-.hook-form-multi-line() {}
+.hook-form-multi-line() {
+  line-height: 1.8;
+}
 .hook-form-focus() {
   border-color: @global-primary-background;
 }
