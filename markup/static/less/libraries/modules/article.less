@@ -114,6 +114,13 @@
       } 
     }
 
+    &.uk-is-hover:not(:hover):not(:focus) {
+      .uk-video-overlay,
+      .uk-video-foreground {
+        opacity: 0;
+      }
+    }
+
     &:hover,
     &:focus {
       .uk-btn-video-link {
