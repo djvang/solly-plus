@@ -1,111 +1,124 @@
 .hook-card-misc() {
-  .uk-site-link {
-    font-weight: 500;
-    display: inline-block;
-    position: relative;
-    padding-right: 26px;
-    .uk-site-link-decore {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      line-height: 1;
-      transform: translateY(-50%);
+    .uk-site-link {
+        font-weight: 500;
+        display: inline-block;
+        position: relative;
+        padding-right: 26px;
 
-      &:hover {
-        svg {
-          fill: @global-link-hover-color;
-        }
-      }
-      svg {
-        width: auto;
-        height: auto;
-      }
-    }
-  }
+        .uk-site-link-decore {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            line-height: 1;
+            transform: translateY(-50%);
 
-  .uk-list-park-drive {
-    .uk-card-sequencing {
-      padding-top: 0;
-    }
-  }
+            &:hover {
+                svg {
+                    fill: @global-link-hover-color;
+                }
+            }
 
-  // .uk-list-autoelements,
-  .uk-list-service {
-    font-size: 16px;
-    li {
-      @media (min-width: @breakpoint-medium) {
-        &:nth-child(n+2), & > ul {
-          margin-top: 30px;
+            svg {
+                width: auto;
+                height: auto;
+            }
         }
-      }
-      &:last-child {
-        margin-top: 10px;
-        @media (min-width: @breakpoint-medium) {
-          margin-top: 30px;
-        }
-      }
     }
-  }
+
+    .uk-list-park-drive {
+        .uk-card-sequencing {
+            padding-top: 0;
+        }
+    }
+
+    // .uk-list-autoelements,
+    .uk-list-service {
+        font-size: 16px;
+
+        li {
+            @media (min-width: @breakpoint-medium) {
+
+                &:nth-child(n+2),
+                &>ul {
+                    margin-top: 30px;
+                }
+            }
+
+            &:last-child {
+                margin-top: 10px;
+
+                @media (min-width: @breakpoint-medium) {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
 
 
 }
 
 .hook-section-misc() {
 
-  .uk-hero-secondary {
-    .uk-navbar-nav > li > a, .uk-navbar-item, 
-    .uk-navbar-nav > li.uk-active > a, 
-    .uk-navbar-nav > li:hover > a, 
-    .uk-navbar-nav > li > a:focus, 
-    .uk-navbar-nav > li > a.uk-open {
-      color: @global-inverse-color;
-    }
-    .uk-hero-background {
-      bottom: -522px;
-      left: auto;
-      width: 40%;
-      display: none;
-      @media (min-width: @breakpoint-large) {
-        width: 30%;
-      }
-      @media (min-width: @breakpoint-xlarge) {
-        width: 40%;
-      }
-      @media (min-width: @breakpoint-small) {
-        display: block;
-      }
+    .uk-hero-secondary {
 
-      img {
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-    
-  }
+        .uk-navbar-nav>li>a,
+        .uk-navbar-item,
+        .uk-navbar-nav>li.uk-active>a,
+        .uk-navbar-nav>li:hover>a,
+        .uk-navbar-nav>li>a:focus,
+        .uk-navbar-nav>li>a.uk-open {
+            color: @global-inverse-color;
+        }
 
-  // .uk-section-park-drive, 
-  // .uk-section-auto-element,
-  .uk-section-service {
-    padding-top: 10px;
-    @media (min-width: @breakpoint-small) {
-      width: 60%;
-    }
-    @media (min-width: @breakpoint-large) {
-      width: 70%;
+        .uk-hero-background {
+            bottom: -522px;
+            left: auto;
+            width: 40%;
+            display: none;
+
+            @media (min-width: @breakpoint-large) {
+                width: 30%;
+            }
+
+            @media (min-width: @breakpoint-xlarge) {
+                width: 40%;
+            }
+
+            @media (min-width: @breakpoint-small) {
+                display: block;
+            }
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
     }
 
-    @media (min-width: @breakpoint-xlarge) {
-      width: 60%;
-    }
+    // .uk-section-park-drive, 
+    // .uk-section-auto-element,
+    .uk-section-service {
+        padding-top: 50px;
 
-    .uk-section-subtitle {
-      @media (min-width: @breakpoint-small) {
-        font-size: 22px;
-      }
+        @media (min-width: @breakpoint-small) {
+            width: 60%;
+        }
+
+        @media (min-width: @breakpoint-large) {
+            width: 70%;
+        }
+
+        @media (min-width: @breakpoint-xlarge) {
+            width: 60%;
+        }
+
+        .uk-section-subtitle {
+            @media (min-width: @breakpoint-small) {
+                font-size: 22px;
+            }
+        }
     }
-  }
 }
 
-.hook-grid-misc() {
-  
-}
+.hook-grid-misc() {}

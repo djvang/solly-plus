@@ -1,116 +1,127 @@
 .hook-card-misc() {
-  .uk-card-partnership {
+    .uk-card-partnership {
 
-    .uk-card-quote {
-      padding: 25px 20px;
-      box-shadow: 0px 0px 50px rgba(251, 246, 89, 0.6);
-      margin-bottom: 50px !important;
-      position: relative;
-      border-radius: 10px;
-      @media (min-width: @breakpoint-small) {
-        padding: 50px 40px;
-      }
+        .uk-card-quote {
+            padding: 25px 20px;
+            box-shadow: 0px 0px 50px rgba(251, 246, 89, 0.6);
+            margin-bottom: 50px !important;
+            position: relative;
+            border-radius: 10px;
 
-      &:before {
+            @media (min-width: @breakpoint-small) {
+                padding: 50px 40px;
+            }
+
+            &:before {
+                position: absolute;
+                content: "";
+                bottom: -45px;
+                right: 0;
+                width: 0;
+                height: 0;
+                border-top: 50px solid #FBF659;
+                border-left: 50px solid transparent;
+            }
+        }
+
+        .uk-card-title {
+            margin-bottom: 0;
+            font-size: 22px;
+
+            @media (min-width: @breakpoint-medium) {
+                font-size: 28px;
+            }
+        }
+
+        .uk-card-person-2 {
+            justify-content: flex-end;
+        }
+    }
+
+    .uk-card-partnership-2 {
+        .uk-card-quote {
+            box-shadow: none;
+            border: 5px solid @global-muted-background;
+
+            &:before {
+                border-top: 40px solid #fff;
+                border-left: none;
+                border-right: 40px solid transparent;
+                right: auto;
+                left: 0;
+                z-index: 1;
+                bottom: -38px;
+            }
+
+            &:after {
+                position: absolute;
+                content: "";
+                bottom: -50px;
+                left: -5px;
+                width: 0;
+                height: 0;
+                border-top: 50px solid @global-muted-background;
+                border-right: 50px solid transparent;
+            }
+        }
+
+        .uk-card-person-2 {
+            justify-content: flex-start;
+        }
+    }
+
+    .uk-bg-decore {
         position: absolute;
-        content: "";
-        bottom: -45px;
-        right: 0;
-        width: 0;
-        height: 0;
-        border-top: 50px solid #FBF659; 
-        border-left: 50px solid transparent;
-      }
+
     }
-
-    .uk-card-title {
-      margin-bottom: 0;
-      font-size: 22px;
-      @media (min-width: @breakpoint-medium) {
-        font-size: 28px;
-      }
-    }
-
-    .uk-card-person-2 {
-      justify-content: flex-end;
-    }
-  }
-
-  .uk-card-partnership-2 {
-    .uk-card-quote {
-      box-shadow: none;
-      border: 5px solid @global-muted-background;
-      &:before {
-        border-top: 40px solid #fff;
-        border-left: none;
-        border-right: 40px solid transparent;
-        right: auto;
-        left: 0;
-        z-index: 1;
-        bottom: -38px;
-      }
-      &:after {
-        position: absolute;
-        content: "";
-        bottom: -50px;
-        left: -5px;
-        width: 0;
-        height: 0;
-        border-top: 50px solid @global-muted-background; 
-        border-right: 50px solid transparent;
-      }
-    }
-
-    .uk-card-person-2 {
-      justify-content: flex-start;
-    }
-  }
-
-  .uk-bg-decore {
-    position: absolute;
-
-  }
 }
 
 .hook-section-misc() {
-  .uk-section-partnership {
-    padding-top: 10px;
-    .uk-phone-block {
-      .uk-contact-title {
-        font-size: 16px;
-        color: @global-muted-color;
-        margin-bottom: 10px;
-      }
-      .uk-contact-phone {
-        font-size: 30px;
-        font-weight: 200;
-        color: @global-color;
-        display: block;
-        @media (min-width: @breakpoint-small) {
-          font-size: 40px;
-        }
-      }
-      .uk-site-link {
-        font-weight: 400;
-        font-size: 22px;
-      }
-    }
+    .uk-section-partnership {
+        padding-top: 50px;
 
-    .uk-container {
-      position: relative;
-      .uk-bg-decore {
-        display: none;
-        padding: 0;
-        top: 160px;
-        left: 40px;
-        @media (min-width: @breakpoint-small) {
-          display: block;
+        .uk-phone-block {
+            .uk-contact-title {
+                font-size: 16px;
+                color: @global-muted-color;
+                margin-bottom: 10px;
+            }
+
+            .uk-contact-phone {
+                font-size: 30px;
+                font-weight: 200;
+                color: @global-color;
+                display: block;
+
+                @media (min-width: @breakpoint-small) {
+                    font-size: 40px;
+                }
+            }
+
+            .uk-site-link {
+                font-weight: 400;
+                font-size: 22px;
+            }
         }
-        svg {
-          width: auto;
-          height: auto;
+
+        .uk-container {
+            position: relative;
+
+            .uk-bg-decore {
+                display: none;
+                padding: 0;
+                top: 160px;
+                left: 40px;
+
+                @media (min-width: @breakpoint-small) {
+                    display: block;
+                }
+
+                svg {
+                    width: auto;
+                    height: auto;
+                }
+            }
         }
-      }
     }
-  }
 }
