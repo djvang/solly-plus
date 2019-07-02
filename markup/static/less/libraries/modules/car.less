@@ -1,534 +1,582 @@
 .hook-card-misc() {
 
-  label.uk-card-model {
-    cursor: pointer;
+    label.uk-card-model {
+        cursor: pointer;
 
-    .uk-card-img {
-      border: 2px solid transparent;
-      border-radius: 10px;
+        .uk-card-img {
+            border: 2px solid transparent;
+            border-radius: 10px;
+        }
+
+        >[type="checked"],
+        >[type="radio"] {
+            display: none;
+        }
+
+        input:checked {
+            ~.uk-card-img {
+                border-color: #FBF659;
+            }
+
+            ~* .uk-card-title {
+                color: @global-link-hover-color;
+            }
+        }
+
     }
 
-    > [type="checked"],
-    > [type="radio"] {
-      display: none;
-    }
-
-    input:checked {
-      ~ .uk-card-img {
-        border-color: #FBF659;
-      }
-      ~ * .uk-card-title {
-        color: @global-link-hover-color;
-      }
-    }
-
-  }
-
-  .uk-card-model {
-    font-size: @base-h6-font-size;
-    color: @global-muted-color;
-    text-align: center;
-    display: block;
-
-    &[href] {
-      &:hover {
-        text-decoration: none;
+    .uk-card-model {
+        font-size: @base-h6-font-size;
         color: @global-muted-color;
-        .uk-card-title {
-          color: @global-link-hover-color;
+        text-align: center;
+        display: block;
+
+        &[href] {
+            &:hover {
+                text-decoration: none;
+                color: @global-muted-color;
+
+                .uk-card-title {
+                    color: @global-link-hover-color;
+                }
+            }
         }
-      }
-    }
 
-    .uk-card-title {
-      font-size: @base-h6-font-size;
-      font-weight: 500;
-      margin-bottom: 0;
-    }
+        .uk-card-title {
+            font-size: @base-h6-font-size;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
 
-    .uk-card-body {
-      padding: 10px 0;
-    }
-
-    .uk-card-img {
-      height: 140px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      border-radius: @global-border-radius;
-
-      img {
-        object-fit: contain;
-      }
-    }
-  }
-
-  .uk-card-car {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    overflow: hidden;
-    min-height: 350px;
-    box-shadow: @global-medium-box-shadow;
-
-    &:hover {
-      text-decoration: none;
-
-      &:not(.uk-card-car-preview) {
         .uk-card-body {
-          margin-top: -220px;
-          background: linear-gradient(180deg, rgba(39, 146, 255, 0) -40%, rgba(39, 146, 255, 1) 60.28%, #2792FF 100%);
-          color: #fff;
+            padding: 10px 0;
+        }
+
+        .uk-card-img {
+            height: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-radius: @global-border-radius;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .uk-card-car {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        overflow: hidden;
+        min-height: 350px;
+        box-shadow: @global-medium-box-shadow;
+
+        &:hover {
+            text-decoration: none;
+
+            &:not(.uk-card-car-preview) {
+                .uk-card-body {
+                    margin-top: -220px;
+                    background: linear-gradient(180deg, rgba(48, 48, 50, 0) 0%, #303032, #303032 100%);
+                    color: #fff;
+                }
+
+                .uk-card-title {
+                    color: inherit;
+                }
+
+                .uk-card-real-price {
+                    color: inherit;
+                    opacity: 0.8;
+                }
+
+                .uk-card-price {
+                    background-color: #376BC7;
+                    color: @global-inverse-color;
+                }
+            }
+
+        }
+
+        &:not(:hover):not(.uk-card-car-preview) {
+            .uk-card-specification {
+                display: none;
+            }
+        }
+
+        .uk-card-img {
+            height: 220px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
 
         .uk-card-title {
-          color: inherit;
+            font-size: 16px;
+            margin-bottom: 10px;
         }
 
-        .uk-card-real-price {
-          color: inherit;
-          opacity: 0.8;
+        .uk-card-body {
+            padding: 20px 20px 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+
+        .uk-card-specification {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0;
+            font-size: 14px;
+
+            .uk-specification-indicator {
+                font-weight: 500;
+                padding-left: 3px;
+            }
+        }
+
+        .uk-price-holder {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
         }
 
         .uk-card-price {
-          background-color: #fff;
-          color: @global-color;
+            display: inline-block;
+            padding: 6px 10px;
+            background-color: #376BC7;
+            color: @global-inverse-color;
+            font-size: 16px;
+            font-weight: 900;
+            border-radius: 23px;
+            line-height: 1.2;
         }
-      }
 
+        .uk-card-real-price {
+            font-size: 14px;
+            color: @global-muted-color;
+        }
     }
 
-    &:not(:hover):not(.uk-card-car-preview) {
-      .uk-card-specification {
-        display: none;
-      }
+    .uk-card-car-secondary {
+        text-align: center;
+
+        .uk-card-image {
+            margin-bottom: 20px;
+            height: 160px;
+        }
+
+        .uk-card-image img {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .uk-card-title {
+            font-size: 16px;
+            font-weight: 500;
+        }
     }
 
-    .uk-card-img {
-      height: 220px;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    .uk-card-car-preview {
+        box-shadow: none;
+
+        .uk-card-img {
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .uk-card-body {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
-    .uk-card-title {
-      font-size: 16px;
-      margin-bottom: 10px;
+    .uk-card-step {
+
+        .uk-card-number {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 500px;
+            background: #FFFFFF;
+
+            font-weight: bold;
+            line-height: normal;
+            font-size: 18px;
+
+            color: #303032;
+        }
+
+        .uk-card-title {
+            font-size: 18px;
+        }
     }
-
-    .uk-card-body {
-      padding: 20px 20px 25px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-
-      &:before, &:after {
-        display: none;
-      }
-    }
-
-    .uk-card-specification {
-      list-style: none;
-      padding-left: 0;
-      margin-top: 0;
-      font-size: 14px;
-
-      .uk-specification-indicator {
-        font-weight: 500;
-        padding-left: 3px;
-      }
-    }
-    
-    .uk-price-holder {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .uk-card-price {
-      display: inline-block;
-      padding: 6px 10px;
-      background-color: @global-success-background;
-      color: @global-inverse-color;
-      font-size: 16px;
-      font-weight: 900;
-      border-radius: 23px;
-      line-height: 1.2;
-    }
-
-    .uk-card-real-price {
-      font-size: 14px;
-      color: @global-muted-color;
-    }
-  }
-
-  .uk-card-car-secondary {
-    text-align: center;
-
-    .uk-card-image {
-      margin-bottom: 20px;
-      height: 160px;
-    }
-    .uk-card-image img {
-      border-radius: 10px; 
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .uk-card-title {
-      font-size: 16px;
-      font-weight: 500;
-    }
-  }
-
-  .uk-card-car-preview {
-    box-shadow: none;
-    .uk-card-img {
-      img {
-        border-radius: 10px;
-      }
-    }
-
-    .uk-card-body {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
-  .uk-card-step {
-    
-    .uk-card-number {
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 30px;
-      align-items: center;
-      justify-content: center;
-      width: 36px;
-      height: 36px;
-      border-radius: 500px;
-      background: #FFFFFF;
-
-      font-weight: bold;
-      line-height: normal;
-      font-size: 18px;
-
-      color: #303032;
-    }
-
-    .uk-card-title {
-      font-size: 18px;
-    }
-  }
 }
 
 .hook-grid-misc() {
-  .uk-models-hightlight {
-    overflow: visible;
+    .uk-models-hightlight {
+        overflow: visible;
 
-    .swiper-slide {
-      width: 25%;
-      min-width: 220px;
+        .swiper-slide {
+            width: 25%;
+            min-width: 220px;
+        }
+
+        .uk-card-model {
+            .uk-card-img {
+                height: 140px;
+            }
+        }
     }
-  }
-  .uk-video-holders {
-    overflow: visible;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    .uk-video-holder {
-      min-height: 150px;
+
+    .uk-models-hightlight-2 {
+        overflow: visible;
+
+        .swiper-slide {
+            width: 33.33%;
+            min-width: 220px;
+        }
+
+        .uk-card-model {
+            .uk-card-img {
+                height: 200px;
+            }
+        }
     }
-  }
-  .uk-video-holders .swiper-slide {
-    width: 25%;
-    min-width: 220px;
-  }
+
+    .uk-video-holders {
+        overflow: visible;
+        margin-bottom: 40px;
+        margin-top: 40px;
+
+        .uk-video-holder {
+            min-height: 150px;
+        }
+    }
+
+    .uk-video-holders .swiper-slide {
+        width: 25%;
+        min-width: 220px;
+    }
 }
 
 .hook-section-misc() {
 
-  .uk-section-background-decore {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    svg {
-      width: auto;
-      height: auto;
-    }
-    @media (min-width: @breakpoint-small) {
-      display: block; 
-    } 
-  }
-
-  .uk-section-about-us {
     .uk-section-background-decore {
-      top: auto;
-      right: auto;
-      
-    } 
-    .uk-section-background {
-      bottom: 150px;
-    }
-    .uk-section-foreground {
-      z-index: 1;
-    }
-  }
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
 
-  .uk-section-car {
-    padding-top: 10px;
-  }
+        svg {
+            width: auto;
+            height: auto;
+        }
 
-  .uk-section-cars-overview {
-    padding-top: 10px;
-  }
-
-  .uk-section-cars-empty {
-    padding-top: 10px;
-    padding-bottom: 0;
-
-    .uk-section-background-decore {
-      top: auto;
-      left: auto;
-      bottom: -50px;
-    } 
-    .uk-section-foreground {
-      z-index: 1;
-    }
-  }
-
-  .uk-car-heading {
-    margin-bottom: 30px;
-  }
-
-  .uk-car-title {
-    margin-bottom: 0;
-  }
-
-  .uk-car-id {
-    line-height: normal;
-    font-size: 14px;
-    color: #A5A8AD;
-  }
-
-  .uk-car-prices {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: -10px;
-    margin-bottom: 20px;
-
-    > * {
-      margin: 10px;
+        @media (min-width: @breakpoint-small) {
+            display: block;
+        }
     }
 
-    @media (max-width: @breakpoint-xsmall-max) {
-      margin-bottom: -10px;
+    .uk-section-about-us {
+        .uk-section-background-decore {
+            top: auto;
+            right: auto;
+
+        }
+
+        .uk-section-background {
+            bottom: 150px;
+        }
+
+        .uk-section-foreground {
+            z-index: 1;
+        }
     }
-  }
 
-  .uk-car-price {
-    background-color: @global-success-background;
-    border-radius: 500px;
-    font-weight: 900;
-    line-height: normal;
-    font-size: 24px;
-    color: #fff;
-    padding: 8px 16px;
-    text-align: center;
-    @media (max-width: @breakpoint-xsmall-max) {
-      font-size: 18px;
+    .uk-section-car {
+        padding-top: 50px;
     }
-  }
 
-  .uk-car-price-old {
-    font-size: 20px;
-    line-height: normal;
-    text-decoration: line-through;
-    color: #A5A8AD;
-    text-align: center;
-    @media (max-width: @breakpoint-xsmall-max) {
-      font-size: 16px;
+    .uk-section-cars-overview {
+        padding-top: 50px;
     }
-  }
 
-  .uk-car-info {
-    font-size: 16px;
-    line-height: 1.625;
+    .uk-section-cars-empty {
+        padding-top: 50px;
+        padding-bottom: 0;
 
-    @media (max-width: @breakpoint-xsmall-max) {
-      font-size: 14px;
-      margin-bottom: 16px;
+        .uk-section-background-decore {
+            top: auto;
+            left: auto;
+            bottom: -50px;
+        }
+
+        .uk-section-foreground {
+            z-index: 1;
+        }
     }
-  }
 
-  .uk-car-info td {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    vertical-align: top;
-  }
+    .uk-car-heading {
+        margin-bottom: 30px;
+    }
 
-  .uk-car-info-label {
-    width: 150px;
-    padding-right: 12px;
-  }
+    .uk-car-title {
+        margin-bottom: 0;
+    }
 
-  .uk-car-info-text {
-    font-weight: 500;
-  }
+    .uk-car-id {
+        line-height: normal;
+        font-size: 14px;
+        color: #A5A8AD;
+    }
 
-  .uk-car-info {
-    @media (max-width: @breakpoint-small-max) {
-      tr {
+    .uk-car-prices {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        margin: -10px;
         margin-bottom: 20px;
-      }
-      td {
-        padding-top: 0;
-        padding-bottom: 0;
-      }
 
-      .uk-car-info-label {
-        width: auto;
-      }
-    }
-  }
-
-  .uk-car-about {
-    font-size: 14px;
-    line-height: 2.14;
-  }
-
-  .uk-car-about-title {
-    font-size: 14px;
-    font-weight: 600;
-  }
-
-  .uk-car-gallery {
-    margin-bottom: 40px;
-  }
-
-  .uk-car-gallery-general {
-    height: 412px;
-    @media (max-width: @breakpoint-small-max) {
-      height: 200px;
-    }
-  }
-
-  .uk-car-gallery-thumbs {
-    // height: 70px;
-    margin-top: 20px;
-  }
-
-  .uk-car-gallery-thumbs .swiper-wrapper {
-    transform: none !important;
-    width: auto;
-    margin-right: -21px;
-
-    &.swiper-opened {
-      flex-wrap: wrap !important;
-
-      .swiper-rest-active {
-        display: none;
-      }
-    }
-  }
-
-  .uk-car-gallery-thumbs .swiper-slide {
-    width: ~'calc(20% - 20px)';
-    height: 100%;
-    cursor: pointer;
-    height: 70px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-
-    @media (max-width: 967px) {
-      width: ~'calc(33.33% - 20px)';
-    } 
-  }
-
-  .uk-car-gallery-thumbs .swiper-slide-thumb-active {
-    opacity: 0.4;
-  }
-
-  .uk-car-actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: -10px;
-
-    > * {
-      margin: 10px;
-    }
-  }
-
-  .uk-grid > .uk-car-actions {
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-
-  .uk-car-dealer {
-    line-height: normal;
-    display: flex;
-    align-items: center;
-    margin: -10px;
-
-    > * {
-      margin: 10px;
-    }
-  }
-
-  .uk-car-dealer-logo {
-    width: 60px;
-    flex-shrink: 0;
-  }
-  
-  .uk-car-dealer-title {
-    font-size: 22px;
-    font-weight: 500;
-  }
-
-  .uk-car-dealer-link {
-    font-size: 14px;
-  }
-
-  .uk-section-filter-cars {
-    text-align: center;
-  }
-  
-  .uk-filter-cars {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .uk-filter-cars-overview {
-    font-size: 16px;
-    margin-bottom: 50px;
-  }
-
-  .uk-filter-cars {
-    @media (max-width: @breakpoint-xsmall-max) {
-      .uk-filter-controls {
-        > * {
-          width: 100%;
+        >* {
+            margin: 10px;
         }
-      }
-      .uk-form-width-large {
-        width: 100%;
-      }
-      .uk-form-width-medium {
-        width: 100%;
-      }
+
+        @media (max-width: @breakpoint-xsmall-max) {
+            margin-bottom: -10px;
+        }
     }
-  }
+
+    .uk-car-price {
+        background-color: @global-success-background;
+        border-radius: 500px;
+        font-weight: 900;
+        line-height: normal;
+        font-size: 24px;
+        color: #fff;
+        padding: 8px 16px;
+        text-align: center;
+
+        @media (max-width: @breakpoint-xsmall-max) {
+            font-size: 18px;
+        }
+    }
+
+    .uk-car-price-old {
+        font-size: 20px;
+        line-height: normal;
+        text-decoration: line-through;
+        color: #A5A8AD;
+        text-align: center;
+
+        @media (max-width: @breakpoint-xsmall-max) {
+            font-size: 16px;
+        }
+    }
+
+    .uk-car-info {
+        font-size: 16px;
+        line-height: 1.625;
+
+        @media (max-width: @breakpoint-xsmall-max) {
+            font-size: 14px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .uk-car-info td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        vertical-align: top;
+    }
+
+    .uk-car-info-label {
+        width: 150px;
+        padding-right: 12px;
+    }
+
+    .uk-car-info-text {
+        font-weight: 500;
+    }
+
+    .uk-car-info {
+        @media (max-width: @breakpoint-small-max) {
+            tr {
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 20px;
+            }
+
+            td {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            .uk-car-info-label {
+                width: auto;
+            }
+        }
+    }
+
+    .uk-car-about {
+        font-size: 14px;
+        line-height: 2.14;
+    }
+
+    .uk-car-about-title {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .uk-car-gallery {
+        margin-bottom: 40px;
+    }
+
+    .uk-car-gallery-general {
+        height: 412px;
+
+        @media (max-width: @breakpoint-small-max) {
+            height: 200px;
+        }
+    }
+
+    .uk-car-gallery-thumbs {
+        // height: 70px;
+        margin-top: 20px;
+    }
+
+    .uk-car-gallery-thumbs .swiper-wrapper {
+        transform: none !important;
+        width: auto;
+        margin-right: -21px;
+
+        &.swiper-opened {
+            flex-wrap: wrap !important;
+
+            .swiper-rest-active {
+                display: none;
+            }
+        }
+    }
+
+    .uk-car-gallery-thumbs .swiper-slide {
+        width: ~'calc(20% - 20px)';
+        height: 100%;
+        cursor: pointer;
+        height: 70px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+
+        @media (max-width: 967px) {
+            width: ~'calc(33.33% - 20px)';
+        }
+    }
+
+    .uk-car-gallery-thumbs .swiper-slide-thumb-active {
+        opacity: 0.4;
+    }
+
+    .uk-car-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: -10px;
+
+        >* {
+            margin: 10px;
+        }
+    }
+
+    .uk-grid>.uk-car-actions {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .uk-car-dealer {
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        margin: -10px;
+
+        >* {
+            margin: 10px;
+        }
+    }
+
+    .uk-car-dealer-logo {
+        width: 60px;
+        flex-shrink: 0;
+    }
+
+    .uk-car-dealer-title {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .uk-car-dealer-link {
+        font-size: 14px;
+    }
+
+    .uk-section-filter-cars {
+        text-align: center;
+    }
+
+    .uk-filter-cars,
+    .uk-filter-models {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .uk-filter-cars-overview,
+    .uk-filter-models-overview {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .uk-filter-cars,
+    .uk-filter-models {
+        @media (max-width: @breakpoint-xsmall-max) {
+            .uk-filter-controls {
+                >* {
+                    width: 100%;
+                }
+            }
+
+            .uk-form-width-large {
+                width: 100%;
+            }
+
+            .uk-form-width-medium {
+                width: 100%;
+            }
+        }
+    }
 
 }

@@ -23,83 +23,86 @@
 // Variables
 // ========================================================================
 
-@offcanvas-z-index:                             @global-z-index;
+@offcanvas-z-index: @global-z-index;
 
-@offcanvas-bar-width:                           280px;
-@offcanvas-bar-padding-vertical:                @global-margin;
-@offcanvas-bar-padding-horizontal:              @global-margin;
-@offcanvas-bar-background:                      #F1F2F4;
-@offcanvas-bar-color-mode:                      dark;
+@offcanvas-bar-width: 280px;
+@offcanvas-bar-padding-vertical: @global-margin;
+@offcanvas-bar-padding-horizontal: @global-margin;
+@offcanvas-bar-background: #F1F2F4;
+@offcanvas-bar-color-mode: dark;
 
-@offcanvas-bar-width-m:                         350px;
-@offcanvas-bar-padding-vertical-m:              0;
-@offcanvas-bar-padding-horizontal-m:            0;
+@offcanvas-bar-width-m: 350px;
+@offcanvas-bar-padding-vertical-m: 0;
+@offcanvas-bar-padding-horizontal-m: 0;
 
-@offcanvas-close-position:                      20px;
-@offcanvas-close-padding:                       5px;
+@offcanvas-close-position: 20px;
+@offcanvas-close-padding: 5px;
 
-@offcanvas-overlay-background:                  rgba(0,0,0,0);
+@offcanvas-overlay-background: rgba(0, 0, 0, 0);
 
 // Hooks
 // ========================================================================
 
 .hook-offcanvas-bar() {
-  padding: 0;
-  width: 90%;
-  max-width: 480px;
+    padding: 0;
+    width: 90%;
+    max-width: 480px;
 }
+
 .hook-offcanvas-close() {}
+
 .hook-offcanvas-overlay() {}
+
 .hook-offcanvas-misc() {
-  .uk-offcanvas {
-    top: 67px;
-  }
-
-  .uk-nav-offcanvas {
-    > li {
-      > a {
-        display: flex;
-        align-items: center;
-        padding: 13px 25px;
-        color: @global-color;
-        font-weight: 500;
-      }
-
-      &:not(:last-child) {
-        > a {
-          border-bottom: 1px solid #D9DADD;
-        }
-      }
+    .uk-offcanvas {
+        top: 68px;
     }
 
-    .uk-parent {
-      [data-svg] {
-        margin-left: auto;
-      }
-    }
+    .uk-nav-offcanvas {
+        >li {
+            >a {
+                display: flex;
+                align-items: center;
+                padding: 13px 25px;
+                color: @global-color;
+                font-weight: 500;
+            }
 
-    .uk-nav-sub {
-      padding: 0;
-      
-      ul {
-        padding-left: 0;
-      }
-
-      li {
-        a {
-          display: flex;
-          align-items: center;
-          padding: 13px 25px;
-          color: @global-color;
-          font-weight: 500;
+            &:not(:last-child) {
+                >a {
+                    border-bottom: 1px solid #D9DADD;
+                }
+            }
         }
 
-        &:not(:last-child) {
-          > a {
-            border-bottom: 1px solid #D9DADD;
-          }
+        .uk-parent {
+            [data-svg] {
+                margin-left: auto;
+            }
         }
-      }
+
+        .uk-nav-sub {
+            padding: 0;
+
+            ul {
+                padding-left: 0;
+            }
+
+            li {
+                a {
+                    display: flex;
+                    align-items: center;
+                    padding: 13px 25px;
+                    color: @global-color;
+                    font-weight: 500;
+                }
+
+                &:not(:last-child) {
+                    >a {
+                        border-bottom: 1px solid #D9DADD;
+                    }
+                }
+            }
+        }
     }
-  }
 }

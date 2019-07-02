@@ -1,231 +1,248 @@
 .hook-card-misc() {
 
-  .uk-card-succes-story-1,
-  .uk-card-succes-story-2,
-  .uk-card-succes-story-3 {
-    .uk-card-title {
-      position: relative;
-      padding-top: 40px;
-      font-weight: 500;
-      a {
-        color: inherit;
-      }
+    .uk-card-succes-story-1,
+    .uk-card-succes-story-2,
+    .uk-card-succes-story-3 {
+        .uk-card-title {
+            position: relative;
+            padding-top: 40px;
+            font-weight: 500;
 
-      .uk-title-decore {
-        position: absolute;
-        top: 0;
-        left: 0;
-        line-height: 1;
-        display: block;
-      }
+            a {
+                color: inherit;
+            }
+
+            .uk-title-decore {
+                position: absolute;
+                top: 0;
+                left: 0;
+                line-height: 1;
+                display: block;
+            }
+        }
+
+        .uk-card-person-position {
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .uk-title-decore {
+            svg {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+            }
+        }
     }
 
-    .uk-card-person-position {
-      font-size: 16px;
-      font-weight: 300;
-    }
-
-    .uk-title-decore {
-      svg {
-        width: auto;
-        height: auto;
-        max-width: 100%;
-      }
-    }
-  }
-
-  .uk-card-succes-story-4 {
-    position: relative;
-    border-radius: 10px;
-    // overflow: hidden;
-
-    .uk-title-decore {
-      display: block;
-      font-size: 16px;
-      margin-bottom: 8px;
-    }
-    .uk-card-overlay {
-      border-radius: 10px;
-    }
-    .uk-card-background {
-      img {
+    .uk-card-succes-story-4 {
+        position: relative;
         border-radius: 10px;
-      }
-    }
-    .uk-card-foreground {
-      padding: 50px 40px;
-    }
+        // overflow: hidden;
 
-    &-large {
-      
-      @media (min-width: @breakpoint-small) {
+        .uk-title-decore {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .uk-card-overlay {
+            border-radius: 10px;
+        }
+
+        .uk-card-background {
+            img {
+                border-radius: 10px;
+            }
+        }
+
         .uk-card-foreground {
-          padding-top: 80px;
-          padding-bottom: 110px;
+            padding: 50px 40px;
         }
-      }
 
-      .uk-card-icon {
-        font-size: 64px;
-      }
-    }
-  }
+        &-large {
 
-  .uk-card-succes-story-1 {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    font-weight: 100;
-    height: 100%;
-    @media (min-width: @breakpoint-small) {
-      min-height: 480px;
+            @media (min-width: @breakpoint-small) {
+                .uk-card-foreground {
+                    padding-top: 80px;
+                    padding-bottom: 110px;
+                }
+            }
+
+            .uk-card-icon {
+                font-size: 64px;
+            }
+        }
     }
 
-    .uk-card-title {
-      font-size: 22px;
-      margin: auto 0;
-    }
-
-    .uk-card-background {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-
-      img {
-        object-fit: cover;
-        width: 100%;
+    .uk-card-succes-story-1 {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        font-weight: 100;
         height: 100%;
-      }
-    }
-    .uk-card-overlay {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      opacity: 0.85;
-    }
-    .uk-card-foreground {
-      position: relative;
-      box-sizing: border-box;
-      min-height: inherit;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 20px;
 
-      @media (min-width: @breakpoint-medium) {
-        padding: 30px 40px;
-      }
-    }
-  }
-  
-  .uk-card-succes-story-2 {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 16px;
-
-    .uk-card-title {
-      font-size: 18px;
-      padding-top: 70px;
-      .uk-title-decore {
-        top: 30px;
-      }
-    }
-
-    .uk-card-person-4 {
-      max-width: 100%;
-      @media (min-width: @breakpoint-small) {
-        max-width: 260px;
-      }
-    }
-  }
-
-  .uk-card-succes-story-3 {
-    padding: 20px 20px 30px;
-    border-radius: 10px;
-    @media (min-width: @breakpoint-small) {
-      padding: 40px 40px 60px;
-    }
-
-    .uk-card-title {
-      font-size: 22px;
-      margin-bottom: 40px;
-    }
-
-    &.uk-border {
-      border: 3px solid @global-warning-background;
-    }
-
-    .uk-card-person-3 {
-      flex-direction: column;
-      align-items: flex-start;
-      .uk-card-top {
-        margin-bottom: 18px;
         @media (min-width: @breakpoint-small) {
-          margin-bottom: 0;
+            min-height: 480px;
         }
-      }
-      @media (min-width: @breakpoint-small) {
-        flex-direction: row;
-        align-items: center;
 
-      }
-    }
-  }
-
-  .uk-card-send-resume {
-    padding: 30px 0;
-    .uk-card-title {
-      font-size: 28px;
-      position: relative;
-      padding-top: 40px;
-      .uk-title-decore {
-        position: absolute;
-        top: -17px;
-        left: 50%;
-        transform: translateX(-50%);
-        svg {
-          width: auto;
-          height: auto;
-          max-width: 100%;
+        .uk-card-title {
+            font-size: 22px;
+            margin: auto 0;
         }
-      }
+
+        .uk-card-background {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .uk-card-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.85;
+        }
+
+        .uk-card-foreground {
+            position: relative;
+            box-sizing: border-box;
+            min-height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+
+            @media (min-width: @breakpoint-medium) {
+                padding: 30px 40px;
+            }
+        }
     }
-  }
+
+    .uk-card-succes-story-2 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 16px;
+
+        .uk-card-title {
+            font-size: 18px;
+            padding-top: 70px;
+
+            .uk-title-decore {
+                top: 30px;
+            }
+        }
+
+        .uk-card-person-4 {
+            max-width: 100%;
+
+            @media (min-width: @breakpoint-small) {
+                max-width: 260px;
+            }
+        }
+    }
+
+    .uk-card-succes-story-3 {
+        padding: 20px 20px 30px;
+        border-radius: 10px;
+
+        @media (min-width: @breakpoint-small) {
+            padding: 40px 40px 60px;
+        }
+
+        .uk-card-title {
+            font-size: 22px;
+            margin-bottom: 40px;
+        }
+
+        &.uk-border {
+            border: 3px solid @global-warning-background;
+        }
+
+        .uk-card-person-3 {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .uk-card-top {
+                margin-bottom: 18px;
+
+                @media (min-width: @breakpoint-small) {
+                    margin-bottom: 0;
+                }
+            }
+
+            @media (min-width: @breakpoint-small) {
+                flex-direction: row;
+                align-items: center;
+
+            }
+        }
+    }
+
+    .uk-card-send-resume {
+        padding: 30px 0;
+
+        .uk-card-title {
+            font-size: 28px;
+            position: relative;
+            padding-top: 40px;
+
+            .uk-title-decore {
+                position: absolute;
+                top: -17px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                svg {
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
 }
 
 .hook-section-misc() {
-  .uk-section-succes-story {
-    padding-top: 10px;
+    .uk-section-succes-story {
+        padding-top: 50px;
 
-    .uk-article-title {
-      margin: 20px 0 40px;
-      
-      @media (min-width: @breakpoint-small) {
-        font-size: 40px;
-      }
-    }
-  }
-  .uk-article-succes-story {
-    margin-bottom: 50px;
-    @media (min-width: @breakpoint-medium) {
-      margin-bottom: 120px;
-    }
-    .uk-back {
-      color: @global-color;
-    }
-  }
+        .uk-article-title {
+            margin: 20px 0 40px;
 
-  .uk-section-succes-storys {
-    padding-top: 10px;
-  }
+            @media (min-width: @breakpoint-small) {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .uk-article-succes-story {
+        margin-bottom: 50px;
+
+        @media (min-width: @breakpoint-medium) {
+            margin-bottom: 120px;
+        }
+
+        .uk-back {
+            color: @global-color;
+        }
+    }
+
+    .uk-section-succes-storys {
+        padding-top: 50px;
+    }
 }
 
-.hook-grid-misc() {
-
-}
+.hook-grid-misc() {}

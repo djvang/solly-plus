@@ -1,74 +1,78 @@
 .hook-card-misc() {
-  .uk-card-stock {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    min-height: 235px;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    line-height: 1.66;
-    transform: scale(1);
-    transition: transform 0.2s;
+    .uk-card-stock {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        min-height: 235px;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        line-height: 1.66;
+        transform: scale(1);
+        transition: transform 0.2s;
 
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      transform: scale(1.1);
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            transform: scale(1.1);
+        }
+
+        &.uk-disabled {
+            color: @global-muted-color;
+            background: @global-muted-background;
+            pointer-events: auto;
+        }
+
+        &.uk-light {
+            &:hover {
+                color: @global-inverse-color;
+            }
+        }
+
+        strong {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .city,
+        .date {
+            font-size: 12px;
+            opacity: .6;
+        }
     }
 
-    &.uk-disabled {
-      color: @global-muted-color;
-      background: @global-muted-background;
-      pointer-events: auto;
-    }
-
-    &.uk-light {
-      &:hover {
-        color: @global-inverse-color;
-      }
-    }
-
-    strong {
-      display: block;
-      margin: 10px 0;
-    }
-
-    .city, .date {
-      font-size: 12px;
-      opacity: .6;
-    }
-  }
-  
 }
 
 .hook-section-misc() {
-  .uk-section-stock {
-    padding-top: 10px;
-    .uk-filter-stock {
-      margin-bottom: 60px;
-    }
+    .uk-section-stock {
+        padding-top: 50px;
 
-    .uk-not-found-block {
-      position: relative;
-      .uk-section-background-decore {
-        top: auto;
-        left: auto;
-        bottom: -30px;
-        z-index: -1;
-      }
+        .uk-filter-stock {
+            margin-bottom: 60px;
+        }
+
+        .uk-not-found-block {
+            position: relative;
+
+            .uk-section-background-decore {
+                top: auto;
+                left: auto;
+                bottom: -30px;
+                z-index: -1;
+            }
+        }
     }
-  }
 }
 
 .hook-grid-misc() {
-  .uk-stocks-hightlight {
-    overflow: visible;
-    .swiper-slide {
-      width: 40%;
-      min-width: 250px;
+    .uk-stocks-hightlight {
+        overflow: visible;
+
+        .swiper-slide {
+            width: 40%;
+            min-width: 250px;
+        }
     }
-  }
 }

@@ -1,158 +1,165 @@
 .hook-card-misc() {
-  .uk-card-vacancy {
-    display: block;
-    position: relative;
-    padding: 5px 15px 5px 35px;
-
-    &:hover {
-      .uk-card-title {
-        color: @global-primary-background;
-      }
-    }
-
-    .uk-logo-dealer {
-      width: 20px;
-      height: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      left: 0;
-      top: 7px;
-      color: @global-muted-color;
-
-      img {
-        width: 100%;
-        object-fit: contain;
-      }
-    }
-
-    
-
-    .uk-card-title {
-      font-size: 18px;
-      font-weight: 500;
-      margin: 0;
-    }
-
-    .uk-card-footer {
-      padding: 0;
-      font-size: 14px;
-      color: @global-muted-color;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 -10px;
-
-      .uk-footer-item {
-        padding: 0 10px;
+    .uk-card-vacancy {
+        display: block;
         position: relative;
-        &:before {
-          position: absolute;
-          content: "";
-          width: 1px;
-          height: 10px;
-          background: @global-muted-color;
-          right: 0;
-          top: 50%;
-          transform: translateY(-50%);
+        padding: 5px 15px 5px 35px;
+
+        &:hover {
+            .uk-card-title {
+                color: @global-primary-background;
+            }
         }
 
-        &:last-child {
-          &:before {
-            display: none;
-          }
+        .uk-logo-dealer {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            top: 7px;
+            color: @global-muted-color;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
         }
-      }
+
+
+
+        .uk-card-title {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .uk-card-footer {
+            padding: 0;
+            font-size: 14px;
+            color: @global-muted-color;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
+
+            .uk-footer-item {
+                padding: 0 10px;
+                position: relative;
+
+                &:before {
+                    position: absolute;
+                    content: "";
+                    width: 1px;
+                    height: 10px;
+                    background: @global-muted-color;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                &:last-child {
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+
     }
 
-    &:hover,
-    &:focus {
-      text-decoration: none;
-    }
+    .uk-card-vacancy-secondary {
+        padding-left: 80px;
+        font-size: 14px;
 
-  }
+        .uk-logo-dealer {
+            top: 0;
+            width: 60px;
+            height: 60px;
+        }
 
-  .uk-card-vacancy-secondary {
-    padding-left: 80px;
-    font-size: 14px;
-    .uk-logo-dealer {
-      top: 0;
-      width: 60px;
-      height: 60px;
+        .uk-card-title {
+            font-size: 22px;
+        }
     }
-    .uk-card-title {
-      font-size: 22px;
-    }
-  }
 }
 
 .hook-section-misc() {
-  .uk-section-vacancies {
-    padding-top: 10px;
-    
-    .uk-list-vacancy {
-      margin-bottom: 50px;
+    .uk-section-vacancies {
+        padding-top: 50px;
+
+        .uk-list-vacancy {
+            margin-bottom: 50px;
+        }
+
+        .uk-filter-vacancy-holder {
+            position: relative;
+
+            .uk-section-background-decore {
+                top: 14%;
+                left: auto;
+                bottom: auto;
+                right: -20px;
+                z-index: -1;
+            }
+        }
+    }
+
+    .uk-section-vacancy {
+        padding-top: 50px;
+
+        h5 {
+            @media (min-width: @breakpoint-medium) {
+                margin: 60px 0 30px;
+            }
+        }
+
+        .uk-vacancy-info {
+            font-size: 16px;
+        }
+
+        .uk-list {
+            li {
+                margin-top: 20px;
+
+                &:last-child {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .uk-not-found-block {
+            position: relative;
+
+            .uk-section-background-decore {
+                left: auto;
+                bottom: auto;
+                top: -115px;
+                right: -15px;
+                z-index: -1;
+            }
+        }
     }
 
     .uk-filter-vacancy-holder {
-      position: relative;
-      .uk-section-background-decore {
-        top: 14%;
-        left: auto;
-        bottom: auto;
-        right: -20px;
-        z-index: -1;
-      }
-    }
-  }
-
-  .uk-section-vacancy {
-    padding-top: 10px;
-
-    h5 {
-      @media (min-width: @breakpoint-medium) {
-        margin: 60px 0 30px;
-      }
-    }
-    .uk-vacancy-info {
-      font-size: 16px;
-    }
-    .uk-list {
-      li {
-        margin-top: 20px;
-        &:last-child {
-          margin-top: 20px;
+        .uk-filter-vacancy {
+            margin-bottom: 30px;
         }
-      }
-    }
 
-    .uk-not-found-block {
-      position: relative;
-      .uk-section-background-decore {
-        left: auto;
-        bottom: auto;
-        top: -115px;
-        right: -15px;
-        z-index: -1;
-      }
-    }
-  }
+        .uk-link {
+            font-size: 16px;
+            margin-bottom: 30px;
 
-  .uk-filter-vacancy-holder {
-    .uk-filter-vacancy {
-      margin-bottom: 30px;
+            @media (min-width: @breakpoint-medium) {
+                margin-bottom: 60px;
+            }
+        }
     }
-    .uk-link {
-      font-size: 16px;
-      margin-bottom: 30px;
-
-      @media (min-width: @breakpoint-medium) {
-        margin-bottom: 60px;
-      }
-    }
-  }
 }
 
-.hook-grid-misc() {
-  
-}
+.hook-grid-misc() {}
