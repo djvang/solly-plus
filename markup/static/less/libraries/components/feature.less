@@ -2,20 +2,26 @@
   .uk-card-feature {
     background: linear-gradient(298.64deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%), #FBF659;
     color: @global-color;
-    padding: 35px 25px;
+    padding: 30px 20px;
     display: flex;
     align-items: center;
     text-align: left;
     box-shadow: 0px 5px 40px rgba(251, 246, 89, 0.6);
     transition: box-shadow 0.2s;
     border-radius: 10px;
+    
 
-    > * {
-      margin: 16px;
+    @media (min-width: @breakpoint-medium) {
+      text-align: center;
+      flex-direction: column;
     }
 
+    // > * {
+    //   margin: 16px;
+    // }
+
     .uk-card-icon {
-      font-size: 60px;
+      font-size: 36px;
       svg, img {
         display: block;
       }
@@ -28,6 +34,7 @@
 
     .uk-card-left {
       flex-shrink: 0;
+      margin: 16px;
     }
 
     .uk-card-body {
@@ -88,6 +95,11 @@
     .uk-card-feature {
       padding: 7px;
       border-radius: 30px;
+
+      @media (min-width: @breakpoint-medium) {
+        text-align: left;
+        flex-direction: row;
+      }
 
       &:not(:hover) {
         box-shadow: none;
