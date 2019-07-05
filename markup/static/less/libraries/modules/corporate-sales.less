@@ -1,39 +1,39 @@
 .hook-card-misc() {
-  .uk-section-corporate-sales {
-    color: @global-muted-color;
-    font-size: 16px;
-    .uk-section-title {
-      color: @global-link-color;
-    }
-    .uk-corporate-sales-block {
-      border: 5px solid @global-muted-background;
-      border-radius: @global-border-radius;
-      padding: 30px 20px;
-      overflow: hidden;
+    .uk-section-corporate-sales {
+        color: @global-muted-color;
+        font-size: 16px;
 
-      @media (min-width: @breakpoint-medium) {
-        padding: 80px 60px;
-      }
-    }
+        .uk-section-title {
+            color: @global-link-color;
+        }
 
-    .swiper-slide {
-      width: 33.33%;
-      
-      @media (min-width: @breakpoint-medium) {
-        min-width: 370px;
-      }
+        .uk-corporate-sales-block {
+            border: 5px solid @global-muted-background;
+            border-radius: @global-border-radius;
+            padding: 30px 20px;
+            overflow: hidden;
 
-      .uk-card-img {
-        height: 213px;
-      }
+            @media (min-width: @breakpoint-medium) {
+                padding: 80px 60px;
+            }
+        }
+
+        .swiper-slide {
+            width: 33.33%;
+
+            @media (min-width: @breakpoint-medium) {
+                min-width: 370px;
+            }
+
+            .uk-card-img {
+                // height: 213px;
+            }
+        }
+
+        .uk-corporate-sales-block-top {
+            align-items: center;
+        }
     }
-    
-    .uk-corporate-sales-block-top {
-      align-items: center;
-    }
-  }
 }
 
-.hook-grid-misc() {
-
-}
+.hook-grid-misc() {}
