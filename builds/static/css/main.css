@@ -4583,18 +4583,12 @@ select.uk-form-width-xsmall {
   width: 25%;
   min-width: 220px;
 }
-.uk-models-hightlight .uk-card-model .uk-card-img {
-  height: 140px;
-}
 .uk-models-hightlight-2 {
   overflow: visible;
 }
 .uk-models-hightlight-2 .swiper-slide {
   width: 33.33%;
   min-width: 220px;
-}
-.uk-models-hightlight-2 .uk-card-model .uk-card-img {
-  height: 200px;
 }
 .uk-video-holders {
   overflow: visible;
@@ -5289,7 +5283,6 @@ label.uk-card-model input:checked ~ * .uk-card-title {
   padding: 10px 0;
 }
 .uk-card-model .uk-card-img {
-  height: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5301,6 +5294,9 @@ label.uk-card-model input:checked ~ * .uk-card-title {
           justify-content: center;
   overflow: hidden;
   border-radius: 5px;
+  height: 0;
+  padding-bottom: 56.6%;
+  position: relative;
 }
 .uk-card-model .uk-card-img img {
   display: block;
@@ -5308,6 +5304,9 @@ label.uk-card-model input:checked ~ * .uk-card-title {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .uk-card-car {
   display: -webkit-box;
@@ -5496,9 +5495,6 @@ label.uk-card-model input:checked ~ * .uk-card-title {
   .uk-section-corporate-sales .swiper-slide {
     min-width: 370px;
   }
-}
-.uk-section-corporate-sales .swiper-slide .uk-card-img {
-  height: 213px;
 }
 .uk-section-corporate-sales .uk-corporate-sales-block-top {
   -webkit-box-align: center;
@@ -8466,28 +8462,6 @@ ul.uk-nav-sub {
     padding-top: 12px;
     padding-bottom: 12px;
   }
-}
-.uk-navbar-container.uk-sticky.uk-active {
-  background-color: #fff;
-  color: #303032;
-  -webkit-box-shadow: 0px 5px 20px rgba(48, 48, 50, 0.07);
-          box-shadow: 0px 5px 20px rgba(48, 48, 50, 0.07);
-}
-.uk-navbar-container.uk-sticky.uk-active .uk-light .uk-navbar-nav > li.uk-active > a,
-.uk-navbar-container.uk-sticky.uk-active .uk-navbar-nav > li > a,
-.uk-navbar-container.uk-sticky.uk-active .uk-section-primary:not(.uk-preserve-color) .uk-navbar-nav > li.uk-active > a,
-.uk-navbar-container.uk-sticky.uk-active .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-nav > li.uk-active > a,
-.uk-navbar-container.uk-sticky.uk-active .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-nav > li.uk-active > a,
-.uk-navbar-container.uk-sticky.uk-active .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-nav > li.uk-active > a,
-.uk-navbar-container.uk-sticky.uk-active .uk-card-primary.uk-card-body .uk-navbar-nav > li.uk-active > a,
-.uk-navbar-container.uk-sticky.uk-active .uk-card-primary > :not([class*='uk-card-media']) .uk-navbar-nav > li.uk-active > a,
-.uk-navbar-container.uk-sticky.uk-active .uk-card-secondary.uk-card-body .uk-navbar-nav > li.uk-active > a,
-.uk-navbar-container.uk-sticky.uk-active .uk-card-secondary > :not([class*='uk-card-media']) .uk-navbar-nav > li.uk-active > a,
-.uk-navbar-container.uk-sticky.uk-active .uk-overlay-primary .uk-navbar-nav > li.uk-active > a {
-  color: #303032;
-}
-.uk-navbar-container.uk-sticky.uk-active .uk-logo-description {
-  color: #ACACAE;
 }
 .uk-hamburger {
   -webkit-box-sizing: border-box;
@@ -18345,9 +18319,6 @@ iframe.uk-cover {
 }
 .uk-logo svg [fill="#376BC7"] {
   fill: #fff;
-}
-.uk-sticky-fixed.uk-active .uk-logo svg [fill="#376BC7"] {
-  fill: #376BC7;
 }
 .uk-logo-image {
   margin-bottom: 8px;

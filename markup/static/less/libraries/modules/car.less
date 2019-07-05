@@ -53,18 +53,25 @@
         }
 
         .uk-card-img {
-            height: 170px;
+            // height: 170px;
             display: flex;
             align-items: center;
             justify-content: center;
             overflow: hidden;
             border-radius: @global-border-radius;
 
+            height: 0;
+            padding-bottom: 56.6%;
+            position: relative;
+
             img {
                 display: block;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
             }
         }
     }
@@ -248,7 +255,7 @@
 
         .uk-card-model {
             .uk-card-img {
-                height: 140px;
+                // height: 140px;
             }
         }
     }
@@ -261,11 +268,11 @@
             min-width: 220px;
         }
 
-        .uk-card-model {
-            .uk-card-img {
-                height: 200px;
-            }
-        }
+        // .uk-card-model {
+        //     .uk-card-img {
+        //         height: 200px;
+        //     }
+        // }
     }
 
     .uk-video-holders {
